@@ -66,6 +66,105 @@ module.exports = function (eleventyConfig) {
     return projects.filter((project) => (project[field] || []).includes(key)).length;
   });
 
+  eleventyConfig.addFilter("absoluteUrl", function (value, baseUrl) {
+    return absoluteUrl(value, baseUrl);
+  });
+
+  eleventyConfig.addFilter("maxDateAdded", function (projects, key, field) {
+    const matchingProjects = key && field
+      ? projects.filter((project) => (project[field] || []).includes(key))
+      : projects;
+
+    return matchingProjects
+      .map((project) => project.dateAdded)
+      .filter(Boolean)
+      .sort()
+      .at(-1) || "";
+  });
+
+  eleventyConfig.addFilter("seoJsonLd", function (page, site, projects, title, description) {
+    const baseUrl = process.env.SITE_BASE_URL || site.baseUrl;
+    const rootUrl = absoluteUrl("/", baseUrl);
+    const canonicalUrl = absoluteUrl(page.url || "/", baseUrl);
+    const logoUrl = absoluteUrl(site.logo || site.ogImage, baseUrl);
+    const pageTitle = title || site.name;
+    const pageDescription = description || site.description;
+    const latestDate = projects
+      .map((project) => project.dateAdded)
+      .filter(Boolean)
+      .sort()
+      .at(-1);
+
+    const graph = [
+      {
+        "@type": "Organization",
+        "@id": `${rootUrl}#organization`,
+        name: site.organizationName || "SerpApi",
+        url: site.organizationUrl || site.url,
+        logo: {
+          "@type": "ImageObject",
+          url: logoUrl
+        },
+        sameAs: [
+          site.github
+        ].filter(Boolean)
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${rootUrl}#website`,
+        name: site.name,
+        url: rootUrl,
+        description: site.description,
+        publisher: {
+          "@id": `${rootUrl}#organization`
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: pageTitle,
+        description: pageDescription,
+        isPartOf: {
+          "@id": `${rootUrl}#website`
+        },
+        dateModified: latestDate
+      }
+    ];
+
+    if (isHomeUrl(canonicalUrl, rootUrl)) {
+      graph.push({
+        "@type": "ItemList",
+        "@id": `${canonicalUrl}#project-list`,
+        name: "#BuiltWithSerpApi project feed",
+        description: site.description,
+        numberOfItems: projects.length,
+        itemListElement: projects.map((project, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "CreativeWork",
+            name: project.name,
+            description: project.description,
+            url: project.hostedUrl || project.githubUrl,
+            author: {
+              "@type": project.author && /team/i.test(project.author) ? "Organization" : "Person",
+              name: project.author
+            },
+            datePublished: project.dateAdded,
+            keywords: [...(project.tags || []), ...(project.apis || [])].join(", "),
+            codeRepository: project.githubUrl
+          }
+        }))
+      });
+    }
+
+    return JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": graph
+    }, null, 2).replace(/</g, "\\u003c");
+  });
+
   return {
     pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
     dir: {
@@ -92,4 +191,26 @@ function slugify(value) {
     .replace(/&/g, " and ")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function absoluteUrl(value, baseUrl) {
+  if (!value) return "";
+
+  const rawValue = String(value);
+  if (/^https?:\/\//i.test(rawValue)) return rawValue;
+  if (!baseUrl) return rawValue;
+
+  const base = new URL(baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`);
+  const basePath = base.pathname.replace(/\/+$/g, "");
+
+  if (rawValue.startsWith("/") && basePath && (rawValue === basePath || rawValue.startsWith(`${basePath}/`))) {
+    base.pathname = rawValue;
+    return base.href;
+  }
+
+  return new URL(rawValue.replace(/^\/+/g, ""), base).href;
+}
+
+function isHomeUrl(canonicalUrl, rootUrl) {
+  return canonicalUrl.replace(/\/+$/g, "") === rootUrl.replace(/\/+$/g, "");
 }

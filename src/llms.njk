@@ -1,0 +1,42 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }}
+
+> {{ site.description }}
+
+{{ site.name }} is a static community showcase for apps, agents, automations, dashboards, research tools, and experiments built with SerpApi. Projects include an author, description, public source link, optional hosted link, tags, SerpApi engines, and the date the project was added.
+
+## Core Pages
+
+- [Home]({{ '/' | url | absoluteUrl(site.baseUrl) }}): Scrollable feed of all featured and community projects.
+- [Browse engines]({{ '/apis/' | url | absoluteUrl(site.baseUrl) }}): Projects grouped by SerpApi engine.
+- [Browse tags]({{ '/tags/' | url | absoluteUrl(site.baseUrl) }}): Projects grouped by arbitrary idea and use-case tags.
+- [Submit a project]({{ site.submitUrl }}): GitHub issue form for adding a public project.
+
+## SerpApi Resources
+
+- [SerpApi]({{ site.url }}): Real-time APIs for structured search engine results.
+- [SerpApi API documentation]({{ site.docs }}): Documentation for Google Search API and related SerpApi engines.
+- [SDK integrations](https://serpapi.com/integrations?utm_source=builtwithserpapi): Language-specific SDKs and tools.
+- [SerpApi MCP server](https://github.com/serpapi/serpapi-mcp): Official MCP server for connecting SerpApi to agent workflows.
+- [SerpApi blog](https://serpapi.com/blog/?utm_source=builtwithserpapi): Tutorials, product updates, and project ideas.
+
+## SerpApi Engines
+
+{% for api in apis -%}
+- [{{ api }}]({{ ('/apis/' + (api | slug) + '/') | url | absoluteUrl(site.baseUrl) }}): {{ projects | relatedProjectCount(api, "apis") }} project{% if projects | relatedProjectCount(api, "apis") != 1 %}s{% endif %}.
+{% endfor %}
+
+## Tags
+
+{% for tag in tags -%}
+- [{{ tag }}]({{ ('/tags/' + (tag | slug) + '/') | url | absoluteUrl(site.baseUrl) }}): {{ projects | relatedProjectCount(tag, "tags") }} project{% if projects | relatedProjectCount(tag, "tags") != 1 %}s{% endif %}.
+{% endfor %}
+
+## Projects
+
+{% for project in projects -%}
+- [{{ project.name }}]({{ project.githubUrl }}): {{ project.description }} Author: {{ project.author }}. Added: {{ project.dateAdded }}. Engines: {{ project.apis | join(", ") }}. Tags: {{ project.tags | join(", ") }}.{% if project.hostedUrl %} Live project: {{ project.hostedUrl }}.{% endif %}{% if project.featured %} Featured example.{% endif %}
+{% endfor %}

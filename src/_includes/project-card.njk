@@ -11,7 +11,7 @@
   </div>
   <div class="project-card-top">
     <div>
-      <h2><a href="{{ project | projectUrl }}">{{ project.name }}</a></h2>
+      <h2><a href="{{ project | projectUrl }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a></h2>
       <p class="author">by {{ project.author }}</p>
     </div>
   </div>
@@ -32,11 +32,11 @@
 
   <div class="project-links">
     {% if project.hostedUrl %}
-      <a class="primary-project-link" href="{{ project.hostedUrl }}">{% icon "rocket" %}Open project</a>
+      <a class="primary-project-link" href="{{ project.hostedUrl }}" target="_blank" rel="noopener noreferrer">{% icon "rocket" %}Open project</a>
     {% endif %}
-    <a href="{{ project.githubUrl }}">{% icon "github" %}View source</a>
+    <a href="{{ project.githubUrl }}" target="_blank" rel="noopener noreferrer">{% icon "github" %}View source</a>
     {% for link in project.links %}
-      <a href="{{ link.url }}">{% icon "link" %}{{ link.label }}</a>
+      <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{% icon "link" %}{{ link.label }}</a>
     {% endfor %}
   </div>
 </article>

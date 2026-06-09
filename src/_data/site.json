@@ -1,7 +1,15 @@
 {
   "name": "#BuiltWithSerpApi",
   "description": "A community feed of apps, automations, dashboards, research tools, and experiments powered by SerpApi.",
+  "baseUrl": "https://serpapi.github.io/builtwithserpapi",
   "url": "https://serpapi.com?utm_source=builtwithserpapi",
+  "organizationName": "SerpApi",
+  "organizationUrl": "https://serpapi.com",
+  "logo": "/assets/serpapi-logo-dark.png",
+  "ogImage": "/assets/og-image.png",
+  "ogImageAlt": "#BuiltWithSerpApi community projects powered by SerpApi",
+  "ogImageWidth": "1200",
+  "ogImageHeight": "630",
   "github": "https://github.com/serpapi",
   "docs": "https://serpapi.com/search-api?utm_source=builtwithserpapi",
   "submitUrl": "https://github.com/serpapi/builtwithserpapi/issues/new?template=add-project.yml"

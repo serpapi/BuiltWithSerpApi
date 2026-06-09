@@ -1,0 +1,41 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ '/' | url | absoluteUrl(site.baseUrl) }}</loc>
+    <lastmod>{{ projects | maxDateAdded }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{{ '/tags/' | url | absoluteUrl(site.baseUrl) }}</loc>
+    <lastmod>{{ projects | maxDateAdded }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ '/apis/' | url | absoluteUrl(site.baseUrl) }}</loc>
+    <lastmod>{{ projects | maxDateAdded }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% for tag in tags %}
+  <url>
+    <loc>{{ ('/tags/' + (tag | slug) + '/') | url | absoluteUrl(site.baseUrl) }}</loc>
+    <lastmod>{{ projects | maxDateAdded(tag, "tags") }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+  {% for api in apis %}
+  <url>
+    <loc>{{ ('/apis/' + (api | slug) + '/') | url | absoluteUrl(site.baseUrl) }}</loc>
+    <lastmod>{{ projects | maxDateAdded(api, "apis") }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+</urlset>
