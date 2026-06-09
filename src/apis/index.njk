@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: "Browse Engines | #BuiltWithSerpApi"
+---
+
+<section class="browse-hero">
+  <div class="shell">
+    <h1>Browse by engine</h1>
+    <p>See which SerpApi engines builders are using across apps, automations, and workflows.</p>
+  </div>
+</section>
+
+<section class="shell browse-grid api-browse-grid">
+  {% for api in apis %}
+    <a class="browse-card" href="{{ ('/apis/' + (api | slug) + '/') | url }}">
+      <span class="mini-icon">{% icon "api" %}</span>
+      <span>{{ api }}</span>
+      <strong>{{ projects | relatedProjectCount(api, "apis") }} project{% if projects | relatedProjectCount(api, "apis") != 1 %}s{% endif %}</strong>
+    </a>
+  {% endfor %}
+</section>

@@ -1,0 +1,8 @@
+{
+  "name": "#BuiltWithSerpApi",
+  "description": "A community feed of apps, automations, dashboards, research tools, and experiments powered by SerpApi.",
+  "url": "https://serpapi.com?utm_source=builtwithserpapi",
+  "github": "https://github.com/serpapi",
+  "docs": "https://serpapi.com/search-api?utm_source=builtwithserpapi",
+  "submitUrl": "https://github.com/serpapi/builtwithserpapi/issues/new"
+}

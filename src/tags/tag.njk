@@ -1,0 +1,25 @@
+---
+layout: base.njk
+pagination:
+  data: tags
+  size: 1
+  alias: projectForTag
+permalink: "/tags/{{ projectForTag | slug }}/"
+eleventyComputed:
+  title: "{{ projectForTag }} projects | #BuiltWithSerpApi"
+---
+
+<section class="browse-hero">
+  <div class="shell">
+    <a class="back-link" href="{{ '/tags/' | url }}">All tags</a>
+    <h1>{{ projectForTag }}</h1>
+    <p>Projects tagged with {{ projectForTag }}.</p>
+  </div>
+</section>
+
+<section class="shell listing">
+  {% set matchingProjects = projects | projectsByTag(projectForTag) %}
+  {% for project in matchingProjects %}
+    {% include "project-card.njk" %}
+  {% endfor %}
+</section>

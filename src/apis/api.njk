@@ -1,0 +1,25 @@
+---
+layout: base.njk
+pagination:
+  data: apis
+  size: 1
+  alias: projectForApi
+permalink: "/apis/{{ projectForApi | slug }}/"
+eleventyComputed:
+  title: "{{ projectForApi }} projects | #BuiltWithSerpApi"
+---
+
+<section class="browse-hero">
+  <div class="shell">
+    <a class="back-link" href="{{ '/apis/' | url }}">All engines</a>
+    <h1>{{ projectForApi }}</h1>
+    <p>Projects using {{ projectForApi }}.</p>
+  </div>
+</section>
+
+<section class="shell listing">
+  {% set matchingProjects = projects | projectsByApi(projectForApi) %}
+  {% for project in matchingProjects %}
+    {% include "project-card.njk" %}
+  {% endfor %}
+</section>

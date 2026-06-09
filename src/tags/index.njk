@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: "Browse Tags | #BuiltWithSerpApi"
+---
+
+<section class="browse-hero">
+  <div class="shell">
+    <h1>Browse by tag</h1>
+    <p>Follow the use cases, product patterns, and builder categories emerging around SerpApi.</p>
+  </div>
+</section>
+
+<section class="shell browse-grid">
+  {% for tag in tags %}
+    <a class="browse-card" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">
+      <span class="mini-icon">{% icon "tag" %}</span>
+      <span>{{ tag }}</span>
+      <strong>{{ projects | relatedProjectCount(tag, "tags") }} project{% if projects | relatedProjectCount(tag, "tags") != 1 %}s{% endif %}</strong>
+    </a>
+  {% endfor %}
+</section>

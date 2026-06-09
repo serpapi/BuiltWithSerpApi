@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.name }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <meta property="og:title" content="{{ title or site.name }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=20260608-9' | url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="{{ '/' | url }}">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="{{ '/assets/serpapi-logo-dark.png' | url }}" alt="">
+          </span>
+          <span>{{ site.name }}</span>
+        </a>
+        <div class="nav-links">
+          <a href="{{ '/tags/' | url }}">{% icon "tag" %}Tags</a>
+          <a href="{{ '/apis/' | url }}">{% icon "hub" %}Engines</a>
+          <a href="{{ site.docs }}">{% icon "book" %}Docs</a>
+          <a class="button button-small" href="{{ site.submitUrl }}">{% icon "add" %}Submit project</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="content">
+      {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <p>{{ site.name }} is a community showcase for SerpApi powered apps.</p>
+        <div class="footer-links">
+          <a href="{{ site.url }}">{% icon "globe" %}SerpApi</a>
+          <a href="{{ site.docs }}">{% icon "docs" %}API docs</a>
+          <a href="{{ site.github }}">{% icon "github" %}GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<article class="project-card{% if project.featured %} project-card-featured{% endif %}">
+  <div class="project-kicker">
+    <span>
+      {% if project.featured %}
+        {% icon "star" %}Featured example
+      {% else %}
+        {% icon "bolt" %}Built with SerpApi
+      {% endif %}
+    </span>
+    <span>{% icon "hub" %}{{ project.apis | length }} engine{% if project.apis | length != 1 %}s{% endif %}</span>
+  </div>
+  <div class="project-card-top">
+    <div>
+      <h2><a href="{{ project | projectUrl }}">{{ project.name }}</a></h2>
+      <p class="author">by {{ project.author }}</p>
+    </div>
+  </div>
+
+  <p class="project-description">{{ project.description }}</p>
+
+  <div class="meta-group" aria-label="Project tags">
+    {% for tag in project.tags %}
+      <a class="chip" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">{% icon "tag" %}{{ tag }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="api-row" aria-label="SerpApi APIs used">
+    {% for api in project.apis %}
+      <a class="api-pill" href="{{ ('/apis/' + (api | slug) + '/') | url }}">{% icon "api" %}{{ api }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="project-links">
+    {% if project.hostedUrl %}
+      <a class="primary-project-link" href="{{ project.hostedUrl }}">{% icon "rocket" %}Open project</a>
+    {% endif %}
+    <a href="{{ project.githubUrl }}">{% icon "github" %}View source</a>
+    {% for link in project.links %}
+      <a href="{{ link.url }}">{% icon "link" %}{{ link.label }}</a>
+    {% endfor %}
+  </div>
+</article>

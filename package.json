@@ -1,0 +1,14 @@
+{
+  "name": "builtwithserpapi",
+  "version": "1.0.0",
+  "description": "A static Eleventy showcase for projects built with SerpApi.",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --watch",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
