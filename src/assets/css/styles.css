@@ -506,10 +506,6 @@ a:hover {
   color: var(--green-dark);
 }
 
-.project-card-featured h2 {
-  font-size: clamp(2rem, 3.8vw, 3rem);
-}
-
 .project-card::before {
   content: "";
   position: absolute;
@@ -970,8 +966,7 @@ a:hover {
     font-size: clamp(2.35rem, 11vw, 3rem);
   }
 
-  .stream-header h2,
-  .project-card-featured h2 {
+  .stream-header h2 {
     font-size: clamp(1.85rem, 9vw, 2.45rem);
   }
 

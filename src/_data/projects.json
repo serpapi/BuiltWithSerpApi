@@ -3,6 +3,7 @@
     "name": "Research Brief",
     "description": "Generates a structured research brief for any topic by combining Google Scholar, Google News, and Google Search results with AI synthesis.",
     "author": "Omar Rafiq",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/omarraf/research-brief",
     "links": [],
     "tags": [
@@ -21,6 +22,7 @@
     "name": "SerpApi Superapp",
     "description": "A SerpApi powered superapp built with the SerpApi Python SDK to showcase multi-engine search workflows in one live interface.",
     "author": "SerpApi Team",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/serpapi/serpapi-superapp",
     "hostedUrl": "https://superapp.apps.serpapi.com/?utm_source=builtwithserpapi",
     "featured": true,
@@ -45,6 +47,7 @@
     "name": "SerpAPI Fact Check",
     "description": "Fact-checks news headlines by searching reputable news sources and showing whether the claim has been reported elsewhere.",
     "author": "Jay Shah",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/sonjay97/SerpAPIHackathonProject",
     "links": [],
     "tags": [
@@ -62,6 +65,7 @@
     "name": "SerpTrail",
     "description": "Tracks and monitors SEO efforts with SerpApi-powered rank and search visibility workflows.",
     "author": "SerpApi Team",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/serpapi/serptrail",
     "featured": true,
     "links": [],
@@ -79,6 +83,7 @@
     "name": "Foundry Atlas",
     "description": "Helps chip designers discover and compare semiconductor and photonic foundries using search aggregation and an interactive map.",
     "author": "Joaquin Matres",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/joamatab/foundry-atlas",
     "links": [],
     "tags": [
@@ -95,6 +100,7 @@
     "name": "Creator Lens",
     "description": "Analyzes YouTube creator strategy with AI using SerpApi data and DeepSeek.",
     "author": "SerpApi Team",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/serpapi/creator-lens",
     "featured": true,
     "links": [],
@@ -112,6 +118,7 @@
     "name": "Trend Spotter Dashboard",
     "description": "Shows current Google trends, related news, and interest-over-time views for custom topics in a Streamlit dashboard.",
     "author": "Amaury Rodriguez",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/amrod/trend-spotter-dashboard",
     "links": [],
     "tags": [
@@ -129,6 +136,7 @@
     "name": "Local LLM Web Search",
     "description": "Gives a local LLM real-time web search through SerpApi function calling.",
     "author": "SerpApi Team",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/serpapi/local-llm-web-search",
     "featured": true,
     "links": [],
@@ -146,6 +154,7 @@
     "name": "SerpAPI Trending News Digest",
     "description": "Command-line digest generator that fetches trending Google News results for a topic and formats titles, sources, dates, and links.",
     "author": "Joel Peter",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/joelpeter94/serpapi-trending-news-digest",
     "links": [],
     "tags": [
@@ -161,6 +170,7 @@
     "name": "SerpApi Research Bot",
     "description": "Cross-platform AI research agent that brings SerpApi-powered research into Slack and Linear.",
     "author": "SerpApi Team",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/serpapi/serpapi-research-bot",
     "featured": true,
     "links": [],
@@ -180,6 +190,7 @@
     "name": "Serapp Warbler",
     "description": "Field-guide planner for birders and nature photographers that gathers regional sightings, forum data, and image references.",
     "author": "Jorge Salvador Vigueras Perez",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/jvigueras/serapp-warbler",
     "links": [],
     "tags": [
@@ -196,6 +207,7 @@
     "name": "Competitive Intelligence Agent",
     "description": "Builds a competitive intelligence workflow with SerpApi engines, OpenAI, and an optional HubSpot add-on.",
     "author": "SerpApi Team",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/serpapi/competitive-intelligence-agent",
     "featured": true,
     "links": [],
@@ -215,6 +227,7 @@
     "name": "Car Search Notification",
     "description": "Searches for used cars near a target ZIP code and filters results by budget, mileage, and other buyer criteria.",
     "author": "Hyun Barng",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/harrybarng/Car-Search-Notification-PyCon-2026-SerpAPI",
     "links": [],
     "tags": [
@@ -232,6 +245,7 @@
     "name": "Pyfood",
     "description": "Restaurant finder for PyCon attendees that matches nearby Long Beach restaurants to food preferences and allergy constraints.",
     "author": "Kirill Ignatev",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/kiri11/pyfood",
     "links": [],
     "tags": [
@@ -249,6 +263,7 @@
     "name": "Solar Market Intelligence",
     "description": "Tracks solar and distributed-energy policy news, regulatory activity, and search trends across US states.",
     "author": "Jim Fingal",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/jimfingal/v0-serpapi-pycon-2026-demo",
     "links": [],
     "tags": [
@@ -267,6 +282,7 @@
     "name": "PyConUS2026 Search Compare",
     "description": "Compares Google and DuckDuckGo results for the same query and highlights overlapping and unique result titles.",
     "author": "Pawel Zal",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/pavelo22/PyConUS2026-SerpAPI",
     "links": [],
     "tags": [
@@ -284,6 +300,7 @@
     "name": "VibeTrip",
     "description": "Travel planning app that explores flight deals and builds trip plans with flights, hotels, and sightseeing options.",
     "author": "Shiva Gaire",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/geeksambhu/demo-serp",
     "links": [],
     "tags": [
@@ -302,6 +319,7 @@
     "name": "PyPackage Oracle",
     "description": "Recommends Python libraries for plain-English tasks using real search results synthesized into an evidence-backed answer.",
     "author": "Everest K C",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/everestkc/PyPackageOracle",
     "links": [],
     "tags": [
@@ -318,6 +336,7 @@
     "name": "WanderLens",
     "description": "Builds destination dashboards with attractions, restaurants, hidden gems, events, and travel videos across multiple SerpApi engines.",
     "author": "Jeremy Wang",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/jqw115-hash/pycon2026-serpapi-submission",
     "links": [],
     "tags": [
@@ -337,6 +356,7 @@
     "name": "SerpSide",
     "description": "Conference companion with a restaurant explorer and a swipe-based product price game for deciding what swag is worth saving.",
     "author": "Joseph Osei Yaw Nyarko",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/Joe342wise/serpside",
     "links": [],
     "tags": [
@@ -346,7 +366,6 @@
     ],
     "apis": [
       "Google Maps API",
-      "Google Product API",
       "Google Shopping API"
     ]
   },
@@ -354,6 +373,7 @@
     "name": "SEO by Serp",
     "description": "Tracks Google ranking positions, AI Overviews, People Also Ask data, volatility alerts, and competitor domain movement.",
     "author": "Joseph Osei Yaw Nyarko",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/Joe342wise/serp-project",
     "links": [],
     "tags": [
@@ -369,6 +389,7 @@
     "name": "MCP Chat Bot",
     "description": "Chat interface backed by a FastMCP server that sends queries to SerpApi and returns organic results as clickable cards.",
     "author": "Joseph Osei Yaw Nyarko",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/Joe342wise/MCPChatBot",
     "links": [],
     "tags": [
@@ -384,6 +405,7 @@
     "name": "Pylon 2026 SerpApi Demo",
     "description": "Processes natural-language queries with an LLM, runs SerpApi searches, and parses results for user-facing answers.",
     "author": "Israel Brewster",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/ibrewster/pylon2026-serpapi-demo",
     "links": [],
     "tags": [
@@ -399,6 +421,7 @@
     "name": "Serp Geocode Demo",
     "description": "Turns single or uploaded lists of human-readable addresses into latitude and longitude coordinates.",
     "author": "Aaron Robinson",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/aaronr8684/serp_demo",
     "links": [],
     "tags": [
@@ -415,6 +438,7 @@
     "name": "FamilyOut",
     "description": "Helps families discover local events and activities by city, date, category, and kid-friendly filters.",
     "author": "Brian Chin",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/brianchin-sudo/familyout",
     "links": [],
     "tags": [
@@ -432,6 +456,7 @@
     "name": "PyCon SerpApi Vibe",
     "description": "Searches an original project idea and shows related existing work so builders can judge timing and find inspiration.",
     "author": "Yixing Fu",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/yixingfu/pycon-serpapi-vibe",
     "links": [],
     "tags": [
@@ -448,6 +473,7 @@
     "name": "FIRST Robotics News",
     "description": "Serves news articles about FIRST, the K-12 international robotics organization, using Google News results.",
     "author": "Hanna Keyerleber",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/rebelreyek/serpapi-demo",
     "links": [],
     "tags": [
@@ -461,8 +487,9 @@
   },
   {
     "name": "PyCon 2026 Knowledge Graph",
-    "description": "Builds a live PyCon knowledge graph by combining SerpApi engines for Google Search, News, Scholar, YouTube, Local, and Reddit.",
+    "description": "Builds a live PyCon knowledge graph by combining SerpApi engines for Google Search, News, Scholar, YouTube, and Local results.",
     "author": "Carmelo Piccione",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/struktured-labs/pycon-2026",
     "links": [],
     "tags": [
@@ -475,14 +502,14 @@
       "Google News API",
       "Google Scholar API",
       "YouTube Search API",
-      "Google Local API",
-      "Reddit Search API"
+      "Google Local API"
     ]
   },
   {
     "name": "Flight Search Script",
     "description": "Automates recurring flight searches between two places so the builder can monitor good travel deals.",
     "author": "Ruben",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/rgimen3z/serp-api-example",
     "links": [],
     "tags": [
@@ -498,6 +525,7 @@
     "name": "Search Signal Board",
     "description": "Turns a topic into prototype ideas, repeated terms, related questions, and source links from Google Search and News results.",
     "author": "Katarina Nogradiova",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/katyja/serpapi-pycon",
     "links": [],
     "tags": [
@@ -514,6 +542,7 @@
     "name": "PriceScope",
     "description": "Compares real-time product prices across stores with cheapest-deal discovery, price charts, and filterable result tables.",
     "author": "Carla Marcela Florida Roman",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/carlicode/PriceScope---Smart-Product-Price-Comparator",
     "links": [],
     "tags": [
@@ -530,6 +559,7 @@
     "name": "SerpApi Raffle Companion",
     "description": "Conference companion utility for finding talks, slides, speaker bios, demos, and related resources across the web.",
     "author": "Goutham Kalla",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/kallagoutham/serpapi-raffle",
     "links": [],
     "tags": [
@@ -545,6 +575,7 @@
     "name": "Layout Paper Generator",
     "description": "Finds research papers through Google Scholar and generates downloadable photonic integrated circuit layouts from extracted parameters.",
     "author": "Joaquin Matres",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/joamatab/layout-paper-generator",
     "links": [],
     "tags": [
@@ -561,6 +592,7 @@
     "name": "Travel Currency Trends",
     "description": "Tracks currency trend signals for travelers using search-driven discovery.",
     "author": "Adilson Torres",
+    "dateAdded": "2026-06-02",
     "githubUrl": "https://github.com/AdilsonTorres/travel-currency-trends",
     "links": [],
     "tags": [
@@ -571,6 +603,103 @@
     "apis": [
       "Google Trends API",
       "Google Search API"
+    ]
+  },
+  {
+    "name": "SkyMind AI",
+    "description": "AI-powered travel assistant that helps users search flights, compare options, and generate travel recommendations with multi-source travel intelligence.",
+    "author": "Ujjwal Kumar Jha",
+    "dateAdded": "2026-06-09",
+    "githubUrl": "https://github.com/JiNamaste/skymind-ai",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "llm"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Autonomous AI Job Hunter",
+    "description": "Automated LLM-powered job aggregation and evaluation pipeline that pulls real-time job listings, scores matches, drafts cover letters, and sends alerts.",
+    "author": "Karthik Banda",
+    "dateAdded": "2026-06-09",
+    "githubUrl": "https://github.com/Karthik-Banda/Autonomous-AI-Job-Hunter",
+    "links": [],
+    "tags": [
+      "jobs",
+      "automation",
+      "llm"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ]
+  },
+  {
+    "name": "LiveRank SERP Tracker",
+    "description": "Python SEO rank tracker that fetches live Google SERP snapshots, detects ranking changes, and generates AI-written SEO insight reports.",
+    "author": "Hema Karoonyaa T M",
+    "dateAdded": "2026-06-09",
+    "githubUrl": "https://github.com/Hema-k-ds/liverank-serp-tracker",
+    "links": [],
+    "tags": [
+      "seo",
+      "rank-tracking",
+      "reporting"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "AI Learning Path Generator",
+    "description": "Automation workflow that creates personalized learning roadmaps, generates Google Docs study plans, and optionally schedules tasks in Google Calendar.",
+    "author": "Devi Krishna Manoj",
+    "dateAdded": "2026-06-09",
+    "githubUrl": "https://github.com/devik-sys/ai-automation-projects",
+    "links": [],
+    "tags": [
+      "education",
+      "automation",
+      "llm"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Fake News Detection",
+    "description": "Fact-checking web app that runs live Google searches through SerpApi and uses Groq analysis to classify news claims with confidence scores and evidence.",
+    "author": "Vamsi Pabbiti",
+    "dateAdded": "2026-06-09",
+    "githubUrl": "https://github.com/Vamsi-Pabbiti/Fake-News-Detection",
+    "links": [],
+    "tags": [
+      "fact-checking",
+      "news",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "SmartStock CRM",
+    "description": "Full-stack inventory and CRM app with AI analytics and SerpApi-powered product trend discovery for retail categories.",
+    "author": "Kaushik Joshi",
+    "dateAdded": "2026-06-09",
+    "githubUrl": "https://github.com/k-k-j123/SmartStock_CRM",
+    "links": [],
+    "tags": [
+      "inventory",
+      "crm",
+      "shopping"
+    ],
+    "apis": [
+      "Amazon Search API"
     ]
   }
 ]

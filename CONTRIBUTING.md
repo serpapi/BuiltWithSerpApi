@@ -17,6 +17,7 @@ Projects live in `src/_data/projects.json`. Each project supports:
   "name": "Search Radar",
   "description": "A product-monitoring app that tracks SERP shifts across markets.",
   "author": "Jane Doe",
+  "dateAdded": "2026-06-09",
   "githubUrl": "https://github.com/example/search-radar",
   "hostedUrl": "https://search-radar.example.com",
   "featured": false,
@@ -36,6 +37,7 @@ Required fields:
 - `name`
 - `description`
 - `author`
+- `dateAdded`
 - `githubUrl`
 - `tags`
 - `apis`
@@ -47,6 +49,8 @@ Optional fields:
 - `links`
 
 Before adding a `githubUrl` or `hostedUrl`, verify that it is publicly reachable. Do not add local-only preview URLs such as `localhost` or `127.0.0.1`.
+
+Use `YYYY-MM-DD` for `dateAdded`. Maintainers should set it to the date the project is added to the site.
 
 ## Run Locally
 
