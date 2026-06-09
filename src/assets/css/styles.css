@@ -23,11 +23,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: clip;
   color: var(--text);
   font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
   letter-spacing: 0;
@@ -60,8 +62,9 @@ a:hover {
 }
 
 .shell {
-  width: min(var(--shell), calc(100% - 40px));
+  width: min(var(--shell), 100%);
   margin-inline: auto;
+  padding-inline: 20px;
 }
 
 .skip-link {
@@ -258,6 +261,7 @@ a:hover {
   font-size: clamp(3.2rem, 7vw, 5.8rem);
   line-height: 0.92;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .intro-card p:not(.label),
@@ -558,6 +562,7 @@ a:hover {
   font-size: clamp(1.72rem, 3vw, 2.35rem);
   line-height: 1.03;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .author {
@@ -846,7 +851,7 @@ a:hover {
 }
 
 .browse-grid {
-  padding: 24px 0 76px;
+  padding-block: 24px 76px;
 }
 
 .api-browse-grid .browse-card {
@@ -856,7 +861,7 @@ a:hover {
 }
 
 .listing {
-  padding: 28px 0 76px;
+  padding-block: 28px 76px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -901,16 +906,18 @@ a:hover {
 
 @media (max-width: 760px) {
   .nav {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    padding: 14px 0;
+    padding-block: 14px;
   }
 
   .nav-links {
     width: 100%;
     gap: 14px;
-    overflow-x: auto;
-    padding-bottom: 2px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding: 0 2px 2px 0;
   }
 
   .stream-feed,
@@ -936,15 +943,36 @@ a:hover {
   .stat-card {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .footer-inner {
+    min-height: 0;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  .footer-links {
+    gap: 12px 18px;
+    padding-bottom: 2px;
+  }
 }
 
 @media (max-width: 520px) {
   .shell {
-    width: min(var(--shell), calc(100% - 28px));
+    padding-inline: 18px;
   }
 
   .stream-section {
     padding-top: 16px;
+  }
+
+  .intro-card h1 {
+    font-size: clamp(2.35rem, 11vw, 3rem);
+  }
+
+  .stream-header h2,
+  .project-card-featured h2 {
+    font-size: clamp(1.85rem, 9vw, 2.45rem);
   }
 
   .rail-card,
