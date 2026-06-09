@@ -1,0 +1,103 @@
+name: Add a #BuiltWithSerpApi project
+description: Submit a project to be considered for the #BuiltWithSerpApi showcase.
+title: "Add project: "
+labels:
+  - project submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing something built with SerpApi.
+
+        Please include public, reachable links. Maintainers may edit tags, engine names, and descriptions for clarity before adding the project to the site.
+
+  - type: input
+    id: project_name
+    attributes:
+      label: Project name
+      description: The display name for your project.
+      placeholder: Search Radar
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Describe what the project does in 1-3 sentences.
+      placeholder: A product-monitoring app that tracks SERP shifts across markets.
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author or team name
+      placeholder: Jane Doe or Example Team
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: Public source link
+      description: GitHub or GitLab repository URL.
+      placeholder: https://github.com/example/search-radar
+    validations:
+      required: true
+
+  - type: input
+    id: hosted_url
+    attributes:
+      label: Hosted app link
+      description: Optional live demo URL. Do not submit localhost or private preview URLs.
+      placeholder: https://search-radar.example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: serpapi_engines
+    attributes:
+      label: SerpApi engines used
+      description: List the SerpApi engines used by the project.
+      placeholder: |
+        Google Search API
+        Google News API
+        Google Maps API
+    validations:
+      required: true
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Tags
+      description: Add a few tags that describe the project.
+      placeholder: |
+        monitoring
+        analytics
+        seo
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_links
+    attributes:
+      label: Additional links
+      description: Optional docs, demo videos, writeups, or case studies.
+      placeholder: |
+        Case study: https://example.com/case-study
+        Demo video: https://example.com/demo
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: The source link is public and reachable.
+          required: true
+        - label: The hosted app link, if provided, is public and reachable.
+          required: false
+        - label: This project uses SerpApi.
+          required: true

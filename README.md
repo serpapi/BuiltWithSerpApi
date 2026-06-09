@@ -8,7 +8,7 @@ This repository powers a static GitHub Pages site where builders can browse real
 
 Built something with SerpApi? Open an issue and tell us about it:
 
-[Submit a #BuiltWithSerpApi project](https://github.com/serpapi/builtwithserpapi/issues/new)
+[Submit a #BuiltWithSerpApi project](https://github.com/serpapi/builtwithserpapi/issues/new?template=add-project.yml)
 
 Please include:
 
