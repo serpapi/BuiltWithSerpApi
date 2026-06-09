@@ -4,7 +4,7 @@ Thanks for helping improve #BuiltWithSerpApi.
 
 For project submissions, the preferred path is to open an issue:
 
-https://github.com/serpapi/builtwithserpapi/issues/new?template=add-project.yml
+https://github.com/serpapi/BuiltWithSerpApi/issues/new?template=add-project.yml
 
 Maintainers can then verify links and add the project to the feed.
 
