@@ -1,18 +1,22 @@
 :root {
-  --paper: #fbfaf6;
-  --paper-deep: #f1eee6;
-  --ink: #141516;
-  --text: #25282b;
-  --muted: #686b70;
-  --line: #d8d2c4;
-  --line-strong: #b9b19f;
+  --paper: #f8fbff;
+  --paper-deep: #eef4ff;
+  --ink: #272822;
+  --text: #30332f;
+  --muted: #657080;
+  --line: #d9e3ff;
+  --line-strong: #a9baff;
   --surface: #ffffff;
-  --green: #16b56f;
-  --green-dark: #087247;
-  --blue: #245bd6;
-  --amber: #e7a923;
-  --rose: #d75f52;
-  --shadow: 0 18px 42px rgba(20, 21, 22, 0.09);
+  --brand-blue: #377fea;
+  --brand-purple: #6937ea;
+  --brand-purple-bright: #8c45ef;
+  --brand-gradient: linear-gradient(135deg, var(--brand-blue), var(--brand-purple-bright));
+  --green: var(--brand-blue);
+  --green-dark: var(--brand-purple);
+  --blue: var(--brand-blue);
+  --amber: #f0b84f;
+  --rose: #f26f61;
+  --shadow: 0 18px 42px rgba(39, 40, 34, 0.1);
   --radius: 8px;
   --shell: 1180px;
 }
@@ -31,13 +35,9 @@ body {
   min-height: 100vh;
   overflow-x: clip;
   color: var(--text);
-  font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   letter-spacing: 0;
-  background:
-    linear-gradient(90deg, rgba(20, 21, 22, 0.045) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(20, 21, 22, 0.04) 1px, transparent 1px),
-    linear-gradient(180deg, var(--paper), #ffffff 34rem, var(--paper) 100%);
-  background-size: 44px 44px, 44px 44px, auto;
+  background: linear-gradient(180deg, var(--paper), #ffffff 34rem, #f2f6ff 100%);
 }
 
 a {
@@ -86,7 +86,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 5;
-  background: rgba(251, 250, 246, 0.9);
+  background: rgba(255, 255, 255, 0.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
@@ -111,10 +111,12 @@ a:hover {
 
 .brand-mark {
   display: inline-flex;
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(55, 127, 234, 0.16), 0 10px 24px rgba(105, 55, 234, 0.14);
 }
 
 .brand-mark img {
@@ -140,8 +142,13 @@ a:hover {
   gap: 6px;
 }
 
-.nav-links .icon {
-  color: var(--green-dark);
+.brand:hover,
+.nav-links a:not(.button):hover {
+  color: var(--brand-purple);
+}
+
+.nav-links a:not(.button) .icon {
+  color: var(--brand-blue);
 }
 
 .button {
@@ -152,17 +159,22 @@ a:hover {
   gap: 8px;
   padding: 0 16px;
   color: #ffffff;
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  background: var(--brand-purple);
+  border: 1px solid var(--brand-purple);
   border-radius: var(--radius);
   font-size: 0.9rem;
   font-weight: 800;
-  box-shadow: 0 8px 0 rgba(20, 21, 22, 0.12);
+  box-shadow: 0 8px 0 rgba(55, 127, 234, 0.22);
+}
+
+.button .icon {
+  color: currentColor;
 }
 
 .button:hover {
   color: #ffffff;
-  background: #2a2d30;
+  background: #572bd0;
+  border-color: #572bd0;
 }
 
 .button-secondary {
@@ -210,10 +222,10 @@ a:hover {
 .idea-break,
 .mini-browse-card,
 .browse-card {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: 0 1px 0 rgba(20, 21, 22, 0.04);
+  box-shadow: 0 1px 0 rgba(39, 40, 34, 0.04);
 }
 
 .rail-card {
@@ -223,16 +235,15 @@ a:hover {
 .intro-card {
   padding: clamp(22px, 4vw, 34px);
   color: #ffffff;
-  background:
-    linear-gradient(135deg, rgba(22, 181, 111, 0.28), transparent 46%),
-    #17191b;
-  border-color: #17191b;
+  background: linear-gradient(135deg, rgba(55, 127, 234, 0.94), rgba(105, 55, 234, 0.96) 58%, #272822 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 22px 50px rgba(105, 55, 234, 0.18);
 }
 
 .label,
 .project-kicker {
   margin: 0;
-  color: var(--green-dark);
+  color: var(--brand-purple);
   font-size: 0.73rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -252,12 +263,12 @@ a:hover {
 }
 
 .intro-card .label {
-  color: #70e3a7;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .intro-card h1 {
   margin: 10px 0 0;
-  font-family: Newsreader, Georgia, serif;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(3.2rem, 7vw, 5.8rem);
   line-height: 0.92;
   letter-spacing: 0;
@@ -303,9 +314,9 @@ a:hover {
   justify-content: center;
   width: 28px;
   height: 28px;
-  color: var(--green-dark);
-  background: #e2f7ea;
-  border: 1px solid #bee7cd;
+  color: var(--brand-purple);
+  background: #edf3ff;
+  border: 1px solid rgba(55, 127, 234, 0.28);
   border-radius: var(--radius);
 }
 
@@ -321,7 +332,7 @@ a:hover {
 
 .stat-card strong {
   color: var(--ink);
-  font-family: Newsreader, Georgia, serif;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   font-size: 1.55rem;
   line-height: 1;
 }
@@ -351,7 +362,7 @@ a:hover {
 
 .browse-card-rail h2 .icon,
 .submit-card h2 .icon {
-  color: var(--green-dark);
+  color: var(--brand-blue);
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -384,22 +395,27 @@ a:hover {
 }
 
 .side-links .icon {
-  color: var(--green-dark);
+  color: var(--brand-blue);
   font-size: 1.2rem;
 }
 
 .side-links a::after {
   content: ">";
-  color: var(--green-dark);
+  color: var(--brand-purple);
 }
 
 .submit-card {
-  background: #eaf8ef;
-  border-color: #bfe7cf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(55, 127, 234, 0.14), rgba(140, 69, 239, 0.1)),
+    #f1f6ff;
+  border-color: rgba(55, 127, 234, 0.24);
 }
 
 .submit-card p {
-  color: #496356;
+  color: #4f5d70;
 }
 
 .submit-card .button {
@@ -414,7 +430,9 @@ a:hover {
 .stream-header {
   margin-bottom: 12px;
   padding: 20px 22px;
-  background: rgba(251, 250, 246, 0.86);
+  background:
+    linear-gradient(90deg, rgba(55, 127, 234, 0.12), transparent 48%),
+    rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
@@ -430,7 +448,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--green-dark);
+  color: var(--brand-purple);
   font-size: 0.88rem;
   font-weight: 850;
   white-space: nowrap;
@@ -445,7 +463,7 @@ a:hover {
   max-width: 760px;
   margin: 12px 0 0;
   color: var(--ink);
-  font-family: Newsreader, Georgia, serif;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(2rem, 4vw, 3.45rem);
   line-height: 1;
   letter-spacing: 0;
@@ -472,38 +490,38 @@ a:hover {
 
 .stream-feed .project-card:nth-of-type(3n + 1) {
   background:
-    linear-gradient(90deg, rgba(36, 91, 214, 0.08), transparent 42%),
+    linear-gradient(90deg, rgba(55, 127, 234, 0.08), transparent 42%),
     #ffffff;
 }
 
 .stream-feed .project-card:nth-of-type(4n + 2) {
   background:
-    linear-gradient(90deg, rgba(231, 169, 35, 0.13), transparent 42%),
+    linear-gradient(90deg, rgba(105, 55, 234, 0.08), transparent 42%),
     #ffffff;
 }
 
 .project-card-featured {
-  border-color: #a8d9bf;
+  border-color: rgba(105, 55, 234, 0.36);
   background:
-    linear-gradient(120deg, rgba(22, 181, 111, 0.18), transparent 38%),
-    linear-gradient(90deg, rgba(36, 91, 214, 0.08), transparent 56%),
+    linear-gradient(120deg, rgba(55, 127, 234, 0.13), transparent 38%),
+    linear-gradient(90deg, rgba(105, 55, 234, 0.1), transparent 56%),
     #ffffff;
 }
 
 .stream-feed .project-card-featured:nth-of-type(n) {
   background:
-    linear-gradient(120deg, rgba(22, 181, 111, 0.18), transparent 38%),
-    linear-gradient(90deg, rgba(36, 91, 214, 0.08), transparent 56%),
+    linear-gradient(120deg, rgba(55, 127, 234, 0.13), transparent 38%),
+    linear-gradient(90deg, rgba(105, 55, 234, 0.1), transparent 56%),
     #ffffff;
 }
 
 .project-card-featured::before {
   width: 6px;
-  background: linear-gradient(180deg, var(--green), var(--green-dark), var(--blue));
+  background: var(--brand-gradient);
 }
 
 .project-card-featured .project-kicker span:first-child {
-  color: var(--green-dark);
+  color: var(--brand-purple);
 }
 
 .project-card::before {
@@ -511,7 +529,7 @@ a:hover {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: linear-gradient(180deg, var(--green), var(--blue), var(--amber));
+  background: var(--brand-gradient);
 }
 
 .project-card:hover {
@@ -535,13 +553,13 @@ a:hover {
 }
 
 .project-kicker .icon {
-  color: var(--green-dark);
+  color: var(--brand-blue);
   width: 1.15em;
   height: 1.15em;
 }
 
 .project-kicker span:last-child {
-  color: var(--green-dark);
+  color: var(--brand-purple);
 }
 
 .project-card-top {
@@ -554,7 +572,7 @@ a:hover {
 .project-card h2 {
   margin: 0;
   color: var(--ink);
-  font-family: Newsreader, Georgia, serif;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(1.72rem, 3vw, 2.35rem);
   line-height: 1.03;
   letter-spacing: 0;
@@ -610,17 +628,17 @@ a:hover {
 }
 
 .chip .icon {
-  color: #6a5f4b;
+  color: var(--brand-purple);
 }
 
 .api-pill {
-  color: #064f34;
-  background: #def6e9;
-  border: 1px solid #b7e6cb;
+  color: #2f2d88;
+  background: #eef3ff;
+  border: 1px solid rgba(55, 127, 234, 0.28);
 }
 
 .api-pill .icon {
-  color: var(--green-dark);
+  color: var(--brand-blue);
 }
 
 .project-links {
@@ -633,7 +651,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: var(--blue);
+  color: var(--brand-blue);
   font-size: 0.86rem;
   font-weight: 850;
 }
@@ -644,23 +662,23 @@ a:hover {
 }
 
 .project-links .primary-project-link {
-  color: var(--green-dark);
+  color: var(--brand-purple);
 }
 
 .idea-break {
   padding: 28px;
-  color: #152018;
+  color: #20294d;
   background:
-    linear-gradient(120deg, rgba(22, 181, 111, 0.15), transparent 38%),
-    #eef7e9;
-  border-color: #c3ddbc;
+    linear-gradient(120deg, rgba(55, 127, 234, 0.16), transparent 38%),
+    #f0f5ff;
+  border-color: rgba(55, 127, 234, 0.22);
 }
 
 .idea-break span {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: var(--green-dark);
+  color: var(--brand-purple);
   font-size: 0.75rem;
   font-weight: 850;
   letter-spacing: 0.08em;
@@ -676,7 +694,7 @@ a:hover {
   display: block;
   max-width: 760px;
   margin-top: 10px;
-  font-family: Newsreader, Georgia, serif;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.75rem);
   line-height: 1.02;
   letter-spacing: 0;
@@ -685,7 +703,7 @@ a:hover {
 .idea-break p {
   max-width: 720px;
   margin: 14px 0 0;
-  color: #495d4c;
+  color: #4e5d70;
   line-height: 1.56;
 }
 
@@ -700,7 +718,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--blue);
+  color: var(--brand-blue);
   font-weight: 850;
 }
 
@@ -709,24 +727,25 @@ a:hover {
   height: 1rem;
 }
 
-.idea-break-dark {
-  color: #ffffff;
+.idea-break-mcp {
+  color: #20294d;
   background:
-    linear-gradient(120deg, rgba(36, 91, 214, 0.28), transparent 40%),
-    #17191b;
-  border-color: #17191b;
+    linear-gradient(120deg, rgba(55, 127, 234, 0.2), rgba(140, 69, 239, 0.2) 48%, rgba(255, 255, 255, 0.76) 72%),
+    #eef3ff;
+  border-color: rgba(105, 55, 234, 0.24);
+  box-shadow: 0 14px 34px rgba(105, 55, 234, 0.1);
 }
 
-.idea-break-dark span {
-  color: #8ee8b8;
+.idea-break-mcp span {
+  color: var(--brand-purple);
 }
 
-.idea-break-dark p {
-  color: rgba(255, 255, 255, 0.74);
+.idea-break-mcp p {
+  color: #4e5d70;
 }
 
-.idea-break-dark .idea-actions a {
-  color: #9fbaff;
+.idea-break-mcp .idea-actions a {
+  color: var(--brand-purple);
 }
 
 .api-idea-board {
@@ -777,7 +796,7 @@ a:hover {
   height: 32px;
   margin-bottom: 12px;
   color: #ffffff;
-  background: var(--green-dark);
+  background: var(--brand-gradient);
   border-radius: var(--radius);
 }
 
@@ -815,16 +834,15 @@ a:hover {
 .browse-hero {
   padding: 48px 0 28px;
   background:
-    linear-gradient(180deg, rgba(22, 181, 111, 0.1), transparent),
-    var(--paper);
-  border-bottom: 1px solid var(--line);
+    linear-gradient(135deg, rgba(55, 127, 234, 0.94), rgba(105, 55, 234, 0.96) 62%, #272822 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .browse-hero h1 {
   max-width: 760px;
   margin: 0;
-  color: var(--ink);
-  font-family: Newsreader, Georgia, serif;
+  color: #ffffff;
+  font-family: Lato, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(2.8rem, 7vw, 5rem);
   line-height: 0.94;
   letter-spacing: 0;
@@ -833,7 +851,7 @@ a:hover {
 .browse-hero p {
   max-width: 640px;
   margin: 14px 0 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.76);
   font-size: 1rem;
   line-height: 1.55;
 }
@@ -841,7 +859,7 @@ a:hover {
 .back-link {
   display: inline-flex;
   margin-bottom: 18px;
-  color: var(--green-dark);
+  color: var(--brand-purple);
   font-size: 0.86rem;
   font-weight: 850;
 }
@@ -852,7 +870,7 @@ a:hover {
 
 .api-browse-grid .browse-card {
   background:
-    linear-gradient(180deg, rgba(36, 91, 214, 0.07), transparent 48%),
+    linear-gradient(180deg, rgba(55, 127, 234, 0.07), transparent 48%),
     #ffffff;
 }
 
@@ -862,7 +880,7 @@ a:hover {
 }
 
 .footer {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(55, 127, 234, 0.24);
   background: var(--ink);
 }
 
@@ -963,7 +981,9 @@ a:hover {
   }
 
   .intro-card h1 {
-    font-size: clamp(2.35rem, 11vw, 3rem);
+    font-size: clamp(1.6rem, 8vw, 2.08rem);
+    line-height: 1.02;
+    overflow-wrap: normal;
   }
 
   .stream-header h2 {

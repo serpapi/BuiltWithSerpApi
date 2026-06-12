@@ -58,8 +58,12 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
       </div>
 
       <div class="feed stream-feed">
+      {% set sdkPromoIndex = (projects.length / 4) | round %}
+      {% set mcpPromoIndex = (projects.length / 2) | round %}
+      {% set blogPromoIndex = (projects.length * 3 / 4) | round(0, "ceil") %}
       {% for project in projects %}
-        {% if loop.index == 3 %}
+        {% include "project-card.njk" %}
+        {% if loop.index == sdkPromoIndex %}
           <aside class="idea-break">
             <span>{% icon "code" %}SDK integrations</span>
             <strong>Use a language-specific SerpApi SDK to wire search data into your app faster.</strong>
@@ -69,9 +73,8 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
             </div>
           </aside>
         {% endif %}
-        {% include "project-card.njk" %}
-        {% if loop.index == 7 %}
-          <aside class="idea-break idea-break-dark">
+        {% if loop.index == mcpPromoIndex %}
+          <aside class="idea-break idea-break-mcp">
             <span>{% icon "hub" %}MCP server</span>
             <strong>Connect SerpApi search results to agents and MCP-compatible tools.</strong>
             <p>The official SerpApi MCP server gives builders a ready path from natural language workflows to live search data.</p>
@@ -81,7 +84,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
             </div>
           </aside>
         {% endif %}
-        {% if loop.index == 12 %}
+        {% if loop.index == blogPromoIndex %}
           <aside class="idea-break">
             <span>{% icon "idea" %}More ideas</span>
             <strong>Browse the SerpApi blog for build ideas, tutorials, and API walkthroughs.</strong>

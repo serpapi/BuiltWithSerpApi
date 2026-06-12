@@ -701,5 +701,63 @@
     "apis": [
       "Amazon Search API"
     ]
+  },
+  {
+    "name": "PyLadies Skill Gap Analyzer",
+    "description": "Python data pipeline that discovers PyLadies chapters, extracts public social profile details, and compares chapter curriculum topics with local developer job-market demand.",
+    "author": "Ariana Cursino",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/arcursino/pyladies-serpapi",
+    "links": [],
+    "tags": [
+      "education",
+      "analysis",
+      "python"
+    ],
+    "apis": [
+      "Google Search API",
+      "Instagram Profile API",
+      "Google Jobs API"
+    ]
+  },
+  {
+    "name": "SEO Keyword Research Tool",
+    "description": "Python SEO keyword suggestion tool that extracts Google Autocomplete, People Also Ask, and related-search ideas through SerpApi.",
+    "author": "Artur Chukhrai",
+    "dateAdded": "2026-06-11",
+    "githubUrl": "https://github.com/chukhraiartur/seo-keyword-research-tool",
+    "links": [],
+    "tags": [
+      "seo",
+      "keyword-research",
+      "python"
+    ],
+    "apis": [
+      "Google Autocomplete API",
+      "Google Related Questions API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "SEO Position Tracker",
+    "description": "Python CLI and library for tracking target keyword positions across Google, Baidu, Bing, DuckDuckGo, Yahoo, Yandex, and Naver search results.",
+    "author": "Dmitiry Zub",
+    "dateAdded": "2026-06-11",
+    "githubUrl": "https://github.com/dimitryzub/seo-position-tracker",
+    "links": [],
+    "tags": [
+      "seo",
+      "rank-tracking",
+      "python"
+    ],
+    "apis": [
+      "Google Search API",
+      "Baidu Search API",
+      "Bing Search API",
+      "DuckDuckGo Search API",
+      "Yahoo! Search API",
+      "Yandex Search API",
+      "Naver Search API"
+    ]
   }
 ]
