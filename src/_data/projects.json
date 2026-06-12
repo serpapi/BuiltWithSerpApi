@@ -759,5 +759,103 @@
       "Yandex Search API",
       "Naver Search API"
     ]
+  },
+  {
+    "name": "RentRadar",
+    "description": "Full-stack rental discovery app for Indian cities that searches live rental listings, maps budget-filtered results, and generates AI market advice.",
+    "author": "Shubham Sharma",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/shubhamsharma0707/Renting_properties",
+    "links": [],
+    "tags": [
+      "real-estate",
+      "rentals",
+      "maps"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://renting-properties.vercel.app"
+  },
+  {
+    "name": "Google Maps Business Tracker",
+    "description": "Python business monitor that scans Google Maps results by category and location, records new places in CSV files, and sends email or Telegram alerts.",
+    "author": "Mehul Kumawat",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/MehulKumawat0221/gmaps_tracker",
+    "links": [],
+    "tags": [
+      "maps",
+      "local-search",
+      "alerts"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "AI Travel Planner",
+    "description": "Streamlit multi-agent travel planner that uses local Ollama agents plus SerpApi search to research destinations and generate itineraries with calendar downloads.",
+    "author": "Sagar S.Rao",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/sagarsrao/ai-travel-agent",
+    "links": [],
+    "tags": [
+      "travel",
+      "agent",
+      "itinerary"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "NAR Signal Outreach Agent",
+    "description": "Python outreach agent that searches NAR lawsuit and settlement signals for real estate agencies, then drafts personalized cold emails with Groq.",
+    "author": "Abdul Moeed",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/moeedabdul00988-tech/nar-outreach-agent",
+    "links": [],
+    "tags": [
+      "real-estate",
+      "outreach",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "TruthStream",
+    "description": "Multi-agent fact-checking pipeline that extracts claims from articles, verifies them against live search sources, scores bias, and streams verdicts to a React UI.",
+    "author": "Himanshu Salve",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/himanshusalve16/TruthStream-Multi-Agent-Fact-Checking-Pipeline",
+    "links": [],
+    "tags": [
+      "fact-checking",
+      "news",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://truthstream.vercel.app"
+  },
+  {
+    "name": "IntelliSelect",
+    "description": "Chrome extension and backend that explains selected text with racing AI providers and fetches educational Google Images visuals through SerpApi.",
+    "author": "Zainab Raza Malik",
+    "dateAdded": "2026-06-12",
+    "githubUrl": "https://github.com/zainabraza06/IntelliSelect",
+    "links": [],
+    "tags": [
+      "education",
+      "chrome-extension",
+      "images"
+    ],
+    "apis": [
+      "Google Images API"
+    ]
   }
 ]
