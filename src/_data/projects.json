@@ -857,5 +857,69 @@
     "apis": [
       "Google Images API"
     ]
+  },
+  {
+    "name": "Pre-Viral Restaurant Finder",
+    "description": "Streamlit app that queries SerpApi Google Maps local results and scores restaurants by rating, review count, and trend signals to surface pre-viral hidden gems.",
+    "author": "Bhavani Ravi",
+    "dateAdded": "2026-06-21",
+    "githubUrl": "https://github.com/thelearningdev/serpapi-tutorial",
+    "links": [],
+    "tags": [
+      "restaurants",
+      "maps",
+      "discovery"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "Basic Content Agent AI",
+    "description": "n8n agentic AI workflow with Supabase memory, conditional SerpApi web search, Groq LLM routing, self-critique, and HTML email delivery.",
+    "author": "Faisal Moarafur Rasul",
+    "dateAdded": "2026-06-21",
+    "githubUrl": "https://github.com/faisalmrasul/Inquiro-Basic_Content_Agentic-AI",
+    "links": [],
+    "tags": [
+      "agent",
+      "automation",
+      "email"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "BlogMind AI",
+    "description": "Flask blog intelligence platform that discovers blog URLs through SerpApi, analyzes sentiment and topics, summarizes content, and generates engagement comments.",
+    "author": "Ashir Iqbal",
+    "dateAdded": "2026-06-21",
+    "githubUrl": "https://github.com/ashiriqbal18/Automated-Blog-Posting-Engagement-System",
+    "links": [],
+    "tags": [
+      "blogs",
+      "analysis",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "FlightDeals Tracker",
+    "description": "Flight deal tracker that pulls Google Flights data via SerpApi, stores fares, and scores routes with rule-based filters plus a local Ollama LLM.",
+    "author": "Akhil Mende",
+    "dateAdded": "2026-06-21",
+    "githubUrl": "https://github.com/akhil99558/FlightDeals_Test",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "deals"
+    ],
+    "apis": [
+      "Google Flights API"
+    ]
   }
 ]
