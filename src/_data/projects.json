@@ -921,5 +921,56 @@
     "apis": [
       "Google Flights API"
     ]
+  },
+  {
+    "name": "Productify AI",
+    "description": "AI shopping assistant and product analysis platform that compares marketplace offerings, summarizes pros and cons, recommends purchases, and presents price intelligence using SerpAPI-backed marketplace search.",
+    "author": "Abhyuday Tripathi",
+    "dateAdded": "2026-06-27",
+    "githubUrl": "https://github.com/Abhyuday746xev/Productify-AI",
+    "hostedUrl": "https://productify-ai-five.vercel.app/",
+    "links": [],
+    "tags": [
+      "shopping",
+      "marketplace",
+      "recommendations"
+    ],
+    "apis": [
+      "Amazon Search API"
+    ]
+  },
+  {
+    "name": "AI Job Copilot",
+    "description": "Multi-agent job search system that discovers roles through SerpApi Google Jobs, evaluates fit, tailors resumes, generates PDFs, and stores learning memory.",
+    "author": "Chetandeep Singh",
+    "dateAdded": "2026-06-27",
+    "githubUrl": "https://github.com/chetandeepsingh91-creator/agentic-job-search",
+    "links": [],
+    "tags": [
+      "jobs",
+      "agent",
+      "resume"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ]
+  },
+  {
+    "name": "HermigoBot",
+    "description": "SMS-based multi-agent vacation planner for group trips that uses SerpApi to suggest Tripadvisor places and search Google Hotels and Google Flights.",
+    "author": "Kushwanth Parameshwaraiah",
+    "dateAdded": "2026-06-27",
+    "githubUrl": "https://github.com/kira2406/hermigo_vacation_bot",
+    "links": [],
+    "tags": [
+      "travel",
+      "hotels",
+      "flights"
+    ],
+    "apis": [
+      "Tripadvisor Search API",
+      "Google Hotels API",
+      "Google Flights API"
+    ]
   }
 ]
