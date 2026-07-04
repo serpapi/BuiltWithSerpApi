@@ -972,5 +972,71 @@
       "Google Hotels API",
       "Google Flights API"
     ]
+  },
+  {
+    "name": "Review Watchdog",
+    "description": "Cloud-hosted Python watchdog that uses SerpApi Google Maps reviews to monitor local business profiles and email alerts when low-star reviews appear.",
+    "author": "Vaithiyanathan Muneeswaran",
+    "dateAdded": "2026-07-04",
+    "githubUrl": "https://github.com/vaithiyaseo/review-watchdog",
+    "links": [],
+    "tags": [
+      "local-seo",
+      "reviews",
+      "monitoring"
+    ],
+    "apis": [
+      "Google Maps Reviews API"
+    ]
+  },
+  {
+    "name": "Campus Connect",
+    "description": "AI college research agent that crawls official university pages, answers admissions and fee questions, and optionally speeds up live college Q&A with SerpApi Google Search.",
+    "author": "Nishank Jain",
+    "dateAdded": "2026-07-04",
+    "githubUrl": "https://github.com/Nishank-jain-5/campus-connect",
+    "hostedUrl": "https://campus-connect-orcin-three.vercel.app",
+    "links": [],
+    "tags": [
+      "education",
+      "ai",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Autonomous Outreach Pipeline",
+    "description": "Serverless outreach ETL pipeline that runs SerpApi Google AI Mode company research, cleans responses with Cloudflare Workers, and routes personalized intelligence into Google Sheets and Make.com workflows.",
+    "author": "Ananay Srivastava",
+    "dateAdded": "2026-07-04",
+    "githubUrl": "https://github.com/Ananay-25/Autonomous-Outreach-Pipeline",
+    "links": [],
+    "tags": [
+      "outreach",
+      "automation",
+      "market-intelligence"
+    ],
+    "apis": [
+      "Google AI Mode API"
+    ]
+  },
+  {
+    "name": "Flight Search Dashboard",
+    "description": "Streamlit dashboard that queries SerpApi Google Flights for real-time routes, prices, airlines, durations, and schedule details from IATA airport codes.",
+    "author": "Anjali Juikar",
+    "dateAdded": "2026-07-04",
+    "githubUrl": "https://github.com/AnjaliMMM0888/Flight_App",
+    "hostedUrl": "https://flightapp-m3y8qirwu6v7qu743twjtf.streamlit.app/",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "dashboard"
+    ],
+    "apis": [
+      "Google Flights API"
+    ]
   }
 ]
