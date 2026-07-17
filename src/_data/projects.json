@@ -1038,5 +1038,53 @@
     "apis": [
       "Google Flights API"
     ]
+  },
+  {
+    "name": "AI Appointment + Sales Agent",
+    "description": "n8n-based conversational agent that handles appointment booking, rescheduling, cancellations, sales-register lookups, and live web search using SerpApi.",
+    "author": "Allavudeen S",
+    "dateAdded": "2026-07-17",
+    "githubUrl": "https://github.com/Allavudeen/ai-automation-consulting",
+    "links": [],
+    "tags": [
+      "agent",
+      "appointments",
+      "sales"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "AI Lead Research Flow",
+    "description": "n8n workflow that uses SerpApi Google Maps search to find businesses, enriches them with AI research, identifies automation opportunities, and saves qualified leads to Google Sheets.",
+    "author": "Nida Fatima",
+    "dateAdded": "2026-07-17",
+    "githubUrl": "https://github.com/nida-fatima247/ai-lead-generation",
+    "links": [],
+    "tags": [
+      "lead-generation",
+      "maps",
+      "automation"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "LeadBot AI",
+    "description": "AI-powered lead generation tool that turns prompts into CRM-ready local business leads using SerpApi Google Maps data and automated enrichment.",
+    "author": "Muhammad Abdullah",
+    "dateAdded": "2026-07-17",
+    "githubUrl": "https://github.com/Muhammad08-dot/LeadBot_AI",
+    "links": [],
+    "tags": [
+      "lead-generation",
+      "maps",
+      "crm"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
   }
 ]
