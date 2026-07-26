@@ -1086,5 +1086,92 @@
     "apis": [
       "Google Maps API"
     ]
+  },
+  {
+    "name": "VidScribe.AI",
+    "description": "YouTube video search and transcription agent using SerpApi for stable video discovery and transcript extraction.",
+    "author": "Arslan Babar",
+    "dateAdded": "2026-07-26",
+    "githubUrl": "https://github.com/Arslan-Codes097/YouTube-Video-Search-AND-Transcription-AI-Agent-",
+    "hostedUrl": "https://lnkd.in/dvB4D6t7",
+    "links": [],
+    "tags": [
+      "youtube",
+      "transcription",
+      "agent"
+    ],
+    "apis": [
+      "YouTube Search API",
+      "YouTube Video Transcript API"
+    ]
+  },
+  {
+    "name": "VisionRetain AI",
+    "description": "Retention analytics and product intelligence app with Product Lens scanning and SerpApi Google Shopping price matches.",
+    "author": "Nidhi Sharma",
+    "dateAdded": "2026-07-26",
+    "githubUrl": "https://github.com/AvinashChandra-git/VisionRetain-AI",
+    "hostedUrl": "https://visionretain-ai.vercel.app",
+    "links": [],
+    "tags": [
+      "retention",
+      "analytics",
+      "shopping"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ]
+  },
+  {
+    "name": "Job Hunt Agentic AI",
+    "description": "Multi-agent job search system that uses SerpApi Google Jobs, recruiter discovery, resume matching, and human-approved outreach drafts.",
+    "author": "Pramit Bose",
+    "dateAdded": "2026-07-26",
+    "githubUrl": "https://github.com/pramitbose2024/job-hunt-agent",
+    "links": [],
+    "tags": [
+      "jobs",
+      "agent",
+      "outreach"
+    ],
+    "apis": [
+      "Google Jobs API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Travel Planner AI",
+    "description": "Agentic travel planner using SerpApi for real-time flight and hotel data.",
+    "author": "Ankush Patial",
+    "dateAdded": "2026-07-26",
+    "githubUrl": "https://github.com/AnkushPatial06/Travel-Planner-AI",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "hotels"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API"
+    ]
+  },
+  {
+    "name": "Voyage AI",
+    "description": "Multi-city travel planner using SerpApi Google Flights and Google Hotels to build live itineraries with agent orchestration.",
+    "author": "Barat Chandar V.",
+    "dateAdded": "2026-07-26",
+    "githubUrl": "https://github.com/bcve1017-spec/voyage",
+    "hostedUrl": "https://voyage-1015662262430.us-central1.run.app",
+    "links": [],
+    "tags": [
+      "travel",
+      "itinerary",
+      "agent"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API"
+    ]
   }
 ]
