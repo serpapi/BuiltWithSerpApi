@@ -1173,5 +1173,70 @@
       "Google Flights API",
       "Google Hotels API"
     ]
+  },
+  {
+    "name": "Atlas",
+    "description": "Telegram travel agent that finds and monitors flexible flight and accommodation deals using SerpApi Google Flights and Google Hotels.",
+    "author": "Vínicius Oliveira",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/Haasytr/atlas",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "hotels"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API"
+    ]
+  },
+  {
+    "name": "Account Intelligence Radar",
+    "description": "Company research platform that uses SerpApi to discover sources and produces structured, traceable intelligence reports.",
+    "author": "Shaimaa Almously",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/shaimaaalmously054-beep/account-intelligence-radar",
+    "links": [],
+    "tags": [
+      "market-intelligence",
+      "research",
+      "reporting"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "ResearchBrief",
+    "description": "Context-aware research assistant that uses SerpApi to find sources and generate structured, evidence-linked briefs.",
+    "author": "Chirag Tiwari Rao",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/CJ-777/ResearchBrief",
+    "links": [],
+    "tags": [
+      "research",
+      "briefing",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Flight Price Tracker",
+    "description": "Python automation that monitors fares through SerpApi Google Flights and sends WhatsApp alerts when prices fall below configured targets.",
+    "author": "Jorge Luis Del Angel Maldonado",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/Jorge-delangel/Flight-Price-Tracker",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "alerts"
+    ],
+    "apis": [
+      "Google Flights API"
+    ]
   }
 ]
