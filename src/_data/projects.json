@@ -1348,5 +1348,86 @@
     "apis": [
       "Google Search API"
     ]
+  },
+  {
+    "name": "Price Check",
+    "description": "Scans products and compares live retailer prices through SerpApi's Google Shopping API.",
+    "author": "Kashish Pherwani",
+    "dateAdded": "2026-08-08",
+    "githubUrl": "https://github.com/kash-08/Price-Check",
+    "hostedUrl": "https://expo.dev/artifacts/eas/YoCMQpdEhHUly8vg4S8iXOFBNJ8V2aSnxXK5XAKg5UM.apk",
+    "links": [],
+    "tags": [
+      "shopping",
+      "prices",
+      "mobile"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ]
+  },
+  {
+    "name": "AI Tailor",
+    "description": "Recommends outfits, sources visual references through SerpApi's Google Images API, and supports virtual try-on.",
+    "author": "Nawaz shaikh",
+    "dateAdded": "2026-08-08",
+    "githubUrl": "https://github.com/nk5092091-del/AI-Tailor",
+    "links": [],
+    "tags": [
+      "fashion",
+      "images",
+      "ai"
+    ],
+    "apis": [
+      "Google Images API"
+    ]
+  },
+  {
+    "name": "AI Quiz Generator",
+    "description": "Generates quizzes from uploaded documents or searches the web through SerpApi when additional context is needed.",
+    "author": "Basit Abbas",
+    "dateAdded": "2026-08-08",
+    "githubUrl": "https://github.com/baasit-abbas/MCQ-Generator",
+    "links": [],
+    "tags": [
+      "education",
+      "quiz",
+      "search"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Google Maps Lead Scraper",
+    "description": "Finds businesses through SerpApi's Google Maps API, extracts contact emails, removes duplicates, and saves leads to Google Sheets.",
+    "author": "Jannat Bali",
+    "dateAdded": "2026-08-08",
+    "githubUrl": "https://github.com/studentJannatBali/Google-Maps-Business-Lead-Scraper",
+    "links": [],
+    "tags": [
+      "lead-generation",
+      "maps",
+      "google-sheets"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "SearchScout AI",
+    "description": "Discovers businesses, enriches public contact information, filters by website presence, and exports leads using SerpApi's Google Maps API.",
+    "author": "Muhammad Rizwan",
+    "dateAdded": "2026-08-08",
+    "githubUrl": "https://github.com/MRizwanMalik/SearchScout-AI",
+    "links": [],
+    "tags": [
+      "lead-generation",
+      "maps",
+      "business-intelligence"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
   }
 ]

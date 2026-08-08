@@ -444,6 +444,43 @@ a:hover {
   gap: 16px;
 }
 
+.stream-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.sort-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.sort-control select {
+  min-height: 36px;
+  padding: 0 34px 0 12px;
+  color: var(--ink);
+  background: #ffffff;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 0.82rem;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.sort-control select:focus-visible {
+  outline: 3px solid rgba(55, 127, 234, 0.22);
+  outline-offset: 2px;
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -748,6 +785,24 @@ a:hover {
   color: var(--brand-purple);
 }
 
+.idea-break-search-tools {
+  color: #20294d;
+  background:
+    linear-gradient(120deg, rgba(55, 127, 234, 0.2), rgba(255, 255, 255, 0.74) 46%),
+    linear-gradient(90deg, rgba(105, 55, 234, 0.16), transparent 72%),
+    #f5f8ff;
+  border-color: rgba(55, 127, 234, 0.28);
+}
+
+.idea-break-search-tools code {
+  padding: 0.08em 0.28em;
+  color: var(--brand-purple);
+  background: rgba(105, 55, 234, 0.08);
+  border: 1px solid rgba(105, 55, 234, 0.14);
+  border-radius: 5px;
+  font-size: 0.92em;
+}
+
 .api-idea-board {
   margin-top: 14px;
   padding: 22px;
@@ -946,6 +1001,11 @@ a:hover {
   .footer-inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .stream-header-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .stream-header,

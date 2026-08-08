@@ -62,6 +62,14 @@ module.exports = function (eleventyConfig) {
     return projects.filter((project) => (project.apis || []).includes(api));
   });
 
+  eleventyConfig.addFilter("sortProjectsNewest", function (projects) {
+    return sortProjectsByDate(projects, "desc");
+  });
+
+  eleventyConfig.addFilter("sortProjectsOldest", function (projects) {
+    return sortProjectsByDate(projects, "asc");
+  });
+
   eleventyConfig.addFilter("relatedProjectCount", function (projects, key, field) {
     return projects.filter((project) => (project[field] || []).includes(key)).length;
   });
@@ -182,6 +190,19 @@ function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, undefined, { sensitivity: "base" })
   );
+}
+
+function sortProjectsByDate(projects, direction) {
+  const multiplier = direction === "asc" ? 1 : -1;
+
+  return [...(projects || [])].sort((a, b) => {
+    const dateCompare = String(a.dateAdded || "").localeCompare(String(b.dateAdded || ""));
+    if (dateCompare !== 0) return dateCompare * multiplier;
+
+    return String(a.name || "").localeCompare(String(b.name || ""), undefined, {
+      sensitivity: "base"
+    });
+  });
 }
 
 function slugify(value) {

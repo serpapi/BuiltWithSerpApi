@@ -52,19 +52,44 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
       <div class="stream-header">
         <div class="stream-heading-top">
           <p class="label">{% icon "spark" %}Idea stream</p>
-          <a class="text-link" href="{{ site.docs }}" target="_blank" rel="noopener noreferrer">{% icon "globe" %}SerpApi docs</a>
+          <div class="stream-header-actions">
+            <label class="sort-control" for="project-sort">
+              <span>Sort</span>
+              <select id="project-sort" data-project-sort>
+                <option value="newest" selected>Newest first</option>
+                <option value="oldest">Old to new</option>
+                <option value="random">Random</option>
+              </select>
+            </label>
+            <a class="text-link" href="{{ site.docs }}" target="_blank" rel="noopener noreferrer">{% icon "globe" %}SerpApi docs</a>
+          </div>
         </div>
         <h2>Scroll through projects built on live search data.</h2>
       </div>
 
-      <div class="feed stream-feed">
-      {% set sdkPromoIndex = (projects.length / 4) | round %}
-      {% set mcpPromoIndex = (projects.length / 2) | round %}
-      {% set blogPromoIndex = (projects.length * 3 / 4) | round(0, "ceil") %}
-      {% for project in projects %}
+      <div class="feed stream-feed" data-project-feed>
+      {% set feedProjects = projects | sortProjectsNewest %}
+      {% set enableProjectSort = true %}
+      {% set searchToolsPromoIndex = 4 %}
+      {% set sdkPromoIndex = (feedProjects.length / 4) | round %}
+      {% set mcpPromoIndex = (feedProjects.length / 2) | round %}
+      {% set blogPromoIndex = (feedProjects.length * 3 / 4) | round(0, "ceil") %}
+      {% for project in feedProjects %}
+        {% set projectFeedIndex = loop.index0 %}
         {% include "project-card.njk" %}
+        {% if loop.index == searchToolsPromoIndex %}
+          <aside class="idea-break idea-break-search-tools" data-feed-item="promo" data-promo-slot="{{ searchToolsPromoIndex }}">
+            <span>{% icon "code" %}Python agent tools</span>
+            <strong>Add live SerpApi search to Python agents without rebuilding tool glue.</strong>
+            <p><code>serpapi-search-tools</code> works with popular agent SDKs and lets builders add web, news, maps, shopping, hotels, flights, and more as ready-to-use tools.</p>
+            <div class="idea-actions">
+              <a href="https://serpapi.github.io/serpapi-search-tools-python/?utm_source=builtwithserpapi" target="_blank" rel="noopener noreferrer">{% icon "docs" %}Read the docs</a>
+              <a href="https://pypi.org/project/serpapi-search-tools/" target="_blank" rel="noopener noreferrer">{% icon "open" %}View on PyPI</a>
+            </div>
+          </aside>
+        {% endif %}
         {% if loop.index == sdkPromoIndex %}
-          <aside class="idea-break">
+          <aside class="idea-break" data-feed-item="promo" data-promo-slot="{{ sdkPromoIndex }}">
             <span>{% icon "code" %}SDK integrations</span>
             <strong>Use a language-specific SerpApi SDK to wire search data into your app faster.</strong>
             <p>Pick the integration path that matches your stack and skip the boilerplate around request setup, parsing, and examples.</p>
@@ -74,7 +99,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           </aside>
         {% endif %}
         {% if loop.index == mcpPromoIndex %}
-          <aside class="idea-break idea-break-mcp">
+          <aside class="idea-break idea-break-mcp" data-feed-item="promo" data-promo-slot="{{ mcpPromoIndex }}">
             <span>{% icon "hub" %}MCP server</span>
             <strong>Connect SerpApi search results to agents and MCP-compatible tools.</strong>
             <p>The official SerpApi MCP server gives builders a ready path from natural language workflows to live search data.</p>
@@ -85,7 +110,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           </aside>
         {% endif %}
         {% if loop.index == blogPromoIndex %}
-          <aside class="idea-break">
+          <aside class="idea-break" data-feed-item="promo" data-promo-slot="{{ blogPromoIndex }}">
             <span>{% icon "idea" %}More ideas</span>
             <strong>Browse the SerpApi blog for build ideas, tutorials, and API walkthroughs.</strong>
             <p>Use the examples as prompts for your next SerpApi powered app, automation, dashboard, or agent workflow.</p>
@@ -96,6 +121,73 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
         {% endif %}
       {% endfor %}
       </div>
+
+      <script>
+        (() => {
+          const feed = document.querySelector("[data-project-feed]");
+          const select = document.querySelector("[data-project-sort]");
+          if (!feed || !select) return;
+
+          const projects = Array.from(feed.querySelectorAll('[data-feed-item="project"]'));
+          const promos = Array.from(feed.querySelectorAll('[data-feed-item="promo"]')).map((node, index) => ({
+            node,
+            index,
+            slot: Number.parseInt(node.dataset.promoSlot || "0", 10)
+          }));
+          const collator = new Intl.Collator(undefined, { sensitivity: "base" });
+          const originalOrder = new Map(projects.map((node, index) => [node, index]));
+
+          const compareTitle = (a, b) => collator.compare(a.dataset.projectTitle || "", b.dataset.projectTitle || "");
+          const compareOriginal = (a, b) => (originalOrder.get(a) || 0) - (originalOrder.get(b) || 0);
+
+          const sortedProjects = (mode) => {
+            const ordered = [...projects];
+
+            if (mode === "oldest") {
+              ordered.sort((a, b) => (
+                (a.dataset.projectDate || "").localeCompare(b.dataset.projectDate || "") ||
+                compareTitle(a, b)
+              ));
+              return ordered;
+            }
+
+            if (mode === "random") {
+              for (let index = ordered.length - 1; index > 0; index -= 1) {
+                const swapIndex = Math.floor(Math.random() * (index + 1));
+                [ordered[index], ordered[swapIndex]] = [ordered[swapIndex], ordered[index]];
+              }
+              return ordered;
+            }
+
+            ordered.sort((a, b) => (
+              (b.dataset.projectDate || "").localeCompare(a.dataset.projectDate || "") ||
+              compareTitle(a, b) ||
+              compareOriginal(a, b)
+            ));
+            return ordered;
+          };
+
+          const renderFeed = () => {
+            const fragment = document.createDocumentFragment();
+            const pendingPromos = promos.map((promo) => ({ ...promo })).sort((a, b) => (
+              a.slot - b.slot || a.index - b.index
+            ));
+
+            sortedProjects(select.value).forEach((project, index) => {
+              fragment.appendChild(project);
+
+              while (pendingPromos.length && pendingPromos[0].slot === index + 1) {
+                fragment.appendChild(pendingPromos.shift().node);
+              }
+            });
+
+            pendingPromos.forEach((promo) => fragment.appendChild(promo.node));
+            feed.replaceChildren(fragment);
+          };
+
+          select.addEventListener("change", renderFeed);
+        })();
+      </script>
 
       <section class="api-idea-board">
         <div class="section-heading">

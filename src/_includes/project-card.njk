@@ -1,4 +1,4 @@
-<article class="project-card{% if project.featured %} project-card-featured{% endif %}">
+<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}"{% endif %}>
   <div class="project-kicker">
     <span>
       {% if project.featured %}
