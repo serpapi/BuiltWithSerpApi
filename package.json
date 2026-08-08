@@ -6,7 +6,8 @@
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve --watch",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "check:project-links": "node scripts/check_project_links.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"

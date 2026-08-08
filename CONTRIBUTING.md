@@ -69,6 +69,16 @@ npm run build
 
 The generated static site is written to `_site/`.
 
+## Link Checks
+
+Use the `Check project links` GitHub Actions workflow to verify every project's source and deployed links. Source repository links are required for every project. Deployed app and additional links are checked when they are present.
+
+To run the same check locally:
+
+```bash
+npm run check:project-links -- --scope all
+```
+
 ## Deploy
 
 The site deploys to GitHub Pages through `.github/workflows/pages.yml`.

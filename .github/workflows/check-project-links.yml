@@ -1,0 +1,47 @@
+name: Check project links
+
+on:
+  workflow_dispatch:
+    inputs:
+      timeout_seconds:
+        description: Seconds to wait for each link before reporting a timeout
+        required: true
+        default: "20"
+        type: string
+      fail_on_invalid:
+        description: Fail the job when any checked link is dead or invalid
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    name: Check all project links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check project links
+        run: node scripts/check_project_links.mjs
+        env:
+          PROJECT_LINK_SCOPE: all
+          PROJECT_LINK_TIMEOUT_SECONDS: ${{ inputs.timeout_seconds }}
+          PROJECT_LINK_FAIL_ON_INVALID: ${{ inputs.fail_on_invalid }}
+          PROJECT_LINK_REPORT: project-link-report.md
+
+      - name: Upload link report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-link-report
+          path: project-link-report.md
+          if-no-files-found: error
