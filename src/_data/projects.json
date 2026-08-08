@@ -449,8 +449,7 @@
     "apis": [
       "Google Events API",
       "Google Local API"
-    ],
-    "hostedUrl": "https://web-production-3e61e.up.railway.app/"
+    ]
   },
   {
     "name": "PyCon SerpApi Vibe",
@@ -468,22 +467,6 @@
       "Google Search API"
     ],
     "hostedUrl": "https://pycon-serpapi-vibe-wemxasjccli8perudceiph.streamlit.app/"
-  },
-  {
-    "name": "FIRST Robotics News",
-    "description": "Serves news articles about FIRST, the K-12 international robotics organization, using Google News results.",
-    "author": "Hanna Keyerleber",
-    "dateAdded": "2026-06-02",
-    "githubUrl": "https://github.com/rebelreyek/serpapi-demo",
-    "links": [],
-    "tags": [
-      "robotics",
-      "news",
-      "education"
-    ],
-    "apis": [
-      "Google News API"
-    ]
   },
   {
     "name": "PyCon 2026 Knowledge Graph",

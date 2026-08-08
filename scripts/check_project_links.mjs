@@ -107,6 +107,10 @@ async function checkLink(check, timeout) {
     };
   }
 
+  if (isStreamlitAppUrl(check.url)) {
+    return checkStreamlitLink(baseResult, timeout);
+  }
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
 
@@ -148,6 +152,72 @@ async function checkLink(check, timeout) {
   }
 }
 
+async function checkStreamlitLink(baseResult, timeout) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(baseResult.url, {
+      method: "GET",
+      redirect: "manual",
+      signal: controller.signal,
+      headers: {
+        "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+        "User-Agent": "BuiltWithSerpApi-link-checker (+https://github.com/serpapi/BuiltWithSerpApi)"
+      }
+    });
+
+    if (response.body) {
+      await response.body.cancel().catch(() => {});
+    }
+
+    const ok = response.status >= 200 && response.status < 400;
+    return {
+      ...baseResult,
+      finalUrl: response.url || baseResult.url,
+      status: String(response.status),
+      outcome: ok ? "ok" : "failed",
+      detail: ok ? streamlitDetail(response) : `HTTP ${response.status}`
+    };
+  } catch (error) {
+    const causeCode = error.cause?.code ? ` (${error.cause.code})` : "";
+    const detail = error.name === "AbortError"
+      ? `Timed out after ${timeout / 1000}s`
+      : `${error.message || error.name}${causeCode}`;
+
+    return {
+      ...baseResult,
+      detail
+    };
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+function streamlitDetail(response) {
+  if (response.status >= 300) {
+    const location = response.headers.get("location");
+    if (!location) return "Streamlit Cloud responded with redirect";
+
+    try {
+      const redirectUrl = new URL(location, response.url);
+      const hostname = redirectUrl.hostname.toLowerCase();
+      if (hostname === "share.streamlit.io") {
+        return "Streamlit Cloud responded with wake/auth redirect";
+      }
+      if (hostname.endsWith(".streamlit.app")) {
+        return "Streamlit Cloud responded with app redirect";
+      }
+    } catch {
+      return "Streamlit Cloud responded with redirect";
+    }
+
+    return "Streamlit Cloud responded with redirect";
+  }
+
+  return "Reachable";
+}
+
 function validateUrl(value) {
   let url;
 
@@ -179,6 +249,14 @@ function validateUrl(value) {
   return "";
 }
 
+function isStreamlitAppUrl(value) {
+  try {
+    return new URL(value).hostname.toLowerCase().endsWith(".streamlit.app");
+  } catch {
+    return false;
+  }
+}
+
 async function mapLimit(items, limit, mapper) {
   const results = new Array(items.length);
   let nextIndex = 0;
@@ -198,6 +276,9 @@ async function mapLimit(items, limit, mapper) {
 function renderReport({ scope: checkedScope, timeoutSeconds: seconds, selectedProjects: projectSet, results: linkResults }) {
   const ok = linkResults.filter((result) => result.outcome === "ok");
   const failed = linkResults.filter((result) => result.outcome === "failed");
+  const failedSource = failed.filter((result) => result.type === "source");
+  const failedDeployed = failed.filter((result) => result.type === "deployed");
+  const failedExtra = failed.filter((result) => result.type === "extra");
   const skipped = linkResults.filter((result) => result.outcome === "skipped");
 
   const lines = [
@@ -207,6 +288,9 @@ function renderReport({ scope: checkedScope, timeoutSeconds: seconds, selectedPr
     `- Projects checked: ${projectSet.length}`,
     `- Links reachable: ${ok.length}`,
     `- Links dead or invalid: ${failed.length}`,
+    `- Source repositories dead or invalid: ${failedSource.length}`,
+    `- Deployed links dead or invalid: ${failedDeployed.length}`,
+    `- Additional links dead or invalid: ${failedExtra.length}`,
     `- Links skipped: ${skipped.length}`,
     `- Timeout per link: ${seconds}s`,
     `- Checked at: ${new Date().toISOString()}`,
@@ -215,9 +299,17 @@ function renderReport({ scope: checkedScope, timeoutSeconds: seconds, selectedPr
     ""
   ];
 
-  if (failed.length > 0) {
-    lines.push("### Dead or Invalid Links", "");
-    lines.push(...renderTable(failed));
+  lines.push("### Dead or Invalid Source Repositories", "");
+  lines.push(...renderTable(failedSource));
+  lines.push("");
+
+  lines.push("### Dead or Invalid Deployed Links", "");
+  lines.push(...renderTable(failedDeployed));
+  lines.push("");
+
+  if (failedExtra.length > 0) {
+    lines.push("### Dead or Invalid Additional Links", "");
+    lines.push(...renderTable(failedExtra));
     lines.push("");
   }
 
