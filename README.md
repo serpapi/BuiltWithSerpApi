@@ -1,12 +1,16 @@
 # #BuiltWithSerpApi
 
-[![View project site](https://img.shields.io/badge/View%20project%20site-%23BuiltWithSerpApi-377fea?style=flat-square)](https://serpapi.github.io/BuiltWithSerpApi/)
+[![Open live site](https://img.shields.io/badge/Open%20live%20site-%23BuiltWithSerpApi-377fea?style=flat-square)](https://serpapi.github.io/BuiltWithSerpApi/)
 [![Submit a project](https://img.shields.io/badge/Submit%20a%20project-GitHub%20issue-6937ea?style=flat-square&logo=github)](https://github.com/serpapi/BuiltWithSerpApi/issues/new?template=add-project.yml)
 [![SerpApi docs](https://img.shields.io/badge/SerpApi-docs-161f2e?style=flat-square)](https://serpapi.com/search-api?utm_source=builtwithserpapi)
 
 A community showcase of apps, agents, automations, dashboards, research tools, and experiments built with SerpApi.
 
 This repository powers a static GitHub Pages site where builders can browse real projects, discover SerpApi engines used by each project, and find inspiration for their own search-powered ideas.
+
+<a href="https://serpapi.github.io/BuiltWithSerpApi/">
+  <img src="src/assets/readme-live-site-button.svg" alt="Browse live projects on #BuiltWithSerpApi" width="360">
+</a>
 
 ## Add Your Project
 

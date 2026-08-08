@@ -1,0 +1,16 @@
+<svg width="360" height="64" viewBox="0 0 360 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Browse live projects</title>
+  <desc id="desc">A button linking to the #BuiltWithSerpApi showcase website.</desc>
+  <rect x="0.5" y="0.5" width="359" height="63" rx="8.5" fill="#F6F8FA" stroke="#8C959F"/>
+  <rect x="12" y="12" width="40" height="40" rx="8" fill="#FFFFFF" stroke="#D0D7DE"/>
+  <rect x="20" y="22" width="24" height="18" rx="3" fill="#F6F8FA" stroke="#377FEA" stroke-width="2"/>
+  <path d="M20 28H44" stroke="#377FEA" stroke-width="2"/>
+  <circle cx="25" cy="25" r="1.2" fill="#008A73"/>
+  <circle cx="29" cy="25" r="1.2" fill="#008A73"/>
+  <rect x="24" y="32" width="6" height="4" rx="1" fill="#008A73"/>
+  <rect x="34" y="32" width="6" height="4" rx="1" fill="#008A73"/>
+  <text x="64" y="28" fill="#24292F" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Browse live projects</text>
+  <text x="64" y="47" fill="#57606A" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">serpapi.github.io/BuiltWithSerpApi</text>
+  <rect x="306" y="20" width="40" height="24" rx="12" fill="#FFFFFF" stroke="#8C959F"/>
+  <path d="M320 32H333M328 27L333 32L328 37" stroke="#24292F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
