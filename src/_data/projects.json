@@ -1238,5 +1238,115 @@
     "apis": [
       "Google Flights API"
     ]
+  },
+  {
+    "name": "Gemma² / Gemma Autopilot",
+    "description": "An autonomous agent that benchmarks a Gemma 4 deployment, analyzes speed and energy usage, changes the configuration, and repeats until performance improves.",
+    "author": "Wilfred Doré and François Amat",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/wilfred-dore/gemma-autopilot",
+    "hostedUrl": "https://gemma-autopilot-live.amat-francois.workers.dev/",
+    "links": [],
+    "tags": [
+      "agent",
+      "optimization",
+      "benchmarking"
+    ],
+    "apis": [
+      "Google Light Search API"
+    ]
+  },
+  {
+    "name": "Iria",
+    "description": "A privacy-first visual assistant for blind and low-vision users. Images remain private while SerpApi retrieves web facts and nearby places using text-only queries.",
+    "author": "Mabrouk Chouikri",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/mchouikr/iria",
+    "links": [],
+    "tags": [
+      "accessibility",
+      "vision",
+      "maps"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "Hippocrate",
+    "description": "A private family health assistant that explains local medical records and uses SerpApi-powered Google Scholar searches to find supporting clinical evidence.",
+    "author": "Jilankum and Matéo Le Bras Sancho",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/MatLBS/front-gemma-hackathon",
+    "links": [
+      {
+        "label": "Backend repository",
+        "url": "https://github.com/MatLBS/backend-gemma-hackathon"
+      }
+    ],
+    "tags": [
+      "health",
+      "medical",
+      "research"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Scholar API"
+    ]
+  },
+  {
+    "name": "SafePlate Agent",
+    "description": "A multilingual food-allergy assistant that retrieves manufacturer evidence and asks restaurant staff about cross-contact before providing conservative safety guidance. The deployed site is an interactive replay.",
+    "author": "Rita Kao (Tzu-Yu), Afaq, Yan, and Pyae Sone Kyaw (Seon)",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/RitaTY/gemma4",
+    "hostedUrl": "https://safeplate-ten.vercel.app/",
+    "links": [
+      {
+        "label": "Operator console",
+        "url": "https://safeplate-ten.vercel.app/verify"
+      }
+    ],
+    "tags": [
+      "food",
+      "allergies",
+      "safety"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Droit de Retard",
+    "description": "A local-first EU261 assistant that extracts information from travel documents, checks official passenger-rights sources, and finds airline claim channels.",
+    "author": "Chouam Samy, Xerxai, and Arnaud Durand117",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/Claken/Paris-Gemma-4-Hackaton",
+    "links": [],
+    "tags": [
+      "travel",
+      "legal",
+      "eu261"
+    ],
+    "apis": [
+      "Google Light Search API"
+    ]
+  },
+  {
+    "name": "RedPen",
+    "description": "A real-time debate fact-checker that detects checkable claims, retrieves web evidence through SerpApi, and uses Gemma 4 to return sourced verdicts.",
+    "author": "Mahamoud Coulibaly; El Houssain Souhail (Ductive99)",
+    "dateAdded": "2026-08-01",
+    "githubUrl": "https://github.com/Ductive99/gemma4",
+    "links": [],
+    "tags": [
+      "fact-checking",
+      "debate",
+      "evidence"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
   }
 ]
