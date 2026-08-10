@@ -22,6 +22,14 @@ eleventyExcludeFromCollections: true
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  {% for project in projects %}
+  <url>
+    <loc>{{ (project | projectPermalink) | url | absoluteUrl(site.baseUrl) }}</loc>
+    <lastmod>{{ project.dateAdded }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
   {% for tag in tags %}
   <url>
     <loc>{{ ('/tags/' + (tag | slug) + '/') | url | absoluteUrl(site.baseUrl) }}</loc>

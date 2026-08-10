@@ -1412,5 +1412,22 @@
     "apis": [
       "Google Maps API"
     ]
+  },
+  {
+    "name": "YouTube RAG Chatbot",
+    "description": "Full-stack YouTube RAG chatbot that retrieves timestamped transcripts through SerpApi, chunks and searches them, and returns grounded answers with clickable timestamp sources.",
+    "author": "Gaurav Negi",
+    "dateAdded": "2026-08-10",
+    "githubUrl": "https://github.com/gauravnegigit/Youtube-Chatbot",
+    "links": [],
+    "tags": [
+      "youtube",
+      "rag",
+      "chatbot",
+      "transcription"
+    ],
+    "apis": [
+      "YouTube Video Transcript API"
+    ]
   }
 ]

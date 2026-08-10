@@ -1,0 +1,19 @@
+---
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Returning to #BuiltWithSerpApi</title>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ '/' | url }}">
+    <link rel="canonical" href="{{ '/' | url | absoluteUrl(site.baseUrl) }}">
+    <script>window.location.replace("{{ '/' | url }}");</script>
+  </head>
+  <body>
+    <p>That page does not exist. <a href="{{ '/' | url }}">Return to #BuiltWithSerpApi</a>.</p>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+---
+layout: base.njk
+pagination:
+  data: projects
+  size: 1
+  alias: projectEntry
+permalink: "/projects/{{ projectEntry.name | slug }}/"
+eleventyComputed:
+  title: "{{ projectEntry.name }} by {{ projectEntry.author }} | #BuiltWithSerpApi"
+  description: "{{ projectEntry.description }}"
+---
+
+<section class="project-detail-hero">
+  <span class="project-detail-mark" aria-hidden="true">#</span>
+  <div class="shell">
+    <nav class="project-breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | url }}">Projects</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ projectEntry.name }}</span>
+    </nav>
+
+    <div class="project-detail-hero-grid">
+      <div class="project-detail-intro">
+        <p class="project-detail-label">
+          {% if projectEntry.featured %}
+            {% icon "star" %}Featured community project
+          {% else %}
+            {% icon "bolt" %}Built with SerpApi
+          {% endif %}
+        </p>
+        <h1>{{ projectEntry.name }}</h1>
+        <p class="project-detail-summary">{{ projectEntry.description }}</p>
+        <div class="project-detail-byline">
+          <span>By <strong>{{ projectEntry.author }}</strong></span>
+          <span>Added <time datetime="{{ projectEntry.dateAdded }}">{{ projectEntry.dateAdded | readableDate }}</time></span>
+        </div>
+        <div class="project-detail-actions">
+          {% if projectEntry.hostedUrl %}
+            <a class="button" href="{{ projectEntry.hostedUrl }}" target="_blank" rel="noopener noreferrer">{% icon "rocket" %}Open project</a>
+          {% endif %}
+          <a class="button button-secondary" href="{{ projectEntry.githubUrl }}" target="_blank" rel="noopener noreferrer">{% icon "github" %}View source</a>
+        </div>
+      </div>
+
+      <aside class="project-detail-stamp" aria-label="Project summary">
+        <div>
+          <strong>{{ projectEntry.apis | length }}</strong>
+          <span>SerpApi engine{% if projectEntry.apis | length != 1 %}s{% endif %}</span>
+        </div>
+        <div>
+          <strong>{{ projectEntry.tags | length }}</strong>
+          <span>Idea tag{% if projectEntry.tags | length != 1 %}s{% endif %}</span>
+        </div>
+        <div>
+          <strong>{{ projectEntry.githubUrl | domain }}</strong>
+          <span>Source host</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="project-detail-content shell">
+  <div class="project-detail-grid">
+    <section class="project-detail-panel">
+      <p class="project-detail-eyebrow">Search stack</p>
+      <h2>SerpApi engines used</h2>
+      <div class="api-row" aria-label="SerpApi APIs used">
+        {% for api in projectEntry.apis %}
+          <a class="api-pill" href="{{ ('/apis/' + (api | slug) + '/') | url }}">{% icon "api" %}{{ api }}</a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="project-detail-panel">
+      <p class="project-detail-eyebrow">Project themes</p>
+      <h2>Browse related ideas</h2>
+      <div class="meta-group" aria-label="Project tags">
+        {% for tag in projectEntry.tags %}
+          <a class="chip" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">{% icon "tag" %}{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+
+  {% if projectEntry.links and projectEntry.links.length %}
+    <section class="project-detail-resources">
+      <div>
+        <p class="project-detail-eyebrow">More from this project</p>
+        <h2>Additional resources</h2>
+      </div>
+      <div class="project-detail-resource-links">
+        {% for link in projectEntry.links %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{% icon "link" %}{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <aside class="project-detail-cta">
+    <div>
+      <p class="project-detail-eyebrow">Keep exploring</p>
+      <h2>Find another project to remix</h2>
+      <p>Return to the community feed for more apps, agents, dashboards, monitors, and experiments built with live search data.</p>
+    </div>
+    <a class="button" href="{{ '/' | url }}">{% icon "feed" %}Browse all projects</a>
+  </aside>
+</section>

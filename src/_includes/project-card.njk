@@ -1,4 +1,4 @@
-<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}"{% endif %}>
+<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}" data-project-tags="{{ project.tags | encodeFacetValues }}" data-project-apis="{{ project.apis | encodeFacetValues }}"{% endif %}>
   <div class="project-kicker">
     <span>
       {% if project.featured %}
@@ -11,7 +11,7 @@
   </div>
   <div class="project-card-top">
     <div>
-      <h2><a href="{{ project | projectUrl }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a></h2>
+      <h2><a href="{{ (project | projectPermalink) | url }}">{{ project.name }}</a></h2>
       <p class="author">by {{ project.author }}</p>
     </div>
   </div>
@@ -31,6 +31,7 @@
   </div>
 
   <div class="project-links">
+    <a href="{{ (project | projectPermalink) | url }}">{% icon "feed" %}Project details</a>
     {% if project.hostedUrl %}
       <a class="primary-project-link" href="{{ project.hostedUrl }}" target="_blank" rel="noopener noreferrer">{% icon "rocket" %}Open project</a>
     {% endif %}

@@ -24,11 +24,11 @@
     <meta name="twitter:description" content="{{ metaDescription }}">
     <meta name="twitter:image" content="{{ socialImage }}">
     <meta name="twitter:image:alt" content="{{ site.ogImageAlt }}">
-    <script type="application/ld+json">{{ page | seoJsonLd(site, projects, metaTitle, metaDescription) | safe }}</script>
+    <script type="application/ld+json">{{ page | seoJsonLd(site, projects, metaTitle, metaDescription, projectEntry) | safe }}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=20260808-sort-pypi-projects' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=20260810-project-filters' | url }}">
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>

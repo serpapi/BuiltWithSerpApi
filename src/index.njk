@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "#BuiltWithSerpApi"
+title: "Projects Built with SerpApi | #BuiltWithSerpApi"
 description: "Browse SerpApi powered apps, agents, dashboards, monitors, and experiments built by the community."
 ---
 
@@ -37,7 +37,6 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
         <div class="side-links">
           <a href="{{ '/tags/' | url }}"><span>{% icon "tag" %}All tags</span></a>
           <a href="{{ '/apis/' | url }}"><span>{% icon "api" %}All engines</span></a>
-          <a href="{{ site.docs }}" target="_blank" rel="noopener noreferrer"><span>{% icon "book" %}SerpApi docs</span></a>
         </div>
       </div>
 
@@ -53,18 +52,72 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
         <div class="stream-heading-top">
           <p class="label">{% icon "spark" %}Idea stream</p>
           <div class="stream-header-actions">
-            <label class="sort-control" for="project-sort">
-              <span>Sort</span>
-              <select id="project-sort" data-project-sort>
-                <option value="newest" selected>Newest first</option>
-                <option value="oldest">Old to new</option>
-                <option value="random">Random</option>
-              </select>
-            </label>
-            <a class="text-link" href="{{ site.docs }}" target="_blank" rel="noopener noreferrer">{% icon "globe" %}SerpApi docs</a>
+            <div class="feed-controls" aria-label="Project feed controls">
+              <label class="sort-control" for="project-sort">
+                <span>Sort</span>
+                <select id="project-sort" data-project-sort>
+                  <option value="newest" selected>Newest first</option>
+                  <option value="oldest">Old to new</option>
+                  <option value="random">Random</option>
+                </select>
+              </label>
+
+              <details class="filter-disclosure" data-filter-disclosure>
+                <summary class="filter-trigger">
+                  {% icon "filter" %}
+                  <span>Filters</span>
+                  <span class="filter-count" data-filter-count hidden>0</span>
+                </summary>
+                <div class="filter-panel">
+                  <div class="filter-panel-header">
+                    <div>
+                      <p class="filter-panel-eyebrow">Narrow the feed</p>
+                      <h3>Filter projects</h3>
+                    </div>
+                    <button class="filter-done" type="button" data-filter-close>Done</button>
+                  </div>
+
+                  <form class="tag-filter-form" data-tag-filter-form novalidate>
+                    <label for="project-tag-filter">Tags</label>
+                    <p>Start typing, then choose a suggested tag.</p>
+                    <div class="tag-filter-entry">
+                      <input id="project-tag-filter" type="search" list="project-tag-options" placeholder="Try seo or travel" autocomplete="off" data-tag-filter-input>
+                      <datalist id="project-tag-options" data-tag-options>
+                        {% for tag in tags %}
+                          <option value="{{ tag }}"></option>
+                        {% endfor %}
+                      </datalist>
+                      <button type="submit">Add tag</button>
+                    </div>
+                    <p class="filter-error" data-tag-filter-error role="status" hidden>Choose a tag from the suggestions.</p>
+                    <div class="selected-tags" data-selected-tags aria-label="Selected tags" aria-live="polite" hidden></div>
+                  </form>
+
+                  <fieldset class="api-filter-fieldset">
+                    <legend>SerpApi APIs</legend>
+                    <p>Select one or more APIs to include.</p>
+                    <div class="api-filter-list">
+                      {% for api in apis %}
+                        <label class="api-filter-option">
+                          <input type="checkbox" value="{{ api }}" data-api-filter>
+                          <span>{{ api }}</span>
+                          <small>{{ projects | relatedProjectCount(api, "apis") }}</small>
+                        </label>
+                      {% endfor %}
+                    </div>
+                  </fieldset>
+
+                  <div class="filter-panel-footer">
+                    <span>Matches any selected value in each group.</span>
+                    <button type="button" data-filter-clear>Clear all</button>
+                  </div>
+                </div>
+              </details>
+            </div>
           </div>
         </div>
         <h2>Scroll through projects built on live search data.</h2>
+        <p class="project-result-count" data-project-result-count aria-live="polite">{{ projects.length }} projects</p>
       </div>
 
       <div class="feed stream-feed" data-project-feed>
@@ -122,11 +175,30 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
       {% endfor %}
       </div>
 
+      <section class="filter-empty-state" data-filter-empty-state hidden>
+        <span class="filter-empty-icon">{% icon "search" %}</span>
+        <h3>No projects match those filters</h3>
+        <p>Try another tag or API, or clear the current filters to restore the full feed.</p>
+        <button class="button" type="button" data-filter-clear>Clear filters</button>
+      </section>
+
       <script>
         (() => {
           const feed = document.querySelector("[data-project-feed]");
           const select = document.querySelector("[data-project-sort]");
-          if (!feed || !select) return;
+          const filterDetails = document.querySelector("[data-filter-disclosure]");
+          const filterCount = document.querySelector("[data-filter-count]");
+          const resultCount = document.querySelector("[data-project-result-count]");
+          const emptyState = document.querySelector("[data-filter-empty-state]");
+          const tagForm = document.querySelector("[data-tag-filter-form]");
+          const tagInput = document.querySelector("[data-tag-filter-input]");
+          const tagOptions = document.querySelector("[data-tag-options]");
+          const tagError = document.querySelector("[data-tag-filter-error]");
+          const selectedTagList = document.querySelector("[data-selected-tags]");
+          const apiInputs = Array.from(document.querySelectorAll("[data-api-filter]"));
+          const clearButtons = Array.from(document.querySelectorAll("[data-filter-clear]"));
+          const closeButton = document.querySelector("[data-filter-close]");
+          if (!feed || !select || !filterDetails || !tagForm || !tagInput || !tagOptions || !selectedTagList) return;
 
           const projects = Array.from(feed.querySelectorAll('[data-feed-item="project"]'));
           const promos = Array.from(feed.querySelectorAll('[data-feed-item="promo"]')).map((node, index) => ({
@@ -136,9 +208,27 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           }));
           const collator = new Intl.Collator(undefined, { sensitivity: "base" });
           const originalOrder = new Map(projects.map((node, index) => [node, index]));
+          const availableTags = new Map(Array.from(tagOptions.options).map((option) => (
+            [option.value.toLocaleLowerCase(), option.value]
+          )));
+          const selectedTags = new Set();
+          const selectedApis = new Set();
+          const facets = new Map(projects.map((project) => [project, {
+            tags: new Set(JSON.parse(decodeURIComponent(project.dataset.projectTags || "%5B%5D"))),
+            apis: new Set(JSON.parse(decodeURIComponent(project.dataset.projectApis || "%5B%5D")))
+          }]));
+          let randomOrder = [...projects];
 
           const compareTitle = (a, b) => collator.compare(a.dataset.projectTitle || "", b.dataset.projectTitle || "");
           const compareOriginal = (a, b) => (originalOrder.get(a) || 0) - (originalOrder.get(b) || 0);
+
+          const shuffleRandomOrder = () => {
+            randomOrder = [...projects];
+            for (let index = randomOrder.length - 1; index > 0; index -= 1) {
+              const swapIndex = Math.floor(Math.random() * (index + 1));
+              [randomOrder[index], randomOrder[swapIndex]] = [randomOrder[swapIndex], randomOrder[index]];
+            }
+          };
 
           const sortedProjects = (mode) => {
             const ordered = [...projects];
@@ -152,11 +242,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
             }
 
             if (mode === "random") {
-              for (let index = ordered.length - 1; index > 0; index -= 1) {
-                const swapIndex = Math.floor(Math.random() * (index + 1));
-                [ordered[index], ordered[swapIndex]] = [ordered[swapIndex], ordered[index]];
-              }
-              return ordered;
+              return [...randomOrder];
             }
 
             ordered.sort((a, b) => (
@@ -167,13 +253,53 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
             return ordered;
           };
 
+          const hasActiveFilters = () => selectedTags.size > 0 || selectedApis.size > 0;
+
+          const projectMatchesFilters = (project) => {
+            const projectFacets = facets.get(project);
+            const matchesTags = selectedTags.size === 0 || [...selectedTags].some((tag) => projectFacets.tags.has(tag));
+            const matchesApis = selectedApis.size === 0 || [...selectedApis].some((api) => projectFacets.apis.has(api));
+            return matchesTags && matchesApis;
+          };
+
+          const renderSelectedTags = () => {
+            const fragment = document.createDocumentFragment();
+
+            selectedTags.forEach((tag) => {
+              const button = document.createElement("button");
+              const label = document.createElement("span");
+              const remove = document.createElement("span");
+              button.type = "button";
+              button.className = "selected-tag";
+              button.dataset.removeTag = tag;
+              button.setAttribute("aria-label", `Remove ${tag} tag`);
+              label.textContent = tag;
+              remove.textContent = "×";
+              remove.setAttribute("aria-hidden", "true");
+              button.append(label, remove);
+              fragment.appendChild(button);
+            });
+
+            selectedTagList.replaceChildren(fragment);
+            selectedTagList.hidden = selectedTags.size === 0;
+          };
+
+          const renderFilterCount = () => {
+            const count = selectedTags.size + selectedApis.size;
+            filterCount.textContent = String(count);
+            filterCount.hidden = count === 0;
+            filterDetails.classList.toggle("has-filters", count > 0);
+          };
+
           const renderFeed = () => {
             const fragment = document.createDocumentFragment();
-            const pendingPromos = promos.map((promo) => ({ ...promo })).sort((a, b) => (
+            const filteredProjects = sortedProjects(select.value).filter(projectMatchesFilters);
+            const filtering = hasActiveFilters();
+            const pendingPromos = filtering ? [] : promos.map((promo) => ({ ...promo })).sort((a, b) => (
               a.slot - b.slot || a.index - b.index
             ));
 
-            sortedProjects(select.value).forEach((project, index) => {
+            filteredProjects.forEach((project, index) => {
               fragment.appendChild(project);
 
               while (pendingPromos.length && pendingPromos[0].slot === index + 1) {
@@ -183,9 +309,95 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
 
             pendingPromos.forEach((promo) => fragment.appendChild(promo.node));
             feed.replaceChildren(fragment);
+            resultCount.textContent = filtering
+              ? `Showing ${filteredProjects.length} of ${projects.length} projects`
+              : `${projects.length} projects`;
+            emptyState.hidden = filteredProjects.length !== 0;
+            renderFilterCount();
           };
 
-          select.addEventListener("change", renderFeed);
+          const clearTagError = () => {
+            tagInput.removeAttribute("aria-invalid");
+            tagError.hidden = true;
+          };
+
+          const addTag = (rawTag, showError = true) => {
+            const tag = availableTags.get(rawTag.trim().toLocaleLowerCase());
+            if (!tag) {
+              if (showError && rawTag.trim()) {
+                tagInput.setAttribute("aria-invalid", "true");
+                tagError.hidden = false;
+              }
+              return false;
+            }
+
+            selectedTags.add(tag);
+            tagInput.value = "";
+            clearTagError();
+            renderSelectedTags();
+            renderFeed();
+            return true;
+          };
+
+          tagForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            addTag(tagInput.value);
+          });
+
+          tagInput.addEventListener("input", clearTagError);
+          tagInput.addEventListener("change", () => addTag(tagInput.value, false));
+
+          selectedTagList.addEventListener("click", (event) => {
+            const button = event.target.closest("[data-remove-tag]");
+            if (!button) return;
+            selectedTags.delete(button.dataset.removeTag);
+            renderSelectedTags();
+            renderFeed();
+            tagInput.focus();
+          });
+
+          apiInputs.forEach((input) => {
+            input.addEventListener("change", () => {
+              if (input.checked) selectedApis.add(input.value);
+              else selectedApis.delete(input.value);
+              renderFeed();
+            });
+          });
+
+          const clearFilters = () => {
+            selectedTags.clear();
+            selectedApis.clear();
+            apiInputs.forEach((input) => { input.checked = false; });
+            tagInput.value = "";
+            clearTagError();
+            renderSelectedTags();
+            renderFeed();
+          };
+
+          clearButtons.forEach((button) => button.addEventListener("click", clearFilters));
+          closeButton.addEventListener("click", () => {
+            filterDetails.open = false;
+            filterDetails.querySelector("summary").focus();
+          });
+
+          document.addEventListener("click", (event) => {
+            if (filterDetails.open && !filterDetails.contains(event.target)) filterDetails.open = false;
+          });
+
+          document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && filterDetails.open) {
+              filterDetails.open = false;
+              filterDetails.querySelector("summary").focus();
+            }
+          });
+
+          select.addEventListener("change", () => {
+            if (select.value === "random") shuffleRandomOrder();
+            renderFeed();
+          });
+
+          renderSelectedTags();
+          renderFeed();
         })();
       </script>
 

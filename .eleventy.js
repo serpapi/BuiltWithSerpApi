@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
       code: '<path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 4l-4 16"/>',
       docs: '<path d="M8 3h8l4 4v16H8z"/><path d="M16 3v5h5M12 13h5M12 17h5"/>',
       feed: '<path d="M5 5h14M5 12h14M5 19h10"/><path d="M3 5h.01M3 12h.01M3 19h.01"/>',
+      filter: '<path d="M4 5h16M7 12h10M10 19h4"/><circle cx="8" cy="5" r="1.5"/><circle cx="15" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>',
       github: '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.8 12.8 0 0 0-6.7 0C6.6.3 5.5.6 5.5.6a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 4 7.8c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.6V22"/>',
       globe: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/>',
       hub: '<circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="m8.6 10.5 5.8-3M8.6 13.5l5.8 3"/>',
@@ -28,8 +29,26 @@ module.exports = function (eleventyConfig) {
     return `<svg class="icon icon-${name}" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${paths[name] || paths.spark}</svg>`;
   });
 
-  eleventyConfig.addFilter("projectUrl", function (project) {
-    return project.hostedUrl || project.githubUrl || "#";
+  eleventyConfig.addFilter("projectPermalink", function (project) {
+    return `/projects/${slugify(project.name)}/`;
+  });
+
+  eleventyConfig.addFilter("readableDate", function (value) {
+    if (!value) return "";
+
+    const date = new Date(`${value}T00:00:00Z`);
+    if (Number.isNaN(date.getTime())) return value;
+
+    return new Intl.DateTimeFormat("en", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      timeZone: "UTC"
+    }).format(date);
+  });
+
+  eleventyConfig.addFilter("encodeFacetValues", function (values) {
+    return encodeURIComponent(JSON.stringify(values || []));
   });
 
   eleventyConfig.addFilter("domain", function (url) {
@@ -90,14 +109,14 @@ module.exports = function (eleventyConfig) {
       .at(-1) || "";
   });
 
-  eleventyConfig.addFilter("seoJsonLd", function (page, site, projects, title, description) {
+  eleventyConfig.addFilter("seoJsonLd", function (page, site, projects, title, description, projectEntry) {
     const baseUrl = process.env.SITE_BASE_URL || site.baseUrl;
     const rootUrl = absoluteUrl("/", baseUrl);
     const canonicalUrl = absoluteUrl(page.url || "/", baseUrl);
     const logoUrl = absoluteUrl(site.logo || site.ogImage, baseUrl);
     const pageTitle = title || site.name;
     const pageDescription = description || site.description;
-    const latestDate = projects
+    const latestDate = projectEntry?.dateAdded || projects
       .map((project) => project.dateAdded)
       .filter(Boolean)
       .sort()
@@ -140,6 +159,31 @@ module.exports = function (eleventyConfig) {
       }
     ];
 
+    if (projectEntry) {
+      const projectId = `${canonicalUrl}#project`;
+      graph[2].mainEntity = {
+        "@id": projectId
+      };
+      graph.push({
+        "@type": "CreativeWork",
+        "@id": projectId,
+        name: projectEntry.name,
+        description: projectEntry.description,
+        url: canonicalUrl,
+        author: {
+          "@type": projectEntry.author && /team/i.test(projectEntry.author) ? "Organization" : "Person",
+          name: projectEntry.author
+        },
+        keywords: [...(projectEntry.tags || []), ...(projectEntry.apis || [])].join(", "),
+        codeRepository: projectEntry.githubUrl,
+        sameAs: [
+          projectEntry.hostedUrl,
+          projectEntry.githubUrl,
+          ...(projectEntry.links || []).map((link) => link.url)
+        ].filter(Boolean)
+      });
+    }
+
     if (isHomeUrl(canonicalUrl, rootUrl)) {
       graph.push({
         "@type": "ItemList",
@@ -147,23 +191,29 @@ module.exports = function (eleventyConfig) {
         name: "#BuiltWithSerpApi project feed",
         description: site.description,
         numberOfItems: projects.length,
-        itemListElement: projects.map((project, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          item: {
-            "@type": "CreativeWork",
-            name: project.name,
-            description: project.description,
-            url: project.hostedUrl || project.githubUrl,
-            author: {
-              "@type": project.author && /team/i.test(project.author) ? "Organization" : "Person",
-              name: project.author
-            },
-            datePublished: project.dateAdded,
-            keywords: [...(project.tags || []), ...(project.apis || [])].join(", "),
-            codeRepository: project.githubUrl
-          }
-        }))
+        itemListElement: projects.map((project, index) => {
+          const projectPageUrl = absoluteUrl(`/projects/${slugify(project.name)}/`, baseUrl);
+
+          return {
+            "@type": "ListItem",
+            position: index + 1,
+            item: {
+              "@type": "CreativeWork",
+              "@id": `${projectPageUrl}#project`,
+              name: project.name,
+              description: project.description,
+              url: projectPageUrl,
+              author: {
+                "@type": project.author && /team/i.test(project.author) ? "Organization" : "Person",
+                name: project.author
+              },
+              datePublished: project.dateAdded,
+              keywords: [...(project.tags || []), ...(project.apis || [])].join(", "),
+              codeRepository: project.githubUrl,
+              sameAs: [project.hostedUrl, project.githubUrl].filter(Boolean)
+            }
+          };
+        })
       });
     }
 
