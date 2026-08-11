@@ -1429,5 +1429,55 @@
     "apis": [
       "YouTube Video Transcript API"
     ]
+  },
+  {
+    "name": "Jarvis Voice",
+    "description": "Self-hosted AI assistant for voice, chat, automation, memory, and coding, with focused SerpApi tools for shopping, news, trends, events, local discovery, sports, travel, images, and YouTube.",
+    "author": "bigsk1",
+    "dateAdded": "2026-08-11",
+    "githubUrl": "https://github.com/bigsk1/jarvis-voice",
+    "links": [
+      {
+        "label": "SerpApi integration guide",
+        "url": "https://github.com/bigsk1/jarvis-voice/blob/main/docs/tools/serp-api-tool/README.md"
+      }
+    ],
+    "tags": [
+      "agent",
+      "automation",
+      "voice",
+      "self-hosted"
+    ],
+    "apis": [
+      "Amazon Search API",
+      "Amazon Product API",
+      "Google Shopping Light API",
+      "Google Sports API",
+      "Google Search API",
+      "Search Index",
+      "Google Images Light API",
+      "Google News Light API",
+      "Google Trends API",
+      "Google Trends Trending Now API",
+      "eBay Search API",
+      "eBay Product API",
+      "The Home Depot Search API",
+      "The Home Depot Product API",
+      "Google Events API",
+      "Google Local API",
+      "Google Local Services API",
+      "Google Maps API",
+      "Google Hotels API",
+      "Google Travel Explore API",
+      "Tripadvisor Search API",
+      "Tripadvisor Place API",
+      "Tripadvisor Reviews API",
+      "Yelp Search API",
+      "Yelp Reviews API",
+      "YouTube Search API",
+      "YouTube Video API",
+      "YouTube Video Transcript API",
+      "Google Flights API"
+    ]
   }
 ]
