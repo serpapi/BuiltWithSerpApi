@@ -1479,5 +1479,57 @@
       "YouTube Video Transcript API",
       "Google Flights API"
     ]
+  },
+  {
+    "name": "ProductPulse",
+    "description": "Compares live product prices, ratings, review counts, stores, and availability using SerpApi's Google Shopping API.",
+    "author": "Yamuna Mediga",
+    "dateAdded": "2026-08-16",
+    "githubUrl": "https://github.com/YamunaMediga/SCT_SD_4",
+    "hostedUrl": "https://productpulse-xjyv.onrender.com/",
+    "links": [],
+    "tags": [
+      "shopping",
+      "prices",
+      "comparison"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ]
+  },
+  {
+    "name": "AuthentiCheck",
+    "description": "Checks text, source code, and images for plagiarism using SerpApi's Google Search and Google Reverse Image APIs.",
+    "author": "Ashutosh Pawar",
+    "dateAdded": "2026-08-16",
+    "githubUrl": "https://github.com/Ashutosh-Pawar29/PlagiarismDetectionSys",
+    "hostedUrl": "https://plagiarism-detection-sys.vercel.app/",
+    "links": [],
+    "tags": [
+      "plagiarism",
+      "verification",
+      "images",
+      "code"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Reverse Image API"
+    ]
+  },
+  {
+    "name": "SearchPhone",
+    "description": "Open-source phone-number OSINT tool that searches the web through SerpApi's Google Search API alongside code, social, carrier, and threat-intelligence sources.",
+    "author": "Victor Bancayan (Hack Underway)",
+    "dateAdded": "2026-08-16",
+    "githubUrl": "https://github.com/HackUnderway/SearchPhone",
+    "links": [],
+    "tags": [
+      "osint",
+      "phone",
+      "security"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
   }
 ]
