@@ -1338,7 +1338,6 @@
     "author": "Kashish Pherwani",
     "dateAdded": "2026-08-08",
     "githubUrl": "https://github.com/kash-08/Price-Check",
-    "hostedUrl": "https://expo.dev/artifacts/eas/YoCMQpdEhHUly8vg4S8iXOFBNJ8V2aSnxXK5XAKg5UM.apk",
     "links": [],
     "tags": [
       "shopping",
@@ -1530,6 +1529,78 @@
     ],
     "apis": [
       "Google Search API"
+    ]
+  },
+  {
+    "name": "Google Maps New Business Tracker",
+    "description": "Searches Google Maps by location and category, detects newly listed businesses against SQLite history, writes results to Google Sheets, and sends Telegram or email alerts.",
+    "author": "Ronak Bihani",
+    "dateAdded": "2026-08-23",
+    "githubUrl": "https://github.com/ronakbihani123/New_Business_Tracker",
+    "links": [],
+    "tags": [
+      "lead-generation",
+      "maps",
+      "monitoring",
+      "alerts"
+    ],
+    "apis": [
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "AI Opportunity Scout",
+    "description": "Matches developers with live hackathons, internships, and competitions by ranking SerpApi Google Search results against their skills, location, and opportunity type.",
+    "author": "Aditya Srivastava",
+    "dateAdded": "2026-08-29",
+    "githubUrl": "https://github.com/dev-aditya-design/ai-opportunity-scout",
+    "hostedUrl": "https://ai-opportunity-scout-hcgtp6eaurjcva2gpryt2l.streamlit.app/",
+    "links": [],
+    "tags": [
+      "opportunities",
+      "hackathons",
+      "matching",
+      "search"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "TripWeaver",
+    "description": "Multi-agent travel planner that searches flights, hotels, and nearby places using SerpApi's Google Flights, Google Hotels, and Google Maps APIs.",
+    "author": "Amiru Mallawarachchi",
+    "dateAdded": "2026-08-29",
+    "githubUrl": "https://github.com/AmiruMallawarachchi/multi-agent-travel-planner",
+    "hostedUrl": "https://multi-agent-travel-planner-jet.vercel.app/",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "hotels",
+      "agent"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API",
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "AI Hiring Signal Pipeline",
+    "description": "n8n pipeline that collects Google Jobs results through SerpApi, classifies hiring signals, and prepares records for prospect enrichment and sales prioritization.",
+    "author": "Mukut Khandelwal",
+    "dateAdded": "2026-08-29",
+    "githubUrl": "https://github.com/mukutkhandelwal/ai-hiring-signal-pipeline",
+    "links": [],
+    "tags": [
+      "jobs",
+      "signals",
+      "automation",
+      "lead-generation"
+    ],
+    "apis": [
+      "Google Jobs API"
     ]
   }
 ]
