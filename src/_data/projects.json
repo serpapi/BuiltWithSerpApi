@@ -1602,5 +1602,92 @@
     "apis": [
       "Google Jobs API"
     ]
+  },
+  {
+    "name": "DepositCheck",
+    "description": "Checks rental listing photos against exact Google Lens matches through SerpApi and compares matched pages with the claimed address before a deposit is paid.",
+    "author": "Vishal Patel",
+    "dateAdded": "2026-09-05",
+    "githubUrl": "https://github.com/ishal1410/depositcheck",
+    "hostedUrl": "https://depositcheck-liart.vercel.app/",
+    "links": [],
+    "tags": [
+      "rentals",
+      "verification",
+      "images",
+      "safety"
+    ],
+    "apis": [
+      "Google Lens API"
+    ]
+  },
+  {
+    "name": "FaceChain",
+    "description": "Uses SerpApi's Google Lens API to find public image candidates, compares face embeddings, and records SHA-256 fingerprints on a local blockchain for later verification.",
+    "author": "Punyashree H S",
+    "dateAdded": "2026-09-05",
+    "githubUrl": "https://github.com/Punya2711/face-blockchain-pipeline",
+    "links": [],
+    "tags": [
+      "images",
+      "verification",
+      "security",
+      "blockchain"
+    ],
+    "apis": [
+      "Google Lens API"
+    ]
+  },
+  {
+    "name": "Image Search to Sheets",
+    "description": "Searches Google Images through SerpApi, validates returned image URLs, and writes one verified result per name to Google Sheets.",
+    "author": "Patrick Cabrera",
+    "dateAdded": "2026-09-05",
+    "githubUrl": "https://github.com/codewithpatrick0/extract_data",
+    "links": [],
+    "tags": [
+      "images",
+      "automation",
+      "google-sheets"
+    ],
+    "apis": [
+      "Google Images API"
+    ]
+  },
+  {
+    "name": "GoTrip AI",
+    "description": "Multi-agent travel planner that uses SerpApi's Google Flights API to add live outbound and return flight options to personalized itineraries.",
+    "author": "Manish Prajapati",
+    "dateAdded": "2026-09-05",
+    "githubUrl": "https://github.com/Manish7512/GoTrip-AI---A-Multi-Agent-Travel-Planner-with-LangGraph",
+    "hostedUrl": "https://gotrip-ai-a-multi-agent-travel-planner.onrender.com/",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "itinerary",
+      "agent"
+    ],
+    "apis": [
+      "Google Flights API"
+    ]
+  },
+  {
+    "name": "FactoryPulse AI",
+    "description": "Industrial diagnostics platform that searches technical standards and bulletins through SerpApi's Google Search API before generating maintenance recommendations.",
+    "author": "Sushanta Chowdhury",
+    "dateAdded": "2026-09-05",
+    "githubUrl": "https://github.com/sushantachowdhury/FactoryPulse-AI",
+    "hostedUrl": "https://factory-pulse-ai-sigma.vercel.app/",
+    "links": [],
+    "tags": [
+      "manufacturing",
+      "monitoring",
+      "analysis",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
   }
 ]
