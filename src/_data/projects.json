@@ -1689,5 +1689,1392 @@
     "apis": [
       "Google Search API"
     ]
+  },
+  {
+    "name": "ApplyPilot",
+    "description": "Finds jobs through SerpApi's Google Jobs API, then matches opportunities to a user's profile with evidence and deterministic scoring.",
+    "author": "Alyht",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Alyht/ApplyPilot",
+    "links": [],
+    "tags": [
+      "jobs",
+      "matching",
+      "ai"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ],
+    "hostedUrl": "https://applypilot-alyht.vercel.app"
+  },
+  {
+    "name": "AccessForm",
+    "description": "Helps callers complete official forms by phone, using SerpApi to discover government sources and nearby assistance providers.",
+    "author": "ali-amjad52114",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/ali-amjad52114/accessform",
+    "links": [],
+    "tags": [
+      "documents",
+      "voice",
+      "accessibility"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "PantryProof",
+    "description": "Searches food-recall coverage through SerpApi's Google news results, then helps pantry teams document and close recall responses.",
+    "author": "Anupam Roy",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Anupam0202/pantryproof",
+    "links": [],
+    "tags": [
+      "food",
+      "monitoring",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://pantryproof.vercel.app"
+  },
+  {
+    "name": "Chancery",
+    "description": "Checks counterparties, brand conflicts, and adverse reports through SerpApi before allowing an agent to act within a person's signed permissions.",
+    "author": "RaYYeR",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/RaYYeR220/chancery",
+    "links": [],
+    "tags": [
+      "agent",
+      "verification",
+      "documents"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Light Search API",
+      "Google News API",
+      "Google Patents API",
+      "Google Scholar Case Law API",
+      "Google Maps API",
+      "Google Maps Reviews API",
+      "Google Trends API",
+      "Google Ads Transparency API",
+      "Amazon Search API",
+      "Google Finance API"
+    ],
+    "hostedUrl": "https://chancery.live"
+  },
+  {
+    "name": "LeadAgent — B2B leads from live market signals",
+    "description": "Uses SerpApi's Google News and Google Search results to find business signals, research companies, rank prospects, and draft outreach.",
+    "author": "Aleksandr Protsiuk",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/zavodIT/LeadAgent",
+    "links": [],
+    "tags": [
+      "sales",
+      "leads",
+      "research"
+    ],
+    "apis": [
+      "Google News API",
+      "Google Search API"
+    ],
+    "hostedUrl": "https://leadagent-zavod.netlify.app"
+  },
+  {
+    "name": "Campaign Weather",
+    "description": "Tracks election advertising, news coverage, and search interest using SerpApi's Google Ads Transparency, Google Search, and Google Trends results.",
+    "author": "Tarik Moody",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/tmoody1973/campaign-weather",
+    "links": [],
+    "tags": [
+      "analytics",
+      "news",
+      "advertising"
+    ],
+    "apis": [
+      "Google Ads Transparency API",
+      "Google Search API",
+      "Google Trends API"
+    ],
+    "hostedUrl": "https://campaign-weather.vercel.app/"
+  },
+  {
+    "name": "Vantage",
+    "description": "Searches published university admissions requirements through SerpApi to help students compare programs and assess application readiness.",
+    "author": "Joseph Sico Birch Kayombo",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/joseph17-mancity/Vantage-Platform",
+    "links": [],
+    "tags": [
+      "education",
+      "research",
+      "planning"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Parallax",
+    "description": "Compares different readings of a PDF and uses SerpApi to check its business claims against public sources before a person approves the next step.",
+    "author": "N DIVIJ",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/N-45div/Parallax",
+    "links": [],
+    "tags": [
+      "documents",
+      "verification",
+      "security"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://parallax-tau-sooty.vercel.app/"
+  },
+  {
+    "name": "Unmet",
+    "description": "Uses SerpApi to analyze App Store reviews, local business feedback, search demand, and AI Overviews for unmet needs and visibility gaps.",
+    "author": "ByASB",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/byasb/unmet",
+    "links": [],
+    "tags": [
+      "research",
+      "reviews",
+      "market-research"
+    ],
+    "apis": [
+      "Apple App Store API",
+      "Apple App Store Reviews API",
+      "Google Trends API",
+      "Google Autocomplete API",
+      "Google Maps API",
+      "Google Maps Reviews API",
+      "Yelp Search API",
+      "Yelp Reviews API",
+      "Tripadvisor Search API",
+      "Tripadvisor Reviews API",
+      "Google Search API",
+      "Google AI Overview API"
+    ],
+    "hostedUrl": "https://unmet.byasb.com"
+  },
+  {
+    "name": "Opportunity Hunter",
+    "description": "Searches the web through SerpApi to find personalized opportunities, rank the supporting evidence, and suggest next steps.",
+    "author": "Poutru",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Poutru/opportunity-hunter",
+    "links": [],
+    "tags": [
+      "research",
+      "discovery",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://oh.humanhere.me"
+  },
+  {
+    "name": "ONIT",
+    "description": "Researches consumer problems and supporting documents with SerpApi's Google Search API to prepare case-resolution plans for human review.",
+    "author": "Tanishka Rao",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/tanishkarao16/onit",
+    "links": [],
+    "tags": [
+      "documents",
+      "research",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://onit-agent.vercel.app/"
+  },
+  {
+    "name": "Dossier",
+    "description": "Researches CRM accounts with SerpApi's Google News and Google Search results to generate cited company briefs and outreach drafts.",
+    "author": "Shamnad Shaji",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/shamnadps/dossier",
+    "links": [],
+    "tags": [
+      "sales",
+      "research",
+      "crm"
+    ],
+    "apis": [
+      "Google News API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Contrarian: An AI Research Agent That Try to Kill Your Idea",
+    "description": "Tests business ideas against predefined failure conditions using SerpApi search, news, academic research, trends, and local-business evidence.",
+    "author": "ven venn",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/venvennnn/contrarian",
+    "links": [],
+    "tags": [
+      "market-research",
+      "research",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API",
+      "Google Scholar API",
+      "Google Trends API",
+      "Google Maps API"
+    ],
+    "hostedUrl": "https://contrarian.streamlit.app/"
+  },
+  {
+    "name": "DriftWatch",
+    "description": "Collects company coverage through SerpApi's Google News API and compares it with historical baselines to detect changes in the narrative.",
+    "author": "Faisal Shariff",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/faisalshariff123/DriftWatch",
+    "links": [],
+    "tags": [
+      "news",
+      "monitoring",
+      "analytics"
+    ],
+    "apis": [
+      "Google News API"
+    ]
+  },
+  {
+    "name": "Ember",
+    "description": "Combines skin analysis and virtual styling with clothing and beauty-product offers retrieved through SerpApi's Google Shopping API.",
+    "author": "Arihant Agarwal",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/arihantagarwal/ember",
+    "links": [],
+    "tags": [
+      "beauty",
+      "fashion",
+      "shopping"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://emberhq.vercel.app"
+  },
+  {
+    "name": "IsThisSafe?",
+    "description": "Uses SerpApi to identify products from photos, research recalls and safety warnings, and find replacement products and local disposal options.",
+    "author": "shrikantwagh",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/shrikantwagh/is-this-safe",
+    "links": [],
+    "tags": [
+      "images",
+      "verification",
+      "shopping"
+    ],
+    "apis": [
+      "Google Lens API",
+      "Google Search API",
+      "Google News API",
+      "Google Shopping API",
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "FitToFly",
+    "description": "Plans wardrobe-inspired vacations with SerpApi flight searches and shopping results for clothing, including detailed product offers.",
+    "author": "Raj Shah",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/ShahRajS/FitToFly",
+    "links": [],
+    "tags": [
+      "travel",
+      "fashion",
+      "flights"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Shopping API",
+      "Google Immersive Product API"
+    ]
+  },
+  {
+    "name": "BillShield",
+    "description": "Reviews hospital bills and searches published procedure prices through SerpApi to support a documented billing-dispute letter.",
+    "author": "chinesepowered",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/chinesepowered/hack-devnet",
+    "links": [],
+    "tags": [
+      "healthcare",
+      "documents",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Grounds",
+    "description": "Audits claims about a company in Google AI Mode and AI Overviews, using SerpApi to inspect citations and seek independent corroborating sources.",
+    "author": "harshwardhan",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/harshwardhan-kp/grounds",
+    "links": [],
+    "tags": [
+      "research",
+      "verification",
+      "seo"
+    ],
+    "apis": [
+      "Google AI Mode API",
+      "Google AI Overview API",
+      "Google Search API",
+      "Google News API",
+      "Google Scholar API",
+      "Google Patents API",
+      "Google Maps API"
+    ],
+    "hostedUrl": "https://grounds-sigma.vercel.app"
+  },
+  {
+    "name": "Amazon FBA Listing Generator",
+    "description": "Researches competing Amazon products, Google results, and autocomplete suggestions through SerpApi to generate product listings and keywords.",
+    "author": "Nitish Mane",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Nitishmane/serp-hack",
+    "links": [],
+    "tags": [
+      "ecommerce",
+      "seo",
+      "shopping"
+    ],
+    "apis": [
+      "Amazon Search API",
+      "Google Search API",
+      "Google Autocomplete API"
+    ]
+  },
+  {
+    "name": "AI Travel Agent",
+    "description": "Uses SerpApi to find flights, airports, hotels, and local places while building a travel itinerary.",
+    "author": "Taanyaa Haridass Prasad",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/taanyaaharidassprasad06/travel-agent",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "hotels"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Flights Autocomplete API",
+      "Google Hotels API",
+      "Google Local API"
+    ],
+    "hostedUrl": "https://travel-agent-olive.vercel.app/"
+  },
+  {
+    "name": "Thermaflow",
+    "description": "Combines boiler and pressure-vessel records with incident reports and local context found through SerpApi to support maintenance investigations.",
+    "author": "king-star-12",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/king-star-12/thermaflow",
+    "links": [],
+    "tags": [
+      "manufacturing",
+      "monitoring",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://thermaflow.clustralai.com"
+  },
+  {
+    "name": "SERPDelta",
+    "description": "Compares an AI assistant's answers with current Google web and news results from SerpApi to highlight outdated or missing information.",
+    "author": "researchsite",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/researchsite/SerpDelta",
+    "links": [],
+    "tags": [
+      "ai",
+      "verification",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://serpdelta-heenqfrqmf3fxfxvkhe8hn.streamlit.app/"
+  },
+  {
+    "name": "hmmm",
+    "description": "Records and organizes spoken ideas, then uses SerpApi's Google Search API to research competitors and attach sources to findings.",
+    "author": "GURKIRAT SINGH",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Gurkirat-Singh-bit/hmmm",
+    "links": [],
+    "tags": [
+      "voice",
+      "productivity",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "AdWatch",
+    "description": "Monitors competitors' advertising and search demand through SerpApi's Google Ads, Ads Transparency, Trends, and Autocomplete APIs.",
+    "author": "Joseph Karns",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/jkarns87/AdWatch",
+    "links": [],
+    "tags": [
+      "advertising",
+      "monitoring",
+      "analytics"
+    ],
+    "apis": [
+      "Google Ads API",
+      "Google Ads Transparency API",
+      "Google Trends API",
+      "Google Autocomplete API"
+    ]
+  },
+  {
+    "name": "ComplyGraph AI",
+    "description": "Extracts invoice fields and cross-checks VAT identifiers against public registry search results from SerpApi before document generation and review.",
+    "author": "AbdulKabir Subair",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/subair99/comply-graph",
+    "links": [],
+    "tags": [
+      "documents",
+      "verification",
+      "invoicing"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Diamond Evidence Gate",
+    "description": "Collects current Google Search evidence through SerpApi for consequential decisions, then records human approval and an audit receipt.",
+    "author": "kiencuongnguyen88",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/kiencuongnguyen88/diamond-evidence-gate",
+    "links": [],
+    "tags": [
+      "verification",
+      "documents",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Still You",
+    "description": "Lets users virtually try wigs, headwear, and eyebrow makeup, then finds related products and prices through SerpApi's Google Shopping API.",
+    "author": "Midhun",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/midhunrajcharles/STILL-YOU",
+    "links": [],
+    "tags": [
+      "beauty",
+      "shopping",
+      "images"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://frontend-theta-five-73.vercel.app/"
+  },
+  {
+    "name": "Proofline",
+    "description": "Researches vendor risks through SerpApi's Google Search API and organizes the sources into decision packets for human review.",
+    "author": "pdrucker48-lab",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/pdrucker48-lab/proofline",
+    "links": [],
+    "tags": [
+      "research",
+      "verification",
+      "procurement"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://proofline-apiworld-2026.pdrucker48.chatgpt.site"
+  },
+  {
+    "name": "SignalOps × SerpApi — Live Evidence Decision Layer",
+    "description": "Retrieves current Google Search evidence through SerpApi, ranks opportunities with AI assistance, and checks policy before an external action.",
+    "author": "lps_atwork",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/leadingproblemsolver/signalops-workbench",
+    "links": [],
+    "tags": [
+      "agent",
+      "research",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://signalops-serpapi-625265193189.me-central1.run.app/"
+  },
+  {
+    "name": "GroundPitch",
+    "description": "Checks time-sensitive marketing claims against current Google Search results from SerpApi before releasing them for human review.",
+    "author": "adamblackoak",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/adamblackoak/groundpitch",
+    "links": [],
+    "tags": [
+      "marketing",
+      "verification",
+      "documents"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Orbit (Web Data Automation)",
+    "description": "Uses SerpApi's Google Search API to discover web sources, then automates data extraction and delivery from a goal described in plain language.",
+    "author": "triumphsystems",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/triumphsystems/orbit",
+    "links": [],
+    "tags": [
+      "automation",
+      "web-data",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://orbit.triumphsystems.tech"
+  },
+  {
+    "name": "ScoutCRM",
+    "description": "Collects company news, hiring signals, and web research through SerpApi to support lead qualification, outreach drafts, and sales pipelines.",
+    "author": "Purav Kanda",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Purav-Kanda/scoutcrm",
+    "links": [],
+    "tags": [
+      "sales",
+      "crm",
+      "leads"
+    ],
+    "apis": [
+      "Google News API",
+      "Google Jobs API",
+      "Google Search API"
+    ],
+    "hostedUrl": "https://scoutcrm-ten.vercel.app"
+  },
+  {
+    "name": "Recuse",
+    "description": "Checks agent-written document claims against SerpApi's Google Search results while reserving signing authorization for a person.",
+    "author": "emmanuelist",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/emmanuelist/recuse",
+    "links": [],
+    "tags": [
+      "documents",
+      "verification",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Relokit",
+    "description": "Checks relocation requirements against SerpApi property listings, local businesses, reviews, and directions to compare places that fit a move.",
+    "author": "projects-hacks",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/projects-hacks/relokit",
+    "links": [],
+    "tags": [
+      "travel",
+      "real-estate",
+      "maps"
+    ],
+    "apis": [
+      "Zillow Search API",
+      "Google Maps API",
+      "Google Maps Directions API",
+      "Google Local API",
+      "Google Maps Reviews API",
+      "Yelp Search API",
+      "Google News API"
+    ],
+    "hostedUrl": "https://relokit-vert.vercel.app"
+  },
+  {
+    "name": "Fleet Command",
+    "description": "Adds market research from SerpApi's Google Search API to an agent-based operations workspace where a person approves proposed changes.",
+    "author": "Brock Falfas",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/thebrockchain/fleetcommand",
+    "links": [],
+    "tags": [
+      "agent",
+      "automation",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://fleetcommand-2u0.pages.dev"
+  },
+  {
+    "name": "Lifecycle Hub",
+    "description": "Combines water-pipe asset records with construction, incident, and local-condition reports found through SerpApi to support failure-risk reviews.",
+    "author": "king-star-12",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/king-star-12/lifecycle-hub",
+    "links": [],
+    "tags": [
+      "infrastructure",
+      "monitoring",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "http://lifecyclehub.clustralai.com"
+  },
+  {
+    "name": "VentureRadar AI",
+    "description": "Evaluates business ideas with SerpApi searches for demand, competitors, and adoption barriers, then assembles the findings into a venture brief.",
+    "author": "babifarah9",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/babifarah9/venture-radar-ai",
+    "links": [],
+    "tags": [
+      "market-research",
+      "startups",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://venture-radar-ai.starmanfarah.chatgpt.site"
+  },
+  {
+    "name": "Charter",
+    "description": "Researches business-name conflicts through SerpApi while preparing a business-formation document packet for owners to review and sign.",
+    "author": "Hriday Vig",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/vighriday/Charter",
+    "links": [],
+    "tags": [
+      "documents",
+      "startups",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://charter-217o.onrender.com"
+  },
+  {
+    "name": "LastTube",
+    "description": "Finds alternatives to discontinued cosmetics and uses SerpApi's Google Shopping API to compare available products, retailers, and prices.",
+    "author": "Kaung Zin Hein",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Zen-cronic/lasttube",
+    "links": [],
+    "tags": [
+      "beauty",
+      "shopping",
+      "product-discovery"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ]
+  },
+  {
+    "name": "PROOFCHAIN - Trusted Document Action Engine",
+    "description": "Checks business-document consistency and uses SerpApi's Google Search API for external corroboration before approving a consequential action.",
+    "author": "Firmin DJIKOLOUM",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/guelmbaye/proofchain",
+    "links": [],
+    "tags": [
+      "documents",
+      "verification",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "PayablePilot",
+    "description": "Prepares invoice reviews and uses SerpApi to research supplier risks when a price discrepancy needs investigation, leaving payment decisions to a person.",
+    "author": "Jonny7171",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Jonny7171/payable-pilot",
+    "links": [],
+    "tags": [
+      "invoicing",
+      "research",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://jonny7171.github.io/payable-pilot/"
+  },
+  {
+    "name": "Launchpad — From Idea to Live Startup in Minutes",
+    "description": "Researches competitors and market news through SerpApi while generating startup landing pages and checking domain availability.",
+    "author": "GUACALITA",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/GUACALITA/launchpad-agent",
+    "links": [],
+    "tags": [
+      "startups",
+      "market-research",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API"
+    ]
+  },
+  {
+    "name": "CeaseFire",
+    "description": "Searches for brand impersonation across SerpApi web, AI, app-store, shopping, map, image, and video results to prioritize investigation and takedown drafts.",
+    "author": "Midhun",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/midhunrajcharles/Ceasefire",
+    "links": [],
+    "tags": [
+      "security",
+      "monitoring",
+      "brand-protection"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google AI Overview API",
+      "Google AI Mode API",
+      "Google Play Store API",
+      "Apple App Store API",
+      "Google Shopping API",
+      "Google Maps API",
+      "YouTube Search API",
+      "Google Images API",
+      "Google Trends API"
+    ],
+    "hostedUrl": "https://frontend-djiexm9zt-samuels-projects-f22dc298.vercel.app/"
+  },
+  {
+    "name": "SignalWatch",
+    "description": "Searches vendor pricing, outages, deprecations, and security reports through SerpApi to prepare cited due-diligence assessments.",
+    "author": "Aditya Yadav",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Officially-aditya/signal-watch",
+    "links": [],
+    "tags": [
+      "monitoring",
+      "research",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://devnetwork-gamma.vercel.app/"
+  },
+  {
+    "name": "AegisFlow",
+    "description": "Investigates procurement incidents using SerpApi searches for external corroboration and prepares evidence for a human decision-maker.",
+    "author": "Tushar Agarwal",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/TusharTechs/aegisflow",
+    "links": [],
+    "tags": [
+      "procurement",
+      "research",
+      "agent"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://aegisflow-ai.vercel.app"
+  },
+  {
+    "name": "VendorProof",
+    "description": "Checks vendor claims with SerpApi's Google Light Search and Google News APIs, then assembles a procurement decision file with cited evidence.",
+    "author": "Simon Lin",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/simonlin1212/vendorproof",
+    "links": [],
+    "tags": [
+      "procurement",
+      "verification",
+      "research"
+    ],
+    "apis": [
+      "Google Light Search API",
+      "Google News API"
+    ],
+    "hostedUrl": "https://vendorproof-web-qjv2kumm3q-as.a.run.app/"
+  },
+  {
+    "name": "Radar Milhas & Viagens",
+    "description": "Retrieves current fares through SerpApi's Google Flights API and compares cash prices with the value of points and miles.",
+    "author": "ibcorreaai-oss",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/ibcorreaai-oss/radar-milhas-viagens",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Flights API"
+    ],
+    "hostedUrl": "https://radar-milhas-viagens.vercel.app"
+  },
+  {
+    "name": "CounterSign",
+    "description": "Investigates supplier invoices using SerpApi web, news, and address searches while reserving signing and payment decisions for people.",
+    "author": "Carlos Sanoja",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/CarSanoja/countersign",
+    "links": [],
+    "tags": [
+      "invoicing",
+      "security",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API",
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "Radar",
+    "description": "Combines SerpApi web searches, news, and Google Maps listings into a cited competitive-intelligence brief about a company or product.",
+    "author": "Deepak Kambala",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/DeepakKambala/Radar",
+    "links": [],
+    "tags": [
+      "market-research",
+      "news",
+      "research"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API",
+      "Google Maps API"
+    ],
+    "hostedUrl": "https://radar-delta-inky.vercel.app"
+  },
+  {
+    "name": "ClinicalBrief AI (by LearnHive Labs)",
+    "description": "Uses SerpApi's Google Scholar API to retrieve clinical research and guidelines for briefs based on patient lab inputs and subject to clinician review.",
+    "author": "Uday Shankar Bhowal",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/udaytx009/ClinicalbriefAI",
+    "links": [],
+    "tags": [
+      "healthcare",
+      "research",
+      "automation"
+    ],
+    "apis": [
+      "Google Scholar API"
+    ]
+  },
+  {
+    "name": "Signet",
+    "description": "Uses SerpApi to identify a company's public domain, then checks invoice provenance and payment fields against signatures and domain-published keys.",
+    "author": "projects-hacks",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/projects-hacks/signet",
+    "links": [],
+    "tags": [
+      "documents",
+      "security",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://signet-lime.vercel.app"
+  },
+  {
+    "name": "Glow Proof",
+    "description": "Combines skin analysis with current product and retailer results from SerpApi's Google Shopping API to suggest a skincare shopping list.",
+    "author": "harrymakoni-netizen",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/harrymakoni-netizen/glow-proof",
+    "links": [],
+    "tags": [
+      "beauty",
+      "shopping",
+      "product-discovery"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://glow-proof.vercel.app/"
+  },
+  {
+    "name": "ClauseProof",
+    "description": "Checks contract counterparties against SerpApi's Google Search results and attaches the evidence to proposed changes for human approval.",
+    "author": "wraithsupplements",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/wraithsupplements/clauseproof-webmcp",
+    "links": [],
+    "tags": [
+      "documents",
+      "verification",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://clauseproof-webmcp.netlify.app"
+  },
+  {
+    "name": "VeriNews AI",
+    "description": "Audits news claims with SerpApi searches across Google Search, News, Scholar, and Patents, then presents a sourced assessment.",
+    "author": "Antonio Carlos Borges Neto",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/fafnirkyu/verinewsai",
+    "links": [],
+    "tags": [
+      "fact-checking",
+      "news",
+      "research"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API",
+      "Google Scholar API",
+      "Google Patents API"
+    ],
+    "hostedUrl": "https://verinewsai-3qdgmhefxyocegud7gwlm7.streamlit.app/"
+  },
+  {
+    "name": "typo.watch",
+    "description": "Finds domains resembling a brand and uses SerpApi's Google Search API to check whether suspicious domains appear in search results.",
+    "author": "millerandmuller",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/millerandmuller/typo-watch",
+    "links": [],
+    "tags": [
+      "security",
+      "domains",
+      "monitoring"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://typo.watch"
+  },
+  {
+    "name": "Overturn",
+    "description": "Finds official health-insurance rules through SerpApi to check denial letters and prepare a sourced appeal for human review.",
+    "author": "Ashraf",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/AshrafAhmed9/overturn-devnetwork-hackathon-2026",
+    "links": [],
+    "tags": [
+      "insurance",
+      "documents",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://overturn-devnetwork-hackathon-2026.vercel.app"
+  },
+  {
+    "name": "DEALCLOSE",
+    "description": "Researches property details and comparable listings through SerpApi before drafting real-estate documents for human authorization.",
+    "author": "hashmessi",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/hashmessi/DealClose",
+    "links": [],
+    "tags": [
+      "real-estate",
+      "documents",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://deal-close-plum.vercel.app"
+  },
+  {
+    "name": "BrandProof",
+    "description": "Combines beauty-product documents and launch materials with current product offers retrieved through SerpApi's Google Shopping API.",
+    "author": "aviad12g",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/aviad12g/brandproof-devnetwork-2026",
+    "links": [],
+    "tags": [
+      "beauty",
+      "marketing",
+      "shopping"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://aviad12g.github.io/brandproof-devnetwork-2026/"
+  },
+  {
+    "name": "FacTruth",
+    "description": "Checks submitted claims against Google Search and Google News results from SerpApi, then presents a verdict with supporting sources.",
+    "author": "Aditya Kamath",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Adity-kamath/FacTruth",
+    "links": [],
+    "tags": [
+      "fact-checking",
+      "news",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API"
+    ],
+    "hostedUrl": "https://factruth-zn0v.onrender.com"
+  },
+  {
+    "name": "Grant Scout",
+    "description": "Finds funding opportunities through SerpApi's Google Search API and turns the results into recommendations with source links.",
+    "author": "ARKNET DIGITAL",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/jayblast-spec/grant-scout",
+    "links": [],
+    "tags": [
+      "funding",
+      "startups",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://grant-scout-jayblast.vercel.app"
+  },
+  {
+    "name": "LiveLLM",
+    "description": "Uses SerpApi to discover current economic information, verify official sources, and maintain a fact ledger for autonomous agents.",
+    "author": "tom",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/prx0r/livellm",
+    "links": [],
+    "tags": [
+      "agent",
+      "research",
+      "market-data"
+    ],
+    "apis": [
+      "Google Light Search API",
+      "Google News Light API",
+      "Google News API",
+      "Search Index"
+    ],
+    "hostedUrl": "https://livellm.tradesprior.workers.dev/"
+  },
+  {
+    "name": "PatchSignal",
+    "description": "Uses SerpApi's Google AI Mode and Google Search APIs to research developer incidents and inspect the authority of cited sources.",
+    "author": "Hyunsik Parker",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/HyunsikParker/patchsignal",
+    "links": [],
+    "tags": [
+      "developer-tools",
+      "research",
+      "verification"
+    ],
+    "apis": [
+      "Google AI Mode API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "PriceVerdict",
+    "description": "Retrieves current Google Shopping offers through SerpApi, matches product variants, and applies pricing rules to assess a quoted price.",
+    "author": "xariskrigkos",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/xariskrigkos/priceverdict",
+    "links": [],
+    "tags": [
+      "shopping",
+      "price-comparison",
+      "verification"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://priceverdict.vercel.app/"
+  },
+  {
+    "name": "Unspun: Search Without Sales Pitch",
+    "description": "Searches Reddit discussions and current shopping offers through SerpApi to support product research with sources and price comparisons.",
+    "author": "Galih Kusuma Wijaya",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/galihkjaya/unspun",
+    "links": [],
+    "tags": [
+      "shopping",
+      "research",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://unspun-v.vercel.app/"
+  },
+  {
+    "name": "Document Trust Gate",
+    "description": "Extracts document evidence and cross-checks claims through SerpApi's Google Search API before routing consequential decisions for human approval.",
+    "author": "Bryan",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/equinoxaifinance-rgb/document-trust-gate",
+    "links": [],
+    "tags": [
+      "documents",
+      "verification",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "ClearSpace AI: Intelligent, Privacy-First Storage Assistant",
+    "description": "Finds duplicate media and large phone files, with storage advice informed by SerpApi's Google AI Mode API before user-approved cleanup.",
+    "author": "盧露",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/lucylow/storage-cleaner-mobile",
+    "links": [],
+    "tags": [
+      "productivity",
+      "ai",
+      "research"
+    ],
+    "apis": [
+      "Google AI Mode API"
+    ]
+  },
+  {
+    "name": "Orbit (Conference Discovery)",
+    "description": "Enriches conference speaker and company records with SerpApi's Google Search results to help attendees discover relevant people and sessions.",
+    "author": "Hafsa Nawaz",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/hnawaz2025/orbit",
+    "links": [],
+    "tags": [
+      "events",
+      "discovery",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Skin to Shelf",
+    "description": "Builds skincare routines and shopping baskets from skin-analysis results, using SerpApi's Google Shopping API for product offers and prices.",
+    "author": "nickillig3-dotcom",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/nickillig3-dotcom/skin-to-shelf",
+    "links": [],
+    "tags": [
+      "beauty",
+      "shopping",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ]
+  },
+  {
+    "name": "Rack",
+    "description": "Identifies clothing with Google Lens and researches shopping offers, eBay listings, and demand through SerpApi to support resale pricing.",
+    "author": "Sidharth Nair",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/sidharthnair7/Rack",
+    "links": [],
+    "tags": [
+      "fashion",
+      "images",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Lens API",
+      "Google Shopping API",
+      "eBay Search API",
+      "Google Trends API"
+    ]
+  },
+  {
+    "name": "Baseline",
+    "description": "Finds skincare product claims through SerpApi's Google Search API and compares repeated skin measurements to assess changes during a routine.",
+    "author": "Jacobo Posada",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Jacobopp27/baseline",
+    "links": [],
+    "tags": [
+      "beauty",
+      "research",
+      "analytics"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Ignition",
+    "description": "Researches startup ideas through SerpApi's Google Search API and assembles cited findings, a viability assessment, and a follow-up work plan.",
+    "author": "king-star-12",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/king-star-12/ignition",
+    "links": [],
+    "tags": [
+      "startups",
+      "market-research",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "http://ignition.clustralai.com"
+  },
+  {
+    "name": "MirrorMuse AI — Autonomous Beauty & AR Concierge",
+    "description": "Combines virtual beauty try-ons and skin analysis with product recommendations informed by SerpApi's Google Shopping results.",
+    "author": "Michael Marquis",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/QuisTech/MirrorMuse_AI",
+    "links": [],
+    "tags": [
+      "beauty",
+      "shopping",
+      "images"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://mirrormuse-ai.vercel.app"
+  },
+  {
+    "name": "PatentPincer",
+    "description": "Searches patents, patent claim details, and academic literature through SerpApi to prepare a cited preliminary patentability assessment.",
+    "author": "doom2quake",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/doom2quake/patentpincer",
+    "links": [],
+    "tags": [
+      "patents",
+      "research",
+      "verification"
+    ],
+    "apis": [
+      "Google Patents API",
+      "Google Patents Details API",
+      "Google Scholar API"
+    ],
+    "hostedUrl": "https://doom2quake.github.io/patentpincer/ui/"
+  },
+  {
+    "name": "AlonTrip",
+    "description": "Plans East Asian trips with transit information and itineraries, using SerpApi's Google Maps API to discover attractions and other places.",
+    "author": "alonuniverse",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/alon1997/alontrip",
+    "links": [],
+    "tags": [
+      "travel",
+      "maps",
+      "itinerary"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "hostedUrl": "https://alonuniverse.com/trip/"
+  },
+  {
+    "name": "Grid Guardian Intel",
+    "description": "Adds SerpApi news and web searches to industrial-device and vulnerability investigations, producing source-linked security briefs.",
+    "author": "Impactquadrant",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/icohangar-ops/grid-guardian-intel",
+    "links": [],
+    "tags": [
+      "security",
+      "news",
+      "research"
+    ],
+    "apis": [
+      "Google News API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Civis RJ - Predictive Command Center",
+    "description": "Supports public-works audits and delay investigations with relevant Brazilian news retrieved through SerpApi's Google News API.",
+    "author": "Rodrigo Carvalho",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/Rodrigo5431/civis-rj_hackaton",
+    "links": [],
+    "tags": [
+      "infrastructure",
+      "news",
+      "analytics"
+    ],
+    "apis": [
+      "Google News API"
+    ],
+    "hostedUrl": "https://civis-analytics.netlify.app/"
+  },
+  {
+    "name": "Time-Out",
+    "description": "Uses SerpApi to research practitioner credentials, procedure evidence, and product records before a cosmetic-procedure safety review.",
+    "author": "Ujwal Suresh Vanjare",
+    "dateAdded": "2026-09-09",
+    "githubUrl": "https://github.com/usv240/time-out",
+    "links": [],
+    "tags": [
+      "healthcare",
+      "research",
+      "verification"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://timeout-prod-74602b-x6g0-xqak-a8ri.n7e.xano.io"
   }
 ]
