@@ -2542,23 +2542,6 @@
     "hostedUrl": "https://vendorproof-web-qjv2kumm3q-as.a.run.app/"
   },
   {
-    "name": "Radar Milhas & Viagens",
-    "description": "Retrieves current fares through SerpApi's Google Flights API and compares cash prices with the value of points and miles.",
-    "author": "ibcorreaai-oss",
-    "dateAdded": "2026-09-09",
-    "githubUrl": "https://github.com/ibcorreaai-oss/radar-milhas-viagens",
-    "links": [],
-    "tags": [
-      "travel",
-      "flights",
-      "price-comparison"
-    ],
-    "apis": [
-      "Google Flights API"
-    ],
-    "hostedUrl": "https://radar-milhas-viagens.vercel.app"
-  },
-  {
     "name": "CounterSign",
     "description": "Investigates supplier invoices using SerpApi web, news, and address searches while reserving signing and payment decisions for people.",
     "author": "Carlos Sanoja",
@@ -3076,5 +3059,70 @@
       "Google Search API"
     ],
     "hostedUrl": "https://timeout-prod-74602b-x6g0-xqak-a8ri.n7e.xano.io"
+  },
+  {
+    "name": "Giftly",
+    "description": "Generates gift recommendations from a recipient description and budget, then uses SerpApi's Google Shopping API to retrieve real products, prices, images, and shopping links.",
+    "author": "Niyor Gogoi",
+    "dateAdded": "2026-09-12",
+    "githubUrl": "https://github.com/niyor1/giftly",
+    "links": [],
+    "tags": [
+      "shopping",
+      "recommendations"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "hostedUrl": "https://giftly-green.vercel.app/"
+  },
+  {
+    "name": "VERITAS FORENSICS",
+    "description": "Finds public visual matches through SerpApi's Google Lens API, compares candidate faces, and registers SHA-256 evidence fingerprints on a local blockchain for later tamper checks.",
+    "author": "Prasiddh Singh",
+    "dateAdded": "2026-09-12",
+    "githubUrl": "https://github.com/Prasiddh2140/face-recognition",
+    "links": [],
+    "tags": [
+      "images",
+      "verification",
+      "blockchain"
+    ],
+    "apis": [
+      "Google Lens API"
+    ]
+  },
+  {
+    "name": "ScoutAI",
+    "description": "Searches the web for jobs and internships through SerpApi's Google Search API, then ranks results against the user's education, skills, interests, and search goals.",
+    "author": "Raghavendra Rathod",
+    "dateAdded": "2026-09-12",
+    "githubUrl": "https://github.com/RaghavendraRathod/ScoutAI",
+    "links": [],
+    "tags": [
+      "jobs",
+      "search",
+      "matching"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://scout-ai-ecru.vercel.app/"
+  },
+  {
+    "name": "SybilWatch",
+    "description": "Uses SerpApi's Google Lens API to find public instances of a profile photo, then anchors evidence hashes on a local blockchain for later integrity checks.",
+    "author": "ATHMABHIRAM S J",
+    "dateAdded": "2026-09-12",
+    "githubUrl": "https://github.com/athmabhiram1/hhgoa_task3",
+    "links": [],
+    "tags": [
+      "images",
+      "security",
+      "blockchain"
+    ],
+    "apis": [
+      "Google Lens API"
+    ]
   }
 ]
