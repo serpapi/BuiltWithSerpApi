@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("projectPermalink", function (project) {
-    return `/projects/${slugify(project.name)}/`;
+    return `/projects/${project.slug || slugify(project.name)}/`;
   });
 
   eleventyConfig.addFilter("readableDate", function (value) {

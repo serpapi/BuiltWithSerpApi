@@ -4,7 +4,7 @@ pagination:
   data: projects
   size: 1
   alias: projectEntry
-permalink: "/projects/{{ projectEntry.name | slug }}/"
+permalink: "{{ projectEntry | projectPermalink }}"
 eleventyComputed:
   title: "{{ projectEntry.name }} by {{ projectEntry.author }} | #BuiltWithSerpApi"
   description: "{{ projectEntry.description }}"
