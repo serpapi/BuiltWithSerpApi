@@ -3371,5 +3371,107 @@
     "apis": [
       "Google Search API"
     ]
+  },
+  {
+    "name": "MarketRadar",
+    "description": "Analyzes products, competitors, nearby retailers, and live prices using SerpApi's Google Search, Google Maps, and Google Shopping APIs.",
+    "author": "Batchu Shyam Kumar",
+    "dateAdded": "2026-10-04",
+    "githubUrl": "https://github.com/Shyambatchu/MarketRadar",
+    "links": [],
+    "tags": [
+      "market-research",
+      "shopping",
+      "comparison"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Shopping API"
+    ]
+  },
+  {
+    "name": "TripPilot AI",
+    "description": "Researches destinations through SerpApi's Google Search API, creates personalized multi-day itineraries by budget and travel style, and exports them as calendar files.",
+    "author": "Iliass El Guaari",
+    "dateAdded": "2026-10-04",
+    "githubUrl": "https://github.com/iliass-elguaari/TripPilot-AI",
+    "links": [],
+    "tags": [
+      "travel",
+      "itinerary",
+      "planning"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "hostedUrl": "https://trippilot-ai-meepsrhytfe9nnb2q2rabr.streamlit.app/"
+  },
+  {
+    "name": "AI YouTube Idea Generator",
+    "description": "Combines SerpApi's Google Trends API with YouTube Data API video research, then uses AI to suggest video ideas for a chosen topic and audience.",
+    "author": "Rohit Kumar",
+    "dateAdded": "2026-10-04",
+    "githubUrl": "https://github.com/rohit-thecoder/Youtube-Ai-generator",
+    "links": [],
+    "tags": [
+      "youtube",
+      "trends",
+      "ideation"
+    ],
+    "apis": [
+      "Google Trends API"
+    ],
+    "hostedUrl": "https://youtube-ai-generator-1.onrender.com/"
+  },
+  {
+    "name": "ResearchMate",
+    "description": "Searches the web through SerpApi's Google Search API, organizes source titles, links, and snippets, and stores recent searches for quick revisiting.",
+    "author": "Bhumi Sharma",
+    "dateAdded": "2026-10-04",
+    "githubUrl": "https://github.com/bhumi-learning/ResearchMate",
+    "links": [],
+    "tags": [
+      "research",
+      "search",
+      "organization"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "AppTrail",
+    "description": "Open-source app visibility tracking for App Store and Google Play rankings, listing changes, and mentions and citations across Google AI Mode, Google AI Overviews, and Bing Copilot.",
+    "author": "SerpApi Team",
+    "dateAdded": "2026-09-29",
+    "githubUrl": "https://github.com/serpapi/apptrail",
+    "featured": true,
+    "links": [
+      {
+        "label": "PyPI",
+        "url": "https://pypi.org/project/apptrail/"
+      },
+      {
+        "label": "Docker Hub",
+        "url": "https://hub.docker.com/r/serpapi/apptrail"
+      }
+    ],
+    "tags": [
+      "featured",
+      "monitoring",
+      "app-stores",
+      "ai-search"
+    ],
+    "apis": [
+      "Apple App Store API",
+      "Apple App Store Product API",
+      "Google Play Store API",
+      "Google Play Product API",
+      "Google Search API",
+      "Google AI Mode API",
+      "Google AI Overview API",
+      "Bing Copilot API"
+    ]
   }
 ]
