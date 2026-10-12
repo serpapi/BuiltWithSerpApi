@@ -1249,7 +1249,8 @@ a:hover {
 
 .project-detail-hero {
   position: relative;
-  padding: 30px 0 58px;
+  margin-top: 24px;
+  padding: 30px 0 44px;
   overflow: hidden;
   color: #ffffff;
   background:
@@ -1275,7 +1276,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 9px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   color: rgba(255, 255, 255, 0.66);
   font-size: 0.84rem;
   font-weight: 800;
@@ -1295,9 +1296,9 @@ a:hover {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 290px);
-  gap: clamp(30px, 7vw, 90px);
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
 }
 
 .project-detail-label,
@@ -1320,18 +1321,23 @@ a:hover {
   max-width: 850px;
   margin: 16px 0 0;
   color: #ffffff;
-  font-size: clamp(3.2rem, 8vw, 6.8rem);
-  line-height: 0.9;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  line-height: 1.02;
   letter-spacing: -0.035em;
   overflow-wrap: anywhere;
 }
 
 .project-detail-summary {
   max-width: 760px;
-  margin: 24px 0 0;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
-  line-height: 1.58;
+  margin: 28px 0 0;
+  padding: 18px 22px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: clamp(1.12rem, 2vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.65;
 }
 
 .project-detail-byline,
@@ -1354,41 +1360,119 @@ a:hover {
 }
 
 .project-detail-actions {
-  margin-top: 30px;
+  gap: 12px;
+  margin-top: 26px;
 }
 
-.project-detail-stamp {
+.project-detail-actions .button {
+  color: var(--brand-purple);
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.project-detail-actions .button:hover {
+  background: var(--paper-deep);
+  border-color: var(--paper-deep);
+}
+
+.project-detail-actions .button-secondary {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.project-detail-actions .button-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.project-detail-meta {
   display: grid;
+  gap: 22px;
+  padding: 24px;
   background: rgba(255, 255, 255, 0.09);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius);
-  box-shadow: 0 22px 60px rgba(18, 12, 51, 0.2);
-  backdrop-filter: blur(12px);
 }
 
-.project-detail-stamp div {
-  display: grid;
-  grid-template-columns: minmax(56px, auto) 1fr;
-  gap: 14px;
-  align-items: center;
-  padding: 18px;
+.project-detail-meta-group h2 {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
-.project-detail-stamp div + div {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+.project-detail-meta .meta-group {
+  margin: 0;
 }
 
-.project-detail-stamp strong {
+.project-detail-meta .chip:not(.event-chip) {
   color: #ffffff;
-  font-size: 1.35rem;
-  line-height: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.project-detail-meta .chip:not(.event-chip) .icon {
+  color: currentColor;
+}
+
+.project-detail-meta .chip:not(.event-chip):hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.project-detail-meta-links {
+  display: grid;
+  gap: 4px;
+}
+
+.project-detail-meta-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 700;
   overflow-wrap: anywhere;
 }
 
-.project-detail-stamp span {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 0.82rem;
-  font-weight: 800;
+.project-detail-meta-links .icon-external-link {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  opacity: 0.9;
+}
+
+.project-detail-meta-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project-detail-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-detail-count {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 6px 10px;
+  color: var(--brand-purple);
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 1.15rem;
+  font-weight: 900;
 }
 
 .project-detail-content {
@@ -1404,7 +1488,7 @@ a:hover {
 .project-detail-panel,
 .project-detail-resources,
 .project-detail-cta {
-  padding: clamp(22px, 4vw, 34px);
+  padding: clamp(22px, 3vw, 28px);
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1426,13 +1510,13 @@ a:hover {
 .project-detail-cta h2 {
   margin: 9px 0 0;
   color: var(--ink);
-  font-size: clamp(1.6rem, 3vw, 2.25rem);
-  line-height: 1.02;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.15;
 }
 
 .project-detail-panel .api-row,
 .project-detail-panel .meta-group {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .project-detail-resources,
@@ -1540,19 +1624,6 @@ a:hover {
   .listing,
   .project-detail-hero-grid {
     grid-template-columns: 1fr;
-  }
-
-  .project-detail-stamp {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .project-detail-stamp div {
-    grid-template-columns: 1fr;
-  }
-
-  .project-detail-stamp div + div {
-    border-top: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.16);
   }
 
   .intro-card,
@@ -1724,7 +1795,12 @@ a:hover {
   }
 
   .project-detail-hero {
+    margin-top: 16px;
     padding: 22px 0 42px;
+  }
+
+  .project-detail-summary {
+    padding: 16px 18px;
   }
 
   .project-breadcrumbs {
@@ -1732,20 +1808,11 @@ a:hover {
   }
 
   .project-detail-intro h1 {
-    font-size: clamp(2.8rem, 15vw, 4.8rem);
+    font-size: clamp(2.6rem, 12vw, 3.6rem);
   }
 
-  .project-detail-stamp {
-    grid-template-columns: 1fr;
-  }
-
-  .project-detail-stamp div {
-    grid-template-columns: minmax(56px, auto) 1fr;
-  }
-
-  .project-detail-stamp div + div {
-    border-top: 1px solid rgba(255, 255, 255, 0.16);
-    border-left: 0;
+  .project-detail-meta {
+    padding: 20px;
   }
 }
 

@@ -10,6 +10,9 @@ eleventyComputed:
   description: "{{ projectEntry.description }}"
 ---
 
+{% set projectTopicTags = projectEntry | projectTags %}
+{% set projectEventNames = projectEntry | projectEvents %}
+
 <section class="project-detail-hero">
   <span class="project-detail-mark" aria-hidden="true">#</span>
   <div class="shell">
@@ -38,24 +41,44 @@ eleventyComputed:
           {% if projectEntry.hostedUrl %}
             <a class="button" href="{{ projectEntry.hostedUrl }}" target="_blank" rel="noopener noreferrer">{% icon "rocket" %}Open project</a>
           {% endif %}
-          <a class="button button-secondary" href="{{ projectEntry.githubUrl }}" target="_blank" rel="noopener noreferrer">{% icon "github" %}View source</a>
+          <a class="button{% if projectEntry.hostedUrl %} button-secondary{% endif %}" href="{{ projectEntry.githubUrl }}" target="_blank" rel="noopener noreferrer">{% icon "github" %}View source</a>
         </div>
       </div>
 
-      <aside class="project-detail-stamp" aria-label="Project summary">
-        <div>
-          <strong>{{ projectEntry.apis | length }}</strong>
-          <span>SerpApi engine{% if projectEntry.apis | length != 1 %}s{% endif %}</span>
-        </div>
-        <div>
-          <strong>{{ projectEntry | projectTags | length }}</strong>
-          <span>Idea tag{% if (projectEntry | projectTags | length) != 1 %}s{% endif %}</span>
-        </div>
-        <div>
-          <strong>{{ projectEntry.githubUrl | domain }}</strong>
-          <span>Source host</span>
-        </div>
-      </aside>
+      {% if projectTopicTags.length or projectEventNames.length or (projectEntry.links and projectEntry.links.length) %}
+        <aside class="project-detail-meta" aria-label="Project tags and links">
+          {% if projectEventNames.length %}
+            <div class="project-detail-meta-group">
+              <h2>Events</h2>
+              <div class="meta-group">
+                {% for event in projectEventNames %}
+                  <a class="chip event-chip" href="{{ ('/events/' + (event | slug) + '/') | url }}">{% icon "calendar" %}{{ event }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+          {% if projectTopicTags.length %}
+            <div class="project-detail-meta-group">
+              <h2>Tags</h2>
+              <div class="meta-group">
+                {% for tag in projectTopicTags %}
+                  <a class="chip" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">{% icon "tag" %}{{ tag }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+          {% if projectEntry.links and projectEntry.links.length %}
+            <div class="project-detail-meta-group">
+              <h2>Additional links</h2>
+              <div class="project-detail-meta-links">
+                {% for link in projectEntry.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{% icon "link" %}{{ link.label }}{% include "icons/external-link.svg" %}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </aside>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -63,8 +86,13 @@ eleventyComputed:
 <section class="project-detail-content shell">
   <div class="project-detail-grid">
     <section class="project-detail-panel">
-      <p class="project-detail-eyebrow">Search stack</p>
-      <h2>SerpApi engines used</h2>
+      <div class="project-detail-panel-heading">
+        <div>
+          <p class="project-detail-eyebrow">Search stack</p>
+          <h2>SerpApi engines used</h2>
+        </div>
+        <span class="project-detail-count" aria-label="{{ projectEntry.apis | length }} SerpApi engine{% if projectEntry.apis | length != 1 %}s{% endif %}">{{ projectEntry.apis | length }}</span>
+      </div>
       <div class="api-row" aria-label="SerpApi APIs used">
         {% for api in projectEntry.apis %}
           <a class="api-pill" href="{{ ('/apis/' + (api | slug) + '/') | url }}">{% icon "api" %}{{ api }}</a>
@@ -73,9 +101,13 @@ eleventyComputed:
     </section>
 
     <section class="project-detail-panel">
-      <p class="project-detail-eyebrow">Project themes</p>
-      <h2>Browse related ideas</h2>
-      {% set projectEventNames = projectEntry | projectEvents %}
+      <div class="project-detail-panel-heading">
+        <div>
+          <p class="project-detail-eyebrow">Project themes</p>
+          <h2>Browse related ideas</h2>
+        </div>
+        <span class="project-detail-count" aria-label="{{ projectTopicTags | length }} tag{% if projectTopicTags.length != 1 %}s{% endif %}">{{ projectTopicTags | length }}</span>
+      </div>
       {% if projectEventNames.length %}
         <div class="event-row" aria-label="Project events">
           <span class="event-label">Events</span>
@@ -86,7 +118,7 @@ eleventyComputed:
       {% endif %}
 
       <div class="meta-group" aria-label="Project tags">
-        {% for tag in projectEntry | projectTags %}
+        {% for tag in projectTopicTags %}
           <a class="chip" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">{% icon "tag" %}{{ tag }}</a>
         {% endfor %}
       </div>
