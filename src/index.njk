@@ -27,7 +27,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
         </a>
         <a href="{{ '/tags/' | url }}">
           <span class="stat-icon">{% icon "tag" %}</span>
-          <strong>{{ projects | allTags | length }}</strong>
+          <strong>{{ projects | allTags | topicTags(events) | length }}</strong>
           <span>idea tags</span>
         </a>
       </div>
@@ -35,6 +35,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
       <div class="rail-card browse-card-rail">
         <h2>{% icon "search" %}Browse fast</h2>
         <div class="side-links">
+          <a href="{{ '/events/' | url }}"><span>{% icon "calendar" %}All events</span></a>
           <a href="{{ '/tags/' | url }}"><span>{% icon "tag" %}All tags</span></a>
           <a href="{{ '/apis/' | url }}"><span>{% icon "api" %}All engines</span></a>
         </div>
@@ -77,13 +78,27 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
                     <button class="filter-done" type="button" data-filter-close>Done</button>
                   </div>
 
+                  <fieldset class="api-filter-fieldset event-filter-fieldset">
+                    <legend>Events</legend>
+                    <p>Browse projects from a conference or hackathon.</p>
+                    <div class="api-filter-list">
+                      {% for event in events %}
+                        <label class="api-filter-option">
+                          <input type="checkbox" value="{{ event }}" data-event-filter>
+                          <span>{{ event }}</span>
+                          <small>{{ projects | projectsByEvent(event) | length }}</small>
+                        </label>
+                      {% endfor %}
+                    </div>
+                  </fieldset>
+
                   <form class="tag-filter-form" data-tag-filter-form novalidate>
                     <label for="project-tag-filter">Tags</label>
                     <p>Start typing, then choose a suggested tag.</p>
                     <div class="tag-filter-entry">
                       <input id="project-tag-filter" type="search" list="project-tag-options" placeholder="Try seo or travel" autocomplete="off" data-tag-filter-input>
                       <datalist id="project-tag-options" data-tag-options>
-                        {% for tag in tags %}
+                        {% for tag in tags | topicTags(events) %}
                           <option value="{{ tag }}"></option>
                         {% endfor %}
                       </datalist>
@@ -178,7 +193,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
       <section class="filter-empty-state" data-filter-empty-state hidden>
         <span class="filter-empty-icon">{% icon "search" %}</span>
         <h3>No projects match those filters</h3>
-        <p>Try another tag or API, or clear the current filters to restore the full feed.</p>
+        <p>Try another event, tag, or API, or clear the current filters to restore the full feed.</p>
         <button class="button" type="button" data-filter-clear>Clear filters</button>
       </section>
 
@@ -195,6 +210,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           const tagOptions = document.querySelector("[data-tag-options]");
           const tagError = document.querySelector("[data-tag-filter-error]");
           const selectedTagList = document.querySelector("[data-selected-tags]");
+          const eventInputs = Array.from(document.querySelectorAll("[data-event-filter]"));
           const apiInputs = Array.from(document.querySelectorAll("[data-api-filter]"));
           const clearButtons = Array.from(document.querySelectorAll("[data-filter-clear]"));
           const closeButton = document.querySelector("[data-filter-close]");
@@ -213,7 +229,9 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           )));
           const selectedTags = new Set();
           const selectedApis = new Set();
+          const selectedEvents = new Set();
           const facets = new Map(projects.map((project) => [project, {
+            events: new Set(JSON.parse(decodeURIComponent(project.dataset.projectEvents || "%5B%5D"))),
             tags: new Set(JSON.parse(decodeURIComponent(project.dataset.projectTags || "%5B%5D"))),
             apis: new Set(JSON.parse(decodeURIComponent(project.dataset.projectApis || "%5B%5D")))
           }]));
@@ -253,13 +271,14 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
             return ordered;
           };
 
-          const hasActiveFilters = () => selectedTags.size > 0 || selectedApis.size > 0;
+          const hasActiveFilters = () => selectedTags.size > 0 || selectedApis.size > 0 || selectedEvents.size > 0;
 
           const projectMatchesFilters = (project) => {
             const projectFacets = facets.get(project);
             const matchesTags = selectedTags.size === 0 || [...selectedTags].some((tag) => projectFacets.tags.has(tag));
             const matchesApis = selectedApis.size === 0 || [...selectedApis].some((api) => projectFacets.apis.has(api));
-            return matchesTags && matchesApis;
+            const matchesEvents = selectedEvents.size === 0 || [...selectedEvents].some((event) => projectFacets.events.has(event));
+            return matchesTags && matchesApis && matchesEvents;
           };
 
           const renderSelectedTags = () => {
@@ -285,7 +304,7 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           };
 
           const renderFilterCount = () => {
-            const count = selectedTags.size + selectedApis.size;
+            const count = selectedTags.size + selectedApis.size + selectedEvents.size;
             filterCount.textContent = String(count);
             filterCount.hidden = count === 0;
             filterDetails.classList.toggle("has-filters", count > 0);
@@ -356,6 +375,14 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
             tagInput.focus();
           });
 
+          eventInputs.forEach((input) => {
+            input.addEventListener("change", () => {
+              if (input.checked) selectedEvents.add(input.value);
+              else selectedEvents.delete(input.value);
+              renderFeed();
+            });
+          });
+
           apiInputs.forEach((input) => {
             input.addEventListener("change", () => {
               if (input.checked) selectedApis.add(input.value);
@@ -367,6 +394,8 @@ description: "Browse SerpApi powered apps, agents, dashboards, monitors, and exp
           const clearFilters = () => {
             selectedTags.clear();
             selectedApis.clear();
+            selectedEvents.clear();
+            eventInputs.forEach((input) => { input.checked = false; });
             apiInputs.forEach((input) => { input.checked = false; });
             tagInput.value = "";
             clearTagError();

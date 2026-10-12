@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=20260810-project-filters' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=20261012-event-filters' | url }}">
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
@@ -41,6 +41,7 @@
           <span>{{ site.name }}</span>
         </a>
         <div class="nav-links">
+          <a href="{{ '/events/' | url }}">{% icon "calendar" %}Events</a>
           <a href="{{ '/tags/' | url }}">{% icon "tag" %}Tags</a>
           <a href="{{ '/apis/' | url }}">{% icon "hub" %}Engines</a>
           <a href="{{ site.docs }}" target="_blank" rel="noopener noreferrer">{% icon "book" %}Docs</a>

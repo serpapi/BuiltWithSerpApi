@@ -1,4 +1,4 @@
-<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}" data-project-tags="{{ project.tags | encodeFacetValues }}" data-project-apis="{{ project.apis | encodeFacetValues }}"{% endif %}>
+<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}" data-project-tags="{{ project | projectTags | encodeFacetValues }}" data-project-events="{{ project | projectEvents | encodeFacetValues }}" data-project-apis="{{ project.apis | encodeFacetValues }}"{% endif %}>
   <div class="project-kicker">
     <span>
       {% if project.featured %}
@@ -18,8 +18,18 @@
 
   <p class="project-description">{{ project.description }}</p>
 
+  {% set projectEventNames = project | projectEvents %}
+  {% if projectEventNames.length %}
+    <div class="event-row" aria-label="Project events">
+      <span class="event-label">Events</span>
+      {% for event in projectEventNames %}
+        <a class="chip event-chip" href="{{ ('/events/' + (event | slug) + '/') | url }}">{% icon "calendar" %}{{ event }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
   <div class="meta-group" aria-label="Project tags">
-    {% for tag in project.tags %}
+    {% for tag in project | projectTags %}
       <a class="chip" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">{% icon "tag" %}{{ tag }}</a>
     {% endfor %}
   </div>

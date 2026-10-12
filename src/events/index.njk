@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: "Browse Events | #BuiltWithSerpApi"
+description: "Browse SerpApi projects from hackathons, conferences, and community events."
+---
+
+<section class="browse-hero">
+  <div class="shell">
+    <h1>Browse by event</h1>
+    <p>Explore projects from hackathons, conferences, and community events.</p>
+  </div>
+</section>
+
+<section class="shell browse-grid">
+  {% for event in events %}
+    <a class="browse-card" href="{{ ('/events/' + (event | slug) + '/') | url }}">
+      <span class="mini-icon">{% icon "calendar" %}</span>
+      <span>{{ event }}</span>
+      <strong>{{ projects | projectsByEvent(event) | length }} projects</strong>
+    </a>
+  {% endfor %}
+</section>

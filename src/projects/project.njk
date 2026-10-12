@@ -48,8 +48,8 @@ eleventyComputed:
           <span>SerpApi engine{% if projectEntry.apis | length != 1 %}s{% endif %}</span>
         </div>
         <div>
-          <strong>{{ projectEntry.tags | length }}</strong>
-          <span>Idea tag{% if projectEntry.tags | length != 1 %}s{% endif %}</span>
+          <strong>{{ projectEntry | projectTags | length }}</strong>
+          <span>Idea tag{% if (projectEntry | projectTags | length) != 1 %}s{% endif %}</span>
         </div>
         <div>
           <strong>{{ projectEntry.githubUrl | domain }}</strong>
@@ -75,8 +75,18 @@ eleventyComputed:
     <section class="project-detail-panel">
       <p class="project-detail-eyebrow">Project themes</p>
       <h2>Browse related ideas</h2>
+      {% set projectEventNames = projectEntry | projectEvents %}
+      {% if projectEventNames.length %}
+        <div class="event-row" aria-label="Project events">
+          <span class="event-label">Events</span>
+          {% for event in projectEventNames %}
+            <a class="chip event-chip" href="{{ ('/events/' + (event | slug) + '/') | url }}">{% icon "calendar" %}{{ event }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <div class="meta-group" aria-label="Project tags">
-        {% for tag in projectEntry.tags %}
+        {% for tag in projectEntry | projectTags %}
           <a class="chip" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">{% icon "tag" %}{{ tag }}</a>
         {% endfor %}
       </div>

@@ -1,8 +1,16 @@
 module.exports = function (eleventyConfig) {
+  const { isEventTag, projectEvents, projectTags } = require("./src/_lib/taxonomy");
+  eleventyConfig.addWatchTarget("./src/_lib/");
+  eleventyConfig.addFilter("isEventTag", isEventTag);
+  eleventyConfig.addFilter("projectEvents", projectEvents);
+  eleventyConfig.addFilter("projectTags", projectTags);
+  eleventyConfig.addFilter("topicTags", (tags, events = []) => tags.filter((tag) => !isEventTag(tag) && !events.includes(tag)));
+  eleventyConfig.addFilter("projectsByEvent", (projects, event) => projects.filter((project) => projectEvents(project).includes(event)));
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   eleventyConfig.addShortcode("icon", function (name) {
     const paths = {
+      calendar: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M16 3v4M8 3v4M3 11h18M8 15h2M14 15h2"/>',
       add: '<path d="M12 5v14M5 12h14"/>',
       api: '<path d="M6 8h4M6 16h4M14 7l3 5-3 5M3 6v12a2 2 0 0 0 2 2h4M21 6v12a2 2 0 0 1-2 2h-4"/>',
       bolt: '<path d="m13 2-8 12h7l-1 8 8-12h-7l1-8z"/>',

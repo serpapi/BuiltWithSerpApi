@@ -15,6 +15,7 @@ eleventyComputed:
     <a class="back-link" href="{{ '/tags/' | url }}">All tags</a>
     <h1>{{ projectForTag }}</h1>
     <p>Projects tagged with {{ projectForTag }}.</p>
+    {% if projectForTag | isEventTag %}<a class="event-browse-link" href="{{ ('/events/' + (projectForTag | slug) + '/') | url }}">{% icon "calendar" %}View event collection</a>{% endif %}
   </div>
 </section>
 
