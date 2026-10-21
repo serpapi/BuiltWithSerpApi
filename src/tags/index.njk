@@ -13,7 +13,7 @@ description: "Browse #BuiltWithSerpApi projects by use case, product pattern, an
 </section>
 
 <section class="shell browse-grid">
-  {% for tag in tags | topicTags(events) %}
+  {% for tag in tags %}
     <a class="browse-card" href="{{ ('/tags/' + (tag | slug) + '/') | url }}">
       <span class="mini-icon">{% icon "tag" %}</span>
       <span>{{ tag }}</span>

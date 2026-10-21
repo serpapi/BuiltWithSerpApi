@@ -39,7 +39,7 @@ eleventyExcludeFromCollections: true
 
 ## Tags
 
-{% for tag in tags | topicTags(events) -%}
+{% for tag in tags -%}
 - [{{ tag }}]({{ ('/tags/' + (tag | slug) + '/') | url | absoluteUrl(site.baseUrl) }}): {{ projects | relatedProjectCount(tag, "tags") }} project{% if projects | relatedProjectCount(tag, "tags") != 1 %}s{% endif %}.
 {% endfor %}
 

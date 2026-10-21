@@ -1,10 +1,8 @@
 module.exports = function (eleventyConfig) {
-  const { isEventTag, projectEvents, projectTags } = require("./src/_lib/taxonomy");
+  const { projectEvents, projectTags } = require("./src/_lib/taxonomy");
   eleventyConfig.addWatchTarget("./src/_lib/");
-  eleventyConfig.addFilter("isEventTag", isEventTag);
   eleventyConfig.addFilter("projectEvents", projectEvents);
   eleventyConfig.addFilter("projectTags", projectTags);
-  eleventyConfig.addFilter("topicTags", (tags, events = []) => tags.filter((tag) => !isEventTag(tag) && !events.includes(tag)));
   eleventyConfig.addFilter("projectsByEvent", (projects, event) => projects.filter((project) => projectEvents(project).includes(event)));
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
@@ -28,6 +26,7 @@ module.exports = function (eleventyConfig) {
       rocket: '<path d="M4.5 16.5c-1 1-1.5 3-1.5 4.5 1.5 0 3.5-.5 4.5-1.5"/><path d="M9 15 5 11l4-2 6-6c2.5-.7 4.8-.4 6 1.2 1.6 1.2 1.9 3.5 1.2 6l-6 6-2 4-4-4z"/><path d="M15 9h.01"/>',
       search: '<circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/>',
       send: '<path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/>',
+      sort: '<path d="M3 4h13M3 9h9M3 14h5M18 12v9m-3-3 3 3 3-3"/>',
       spark: '<path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/><path d="M19 17l.8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8L19 17z"/>',
       star: '<path d="m12 2.5 3 6.1 6.7 1-4.8 4.7 1.1 6.7-6-3.2-6 3.2 1.1-6.7-4.8-4.7 6.7-1 3-6.1z"/>',
       tag: '<path d="M20 13 13 20a2 2 0 0 1-2.8 0L3 12.8V3h9.8L20 10.2a2 2 0 0 1 0 2.8z"/><path d="M7.5 7.5h.01"/>',

@@ -45,7 +45,7 @@ eleventyComputed:
         </div>
       </div>
 
-      {% if projectTopicTags.length or projectEventNames.length or (projectEntry.links and projectEntry.links.length) %}
+      {% if projectTopicTags.length or projectEventNames.length or projectEntry.metadata or (projectEntry.links and projectEntry.links.length) %}
         <aside class="project-detail-meta" aria-label="Project tags and links">
           {% if projectEventNames.length %}
             <div class="project-detail-meta-group">
@@ -67,6 +67,16 @@ eleventyComputed:
               </div>
             </div>
           {% endif %}
+          {% for label, values in projectEntry.metadata %}
+            <div class="project-detail-meta-group">
+              <h2>{{ label | capitalize }}</h2>
+              <div class="meta-group">
+                {% for value in values %}
+                  <span class="chip">{{ value }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
           {% if projectEntry.links and projectEntry.links.length %}
             <div class="project-detail-meta-group">
               <h2>Additional links</h2>

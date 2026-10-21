@@ -1,4 +1,4 @@
-<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}" data-project-tags="{{ project | projectTags | encodeFacetValues }}" data-project-events="{{ project | projectEvents | encodeFacetValues }}" data-project-apis="{{ project.apis | encodeFacetValues }}"{% endif %}>
+<article class="project-card{% if project.featured %} project-card-featured{% endif %}"{% if enableProjectSort %} data-feed-item="project" data-project-date="{{ project.dateAdded | escape }}" data-project-search="{{ (project.name ~ ' ' ~ project.author ~ ' ' ~ project.description) | escape }}" data-project-title="{{ project.name | escape }}" data-project-order="{{ projectFeedIndex }}" data-project-tags="{{ project | projectTags | encodeFacetValues }}" data-project-events="{{ project | projectEvents | encodeFacetValues }}" data-project-apis="{{ project.apis | encodeFacetValues }}"{% endif %}>
   <div class="project-kicker">
     <span>
       {% if project.featured %}

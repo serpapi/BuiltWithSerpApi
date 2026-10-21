@@ -9,15 +9,17 @@
     "tags": [
       "research",
       "ai",
-      "briefing",
-      "PyCon US Raffle 2026"
+      "briefing"
     ],
     "apis": [
       "Google Scholar API",
       "Google News API",
       "Google Search API"
     ],
-    "hostedUrl": "https://research-brief-production-bda3.up.railway.app/"
+    "hostedUrl": "https://research-brief-production-bda3.up.railway.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "SerpApi Superapp",
@@ -29,9 +31,6 @@
     "featured": true,
     "links": [],
     "tags": [
-      "featured",
-      "python",
-      "multi-engine",
       "developer-tools"
     ],
     "apis": [
@@ -42,7 +41,12 @@
       "Google Shopping API",
       "Google Trends API",
       "YouTube Search API"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "SerpAPI Fact Check",
@@ -54,14 +58,16 @@
     "tags": [
       "fact-checking",
       "news",
-      "verification",
-      "PyCon US Raffle 2026"
+      "verification"
     ],
     "apis": [
       "Google News API",
       "Google Search API"
     ],
-    "hostedUrl": "https://serpapifactcheck.streamlit.app/"
+    "hostedUrl": "https://serpapifactcheck.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "SerpTrail",
@@ -72,7 +78,6 @@
     "featured": true,
     "links": [],
     "tags": [
-      "featured",
       "seo",
       "rank-tracking",
       "monitoring"
@@ -91,13 +96,15 @@
     "tags": [
       "semiconductors",
       "maps",
-      "discovery",
-      "PyCon US Raffle 2026"
+      "discovery"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://adgacwuf5fj5pvc8np9rrv.streamlit.app/"
+    "hostedUrl": "https://adgacwuf5fj5pvc8np9rrv.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "Creator Lens",
@@ -108,7 +115,6 @@
     "featured": true,
     "links": [],
     "tags": [
-      "featured",
       "youtube",
       "ai",
       "analysis"
@@ -127,14 +133,16 @@
     "tags": [
       "trends",
       "news",
-      "dashboard",
-      "PyCon US Raffle 2026"
+      "dashboard"
     ],
     "apis": [
       "Google Trends API",
       "Google News API"
     ],
-    "hostedUrl": "https://trend-spotter-dashboard.streamlit.app/"
+    "hostedUrl": "https://trend-spotter-dashboard.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "Local LLM Web Search",
@@ -145,8 +153,7 @@
     "featured": true,
     "links": [],
     "tags": [
-      "featured",
-      "llm",
+      "local-models",
       "local-search",
       "developer-tools"
     ],
@@ -163,13 +170,19 @@
     "links": [],
     "tags": [
       "news",
-      "cli",
-      "digest",
-      "PyCon US Raffle 2026"
+      "digest"
     ],
     "apis": [
       "Google News API"
-    ]
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
+    ],
+    "metadata": {
+      "platforms": [
+        "Command line"
+      ]
+    }
   },
   {
     "name": "SerpApi Research Bot",
@@ -180,9 +193,8 @@
     "featured": true,
     "links": [],
     "tags": [
-      "featured",
       "research",
-      "agent",
+      "ai-agents",
       "automation"
     ],
     "apis": [
@@ -201,12 +213,14 @@
     "tags": [
       "birds",
       "photography",
-      "images",
-      "PyCon US Raffle 2026"
+      "images"
     ],
     "apis": [
       "Google Search API",
       "Google Images API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -218,9 +232,8 @@
     "featured": true,
     "links": [],
     "tags": [
-      "featured",
       "market-intelligence",
-      "agent",
+      "ai-agents",
       "automation"
     ],
     "apis": [
@@ -239,14 +252,16 @@
     "tags": [
       "cars",
       "local-search",
-      "alerts",
-      "PyCon US Raffle 2026"
+      "alerts"
     ],
     "apis": [
       "Google Search API",
       "Google Maps API"
     ],
-    "hostedUrl": "https://car-search-notification-pycon-2026-serpapi-vg8fskug2fxgzmqfhku.streamlit.app/"
+    "hostedUrl": "https://car-search-notification-pycon-2026-serpapi-vg8fskug2fxgzmqfhku.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "Pyfood",
@@ -258,14 +273,16 @@
     "tags": [
       "food",
       "restaurants",
-      "local-search",
-      "PyCon US Raffle 2026"
+      "local-search"
     ],
     "apis": [
       "Google Maps API",
       "Google Search API"
     ],
-    "hostedUrl": "https://pyfood-2026.streamlit.app"
+    "hostedUrl": "https://pyfood-2026.streamlit.app",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "Solar Market Intelligence",
@@ -277,15 +294,17 @@
     "tags": [
       "energy",
       "policy",
-      "market-intelligence",
-      "PyCon US Raffle 2026"
+      "market-intelligence"
     ],
     "apis": [
       "Google News API",
       "Google Search API",
       "Google Trends API"
     ],
-    "hostedUrl": "https://jlf-pycon-2026-serpapi-demo.vercel.app/"
+    "hostedUrl": "https://jlf-pycon-2026-serpapi-demo.vercel.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "PyConUS2026 Search Compare",
@@ -297,14 +316,16 @@
     "tags": [
       "search-comparison",
       "dashboard",
-      "analysis",
-      "PyCon US Raffle 2026"
+      "analysis"
     ],
     "apis": [
       "Google Search API",
       "DuckDuckGo Search API"
     ],
-    "hostedUrl": "https://pyconus2026-serpapi-atfdngedxqqsjhvsp7xv9h.streamlit.app/"
+    "hostedUrl": "https://pyconus2026-serpapi-atfdngedxqqsjhvsp7xv9h.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "VibeTrip",
@@ -316,15 +337,17 @@
     "tags": [
       "travel",
       "flights",
-      "hotels",
-      "PyCon US Raffle 2026"
+      "hotels"
     ],
     "apis": [
       "Google Flights API",
       "Google Hotels API",
       "Google Search API"
     ],
-    "hostedUrl": "https://vibetrip.streamlit.app/"
+    "hostedUrl": "https://vibetrip.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "PyPackage Oracle",
@@ -334,15 +357,21 @@
     "githubUrl": "https://github.com/everestkc/PyPackageOracle",
     "links": [],
     "tags": [
-      "python",
       "developer-tools",
-      "research",
-      "PyCon US Raffle 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://pypackageoracle.streamlit.app/"
+    "hostedUrl": "https://pypackageoracle.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "WanderLens",
@@ -354,8 +383,7 @@
     "tags": [
       "travel",
       "maps",
-      "events",
-      "PyCon US Raffle 2026"
+      "events"
     ],
     "apis": [
       "Google Maps API",
@@ -363,7 +391,10 @@
       "Google Events API",
       "YouTube Search API"
     ],
-    "hostedUrl": "https://pycon2026-serpapi-submission-47rk5vdmteme6rgwgbfyzk.streamlit.app/"
+    "hostedUrl": "https://pycon2026-serpapi-submission-47rk5vdmteme6rgwgbfyzk.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "SerpSide",
@@ -373,14 +404,16 @@
     "githubUrl": "https://github.com/Joe342wise/serpside",
     "links": [],
     "tags": [
-      "conference",
+      "conferences",
       "food",
-      "shopping",
-      "PyCon US Raffle 2026"
+      "shopping"
     ],
     "apis": [
       "Google Maps API",
       "Google Shopping API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -393,11 +426,13 @@
     "tags": [
       "seo",
       "rank-tracking",
-      "alerts",
-      "PyCon US Raffle 2026"
+      "alerts"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -408,13 +443,15 @@
     "githubUrl": "https://github.com/Joe342wise/MCPChatBot",
     "links": [],
     "tags": [
-      "chatbot",
+      "chatbots",
       "mcp",
-      "search",
-      "PyCon US Raffle 2026"
+      "search"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -425,13 +462,15 @@
     "githubUrl": "https://github.com/ibrewster/pylon2026-serpapi-demo",
     "links": [],
     "tags": [
-      "llm",
+      "language-models",
       "search",
-      "qa",
-      "PyCon US Raffle 2026"
+      "question-answering"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -443,14 +482,20 @@
     "links": [],
     "tags": [
       "geocoding",
-      "maps",
-      "csv",
-      "PyCon US Raffle 2026"
+      "maps"
     ],
     "apis": [
       "Google Maps API"
     ],
-    "hostedUrl": "https://serp-geocode-demo.streamlit.app/"
+    "hostedUrl": "https://serp-geocode-demo.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ],
+    "metadata": {
+      "formats": [
+        "CSV"
+      ]
+    }
   },
   {
     "name": "FamilyOut",
@@ -462,12 +507,14 @@
     "tags": [
       "family",
       "events",
-      "local-search",
-      "PyCon US Raffle 2026"
+      "local-search"
     ],
     "apis": [
       "Google Events API",
       "Google Local API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -479,14 +526,16 @@
     "links": [],
     "tags": [
       "ideation",
-      "startup",
-      "search",
-      "PyCon US Raffle 2026"
+      "startups",
+      "search"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://pycon-serpapi-vibe-wemxasjccli8perudceiph.streamlit.app/"
+    "hostedUrl": "https://pycon-serpapi-vibe-wemxasjccli8perudceiph.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "PyCon 2026 Knowledge Graph",
@@ -496,10 +545,8 @@
     "githubUrl": "https://github.com/struktured-labs/pycon-2026",
     "links": [],
     "tags": [
-      "knowledge-graph",
-      "conference",
-      "multi-engine",
-      "PyCon US Raffle 2026"
+      "knowledge-graphs",
+      "conferences"
     ],
     "apis": [
       "Google Search API",
@@ -507,6 +554,9 @@
       "Google Scholar API",
       "YouTube Search API",
       "Google Local API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -519,11 +569,13 @@
     "tags": [
       "flights",
       "automation",
-      "travel",
-      "PyCon US Raffle 2026"
+      "travel"
     ],
     "apis": [
       "Google Flights API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -536,12 +588,14 @@
     "tags": [
       "ideation",
       "news",
-      "signals",
-      "PyCon US Raffle 2026"
+      "signals"
     ],
     "apis": [
       "Google Search API",
       "Google News API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -553,14 +607,16 @@
     "links": [],
     "tags": [
       "shopping",
-      "prices",
-      "comparison",
-      "PyCon US Raffle 2026"
+      "price-comparison",
+      "comparison"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://pricescope---smart-appuct-price-comparator-9rs7irq8jyhzw946yqb.streamlit.app/"
+    "hostedUrl": "https://pricescope---smart-appuct-price-comparator-9rs7irq8jyhzw946yqb.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "SerpApi Raffle Companion",
@@ -570,13 +626,15 @@
     "githubUrl": "https://github.com/kallagoutham/serpapi-raffle",
     "links": [],
     "tags": [
-      "conference",
+      "conferences",
       "search",
-      "resources",
-      "PyCon US Raffle 2026"
+      "resources"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -589,13 +647,15 @@
     "tags": [
       "research",
       "scholar",
-      "photonic-layout",
-      "PyCon US Raffle 2026"
+      "photonic-layout"
     ],
     "apis": [
       "Google Scholar API"
     ],
-    "hostedUrl": "https://dijf9f4ovcitawghjzicrp.streamlit.app/"
+    "hostedUrl": "https://dijf9f4ovcitawghjzicrp.streamlit.app/",
+    "events": [
+      "PyCon US Raffle 2026"
+    ]
   },
   {
     "name": "Travel Currency Trends",
@@ -607,12 +667,14 @@
     "tags": [
       "travel",
       "currency",
-      "trends",
-      "PyCon US Raffle 2026"
+      "trends"
     ],
     "apis": [
       "Google Trends API",
       "Google Search API"
+    ],
+    "events": [
+      "PyCon US Raffle 2026"
     ]
   },
   {
@@ -625,7 +687,7 @@
     "tags": [
       "travel",
       "flights",
-      "llm"
+      "language-models"
     ],
     "apis": [
       "Google Flights API",
@@ -642,7 +704,7 @@
     "tags": [
       "jobs",
       "automation",
-      "llm"
+      "language-models"
     ],
     "apis": [
       "Google Jobs API"
@@ -674,7 +736,7 @@
     "tags": [
       "education",
       "automation",
-      "llm"
+      "language-models"
     ],
     "apis": [
       "Google Search API"
@@ -721,14 +783,18 @@
     "links": [],
     "tags": [
       "education",
-      "analysis",
-      "python"
+      "analysis"
     ],
     "apis": [
       "Google Search API",
       "Instagram Profile API",
       "Google Jobs API"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "SEO Keyword Research Tool",
@@ -739,14 +805,18 @@
     "links": [],
     "tags": [
       "seo",
-      "keyword-research",
-      "python"
+      "keyword-research"
     ],
     "apis": [
       "Google Autocomplete API",
       "Google Related Questions API",
       "Google Search API"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "SEO Position Tracker",
@@ -757,8 +827,7 @@
     "links": [],
     "tags": [
       "seo",
-      "rank-tracking",
-      "python"
+      "rank-tracking"
     ],
     "apis": [
       "Google Search API",
@@ -768,7 +837,12 @@
       "Yahoo! Search API",
       "Yandex Search API",
       "Naver Search API"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "RentRadar",
@@ -812,8 +886,8 @@
     "links": [],
     "tags": [
       "travel",
-      "agent",
-      "itinerary"
+      "ai-agents",
+      "itineraries"
     ],
     "apis": [
       "Google Search API"
@@ -861,12 +935,16 @@
     "links": [],
     "tags": [
       "education",
-      "chrome-extension",
       "images"
     ],
     "apis": [
       "Google Images API"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Chrome extension"
+      ]
+    }
   },
   {
     "name": "Pre-Viral Restaurant Finder",
@@ -892,7 +970,7 @@
     "githubUrl": "https://github.com/faisalmrasul/Inquiro-Basic_Content_Agentic-AI",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "automation",
       "email"
     ],
@@ -958,7 +1036,7 @@
     "links": [],
     "tags": [
       "jobs",
-      "agent",
+      "ai-agents",
       "resume"
     ],
     "apis": [
@@ -1057,7 +1135,7 @@
     "githubUrl": "https://github.com/Allavudeen/ai-automation-consulting",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "appointments",
       "sales"
     ],
@@ -1108,7 +1186,7 @@
     "tags": [
       "youtube",
       "transcription",
-      "agent"
+      "ai-agents"
     ],
     "apis": [
       "YouTube Search API",
@@ -1141,7 +1219,7 @@
     "links": [],
     "tags": [
       "jobs",
-      "agent",
+      "ai-agents",
       "outreach"
     ],
     "apis": [
@@ -1176,8 +1254,8 @@
     "links": [],
     "tags": [
       "travel",
-      "itinerary",
-      "agent"
+      "itineraries",
+      "ai-agents"
     ],
     "apis": [
       "Google Flights API",
@@ -1258,7 +1336,7 @@
     "hostedUrl": "https://gemma-autopilot-live.amat-francois.workers.dev/",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "optimization",
       "benchmarking"
     ],
@@ -1296,8 +1374,7 @@
       }
     ],
     "tags": [
-      "health",
-      "medical",
+      "healthcare",
       "research"
     ],
     "apis": [
@@ -1368,12 +1445,16 @@
     "links": [],
     "tags": [
       "shopping",
-      "prices",
-      "mobile"
+      "price-comparison"
     ],
     "apis": [
       "Google Shopping API"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Mobile"
+      ]
+    }
   },
   {
     "name": "AI Tailor",
@@ -1416,12 +1497,16 @@
     "links": [],
     "tags": [
       "lead-generation",
-      "maps",
-      "google-sheets"
+      "maps"
     ],
     "apis": [
       "Google Maps API"
-    ]
+    ],
+    "metadata": {
+      "integrations": [
+        "Google Sheets"
+      ]
+    }
   },
   {
     "name": "SearchScout AI",
@@ -1449,7 +1534,7 @@
     "tags": [
       "youtube",
       "rag",
-      "chatbot",
+      "chatbots",
       "transcription"
     ],
     "apis": [
@@ -1469,7 +1554,7 @@
       }
     ],
     "tags": [
-      "agent",
+      "ai-agents",
       "automation",
       "voice",
       "self-hosted"
@@ -1516,7 +1601,7 @@
     "links": [],
     "tags": [
       "shopping",
-      "prices",
+      "price-comparison",
       "comparison"
     ],
     "apis": [
@@ -1605,7 +1690,7 @@
       "travel",
       "flights",
       "hotels",
-      "agent"
+      "ai-agents"
     ],
     "apis": [
       "Google Flights API",
@@ -1674,12 +1759,16 @@
     "links": [],
     "tags": [
       "images",
-      "automation",
-      "google-sheets"
+      "automation"
     ],
     "apis": [
       "Google Images API"
-    ]
+    ],
+    "metadata": {
+      "integrations": [
+        "Google Sheets"
+      ]
+    }
   },
   {
     "name": "GoTrip AI",
@@ -1692,8 +1781,8 @@
     "tags": [
       "travel",
       "flights",
-      "itinerary",
-      "agent"
+      "itineraries",
+      "ai-agents"
     ],
     "apis": [
       "Google Flights API"
@@ -1727,13 +1816,15 @@
     "tags": [
       "jobs",
       "matching",
-      "ai",
-      "APIWorld Hackathon 2026"
+      "ai"
     ],
     "apis": [
       "Google Jobs API"
     ],
-    "hostedUrl": "https://applypilot-alyht.vercel.app"
+    "hostedUrl": "https://applypilot-alyht.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "AccessForm",
@@ -1745,12 +1836,14 @@
     "tags": [
       "documents",
       "voice",
-      "accessibility",
-      "APIWorld Hackathon 2026"
+      "accessibility"
     ],
     "apis": [
       "Google Search API",
       "Google Maps API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -1763,13 +1856,15 @@
     "tags": [
       "food",
       "monitoring",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://pantryproof.vercel.app"
+    "hostedUrl": "https://pantryproof.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Chancery",
@@ -1779,10 +1874,9 @@
     "githubUrl": "https://github.com/RaYYeR220/chancery",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "verification",
-      "documents",
-      "APIWorld Hackathon 2026"
+      "documents"
     ],
     "apis": [
       "Google Search API",
@@ -1797,7 +1891,10 @@
       "Amazon Search API",
       "Google Finance API"
     ],
-    "hostedUrl": "https://chancery.live"
+    "hostedUrl": "https://chancery.live",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "LeadAgent — B2B leads from live market signals",
@@ -1808,15 +1905,17 @@
     "links": [],
     "tags": [
       "sales",
-      "leads",
-      "research",
-      "APIWorld Hackathon 2026"
+      "lead-generation",
+      "research"
     ],
     "apis": [
       "Google News API",
       "Google Search API"
     ],
-    "hostedUrl": "https://leadagent-zavod.netlify.app"
+    "hostedUrl": "https://leadagent-zavod.netlify.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Campaign Weather",
@@ -1828,15 +1927,17 @@
     "tags": [
       "analytics",
       "news",
-      "advertising",
-      "APIWorld Hackathon 2026"
+      "advertising"
     ],
     "apis": [
       "Google Ads Transparency API",
       "Google Search API",
       "Google Trends API"
     ],
-    "hostedUrl": "https://campaign-weather.vercel.app/"
+    "hostedUrl": "https://campaign-weather.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Vantage",
@@ -1848,11 +1949,13 @@
     "tags": [
       "education",
       "research",
-      "planning",
-      "APIWorld Hackathon 2026"
+      "planning"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -1865,8 +1968,7 @@
     "tags": [
       "research",
       "reviews",
-      "market-research",
-      "APIWorld Hackathon 2026"
+      "market-research"
     ],
     "apis": [
       "Apple App Store API",
@@ -1882,7 +1984,10 @@
       "Google Search API",
       "Google AI Overview API"
     ],
-    "hostedUrl": "https://unmet.byasb.com"
+    "hostedUrl": "https://unmet.byasb.com",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Opportunity Hunter",
@@ -1894,13 +1999,15 @@
     "tags": [
       "research",
       "discovery",
-      "ai",
-      "APIWorld Hackathon 2026"
+      "ai"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://oh.humanhere.me"
+    "hostedUrl": "https://oh.humanhere.me",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "ONIT",
@@ -1912,13 +2019,15 @@
     "tags": [
       "documents",
       "research",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://onit-agent.vercel.app/"
+    "hostedUrl": "https://onit-agent.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Dossier",
@@ -1930,12 +2039,14 @@
     "tags": [
       "sales",
       "research",
-      "crm",
-      "APIWorld Hackathon 2026"
+      "crm"
     ],
     "apis": [
       "Google News API",
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -1948,8 +2059,7 @@
     "tags": [
       "market-research",
       "research",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API",
@@ -1958,7 +2068,10 @@
       "Google Trends API",
       "Google Maps API"
     ],
-    "hostedUrl": "https://contrarian.streamlit.app/"
+    "hostedUrl": "https://contrarian.streamlit.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "DriftWatch",
@@ -1970,11 +2083,13 @@
     "tags": [
       "news",
       "monitoring",
-      "analytics",
-      "APIWorld Hackathon 2026"
+      "analytics"
     ],
     "apis": [
       "Google News API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -1987,13 +2102,15 @@
     "tags": [
       "beauty",
       "fashion",
-      "shopping",
-      "APIWorld Hackathon 2026"
+      "shopping"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://emberhq.vercel.app"
+    "hostedUrl": "https://emberhq.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "IsThisSafe?",
@@ -2005,8 +2122,7 @@
     "tags": [
       "images",
       "verification",
-      "shopping",
-      "APIWorld Hackathon 2026"
+      "shopping"
     ],
     "apis": [
       "Google Lens API",
@@ -2014,6 +2130,9 @@
       "Google News API",
       "Google Shopping API",
       "Google Maps API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2026,13 +2145,15 @@
     "tags": [
       "travel",
       "fashion",
-      "flights",
-      "APIWorld Hackathon 2026"
+      "flights"
     ],
     "apis": [
       "Google Flights API",
       "Google Shopping API",
       "Google Immersive Product API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2045,11 +2166,13 @@
     "tags": [
       "healthcare",
       "documents",
-      "price-comparison",
-      "APIWorld Hackathon 2026"
+      "price-comparison"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2062,8 +2185,7 @@
     "tags": [
       "research",
       "verification",
-      "seo",
-      "APIWorld Hackathon 2026"
+      "seo"
     ],
     "apis": [
       "Google AI Mode API",
@@ -2074,7 +2196,10 @@
       "Google Patents API",
       "Google Maps API"
     ],
-    "hostedUrl": "https://grounds-sigma.vercel.app"
+    "hostedUrl": "https://grounds-sigma.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Amazon FBA Listing Generator",
@@ -2086,13 +2211,15 @@
     "tags": [
       "ecommerce",
       "seo",
-      "shopping",
-      "APIWorld Hackathon 2026"
+      "shopping"
     ],
     "apis": [
       "Amazon Search API",
       "Google Search API",
       "Google Autocomplete API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2105,8 +2232,7 @@
     "tags": [
       "travel",
       "flights",
-      "hotels",
-      "APIWorld Hackathon 2026"
+      "hotels"
     ],
     "apis": [
       "Google Flights API",
@@ -2114,7 +2240,10 @@
       "Google Hotels API",
       "Google Local API"
     ],
-    "hostedUrl": "https://travel-agent-olive.vercel.app/"
+    "hostedUrl": "https://travel-agent-olive.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Thermaflow",
@@ -2126,13 +2255,15 @@
     "tags": [
       "manufacturing",
       "monitoring",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://thermaflow.clustralai.com"
+    "hostedUrl": "https://thermaflow.clustralai.com",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "SERPDelta",
@@ -2144,13 +2275,15 @@
     "tags": [
       "ai",
       "verification",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://serpdelta-heenqfrqmf3fxfxvkhe8hn.streamlit.app/"
+    "hostedUrl": "https://serpdelta-heenqfrqmf3fxfxvkhe8hn.streamlit.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "hmmm",
@@ -2162,11 +2295,13 @@
     "tags": [
       "voice",
       "productivity",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2179,14 +2314,16 @@
     "tags": [
       "advertising",
       "monitoring",
-      "analytics",
-      "APIWorld Hackathon 2026"
+      "analytics"
     ],
     "apis": [
       "Google Ads API",
       "Google Ads Transparency API",
       "Google Trends API",
       "Google Autocomplete API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2199,11 +2336,13 @@
     "tags": [
       "documents",
       "verification",
-      "invoicing",
-      "APIWorld Hackathon 2026"
+      "invoicing"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2216,11 +2355,13 @@
     "tags": [
       "verification",
       "documents",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2233,13 +2374,15 @@
     "tags": [
       "beauty",
       "shopping",
-      "images",
-      "APIWorld Hackathon 2026"
+      "images"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://frontend-theta-five-73.vercel.app/"
+    "hostedUrl": "https://frontend-theta-five-73.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Proofline",
@@ -2251,13 +2394,15 @@
     "tags": [
       "research",
       "verification",
-      "procurement",
-      "APIWorld Hackathon 2026"
+      "procurement"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://proofline-apiworld-2026.pdrucker48.chatgpt.site"
+    "hostedUrl": "https://proofline-apiworld-2026.pdrucker48.chatgpt.site",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "SignalOps × SerpApi — Live Evidence Decision Layer",
@@ -2267,15 +2412,17 @@
     "githubUrl": "https://github.com/leadingproblemsolver/signalops-workbench",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "research",
-      "automation",
-      "APIWorld Hackathon 2026"
+      "automation"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://signalops-serpapi-625265193189.me-central1.run.app/"
+    "hostedUrl": "https://signalops-serpapi-625265193189.me-central1.run.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "GroundPitch",
@@ -2287,11 +2434,13 @@
     "tags": [
       "marketing",
       "verification",
-      "documents",
-      "APIWorld Hackathon 2026"
+      "documents"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2304,13 +2453,15 @@
     "tags": [
       "automation",
       "web-data",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://orbit.triumphsystems.tech"
+    "hostedUrl": "https://orbit.triumphsystems.tech",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "ScoutCRM",
@@ -2322,15 +2473,17 @@
     "tags": [
       "sales",
       "crm",
-      "leads",
-      "APIWorld Hackathon 2026"
+      "lead-generation"
     ],
     "apis": [
       "Google News API",
       "Google Jobs API",
       "Google Search API"
     ],
-    "hostedUrl": "https://scoutcrm-ten.vercel.app"
+    "hostedUrl": "https://scoutcrm-ten.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Recuse",
@@ -2342,11 +2495,13 @@
     "tags": [
       "documents",
       "verification",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2359,8 +2514,7 @@
     "tags": [
       "travel",
       "real-estate",
-      "maps",
-      "APIWorld Hackathon 2026"
+      "maps"
     ],
     "apis": [
       "Zillow Search API",
@@ -2371,7 +2525,10 @@
       "Yelp Search API",
       "Google News API"
     ],
-    "hostedUrl": "https://relokit-vert.vercel.app"
+    "hostedUrl": "https://relokit-vert.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Fleet Command",
@@ -2381,15 +2538,17 @@
     "githubUrl": "https://github.com/thebrockchain/fleetcommand",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "automation",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://fleetcommand-2u0.pages.dev"
+    "hostedUrl": "https://fleetcommand-2u0.pages.dev",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Lifecycle Hub",
@@ -2401,13 +2560,15 @@
     "tags": [
       "infrastructure",
       "monitoring",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "http://lifecyclehub.clustralai.com"
+    "hostedUrl": "http://lifecyclehub.clustralai.com",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "VentureRadar AI",
@@ -2419,13 +2580,15 @@
     "tags": [
       "market-research",
       "startups",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://venture-radar-ai.starmanfarah.chatgpt.site"
+    "hostedUrl": "https://venture-radar-ai.starmanfarah.chatgpt.site",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Charter",
@@ -2437,13 +2600,15 @@
     "tags": [
       "documents",
       "startups",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://charter-217o.onrender.com"
+    "hostedUrl": "https://charter-217o.onrender.com",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "LastTube",
@@ -2455,11 +2620,13 @@
     "tags": [
       "beauty",
       "shopping",
-      "product-discovery",
-      "APIWorld Hackathon 2026"
+      "product-discovery"
     ],
     "apis": [
       "Google Shopping API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2472,13 +2639,15 @@
     "tags": [
       "invoicing",
       "research",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://jonny7171.github.io/payable-pilot/"
+    "hostedUrl": "https://jonny7171.github.io/payable-pilot/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Launchpad — From Idea to Live Startup in Minutes",
@@ -2490,12 +2659,14 @@
     "tags": [
       "startups",
       "market-research",
-      "automation",
-      "APIWorld Hackathon 2026"
+      "automation"
     ],
     "apis": [
       "Google Search API",
       "Google News API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2508,8 +2679,7 @@
     "tags": [
       "security",
       "monitoring",
-      "brand-protection",
-      "APIWorld Hackathon 2026"
+      "brand-protection"
     ],
     "apis": [
       "Google Search API",
@@ -2523,7 +2693,10 @@
       "Google Images API",
       "Google Trends API"
     ],
-    "hostedUrl": "https://frontend-djiexm9zt-samuels-projects-f22dc298.vercel.app/"
+    "hostedUrl": "https://frontend-djiexm9zt-samuels-projects-f22dc298.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "SignalWatch",
@@ -2535,13 +2708,15 @@
     "tags": [
       "monitoring",
       "research",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://devnetwork-gamma.vercel.app/"
+    "hostedUrl": "https://devnetwork-gamma.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "AegisFlow",
@@ -2553,13 +2728,15 @@
     "tags": [
       "procurement",
       "research",
-      "agent",
-      "APIWorld Hackathon 2026"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://aegisflow-ai.vercel.app"
+    "hostedUrl": "https://aegisflow-ai.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "CounterSign",
@@ -2571,13 +2748,15 @@
     "tags": [
       "invoicing",
       "security",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API",
       "Google News API",
       "Google Maps API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2590,15 +2769,17 @@
     "tags": [
       "market-research",
       "news",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API",
       "Google News API",
       "Google Maps API"
     ],
-    "hostedUrl": "https://radar-delta-inky.vercel.app"
+    "hostedUrl": "https://radar-delta-inky.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "ClinicalBrief AI (by LearnHive Labs)",
@@ -2610,11 +2791,13 @@
     "tags": [
       "healthcare",
       "research",
-      "automation",
-      "APIWorld Hackathon 2026"
+      "automation"
     ],
     "apis": [
       "Google Scholar API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2627,13 +2810,15 @@
     "tags": [
       "documents",
       "security",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://signet-lime.vercel.app"
+    "hostedUrl": "https://signet-lime.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Glow Proof",
@@ -2645,13 +2830,15 @@
     "tags": [
       "beauty",
       "shopping",
-      "product-discovery",
-      "APIWorld Hackathon 2026"
+      "product-discovery"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://glow-proof.vercel.app/"
+    "hostedUrl": "https://glow-proof.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "ClauseProof",
@@ -2663,13 +2850,15 @@
     "tags": [
       "documents",
       "verification",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://clauseproof-webmcp.netlify.app"
+    "hostedUrl": "https://clauseproof-webmcp.netlify.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "VeriNews AI",
@@ -2681,8 +2870,7 @@
     "tags": [
       "fact-checking",
       "news",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API",
@@ -2690,7 +2878,10 @@
       "Google Scholar API",
       "Google Patents API"
     ],
-    "hostedUrl": "https://verinewsai-3qdgmhefxyocegud7gwlm7.streamlit.app/"
+    "hostedUrl": "https://verinewsai-3qdgmhefxyocegud7gwlm7.streamlit.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "typo.watch",
@@ -2702,13 +2893,15 @@
     "tags": [
       "security",
       "domains",
-      "monitoring",
-      "APIWorld Hackathon 2026"
+      "monitoring"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://typo.watch"
+    "hostedUrl": "https://typo.watch",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Overturn",
@@ -2720,13 +2913,15 @@
     "tags": [
       "insurance",
       "documents",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://overturn-devnetwork-hackathon-2026.vercel.app"
+    "hostedUrl": "https://overturn-devnetwork-hackathon-2026.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "DEALCLOSE",
@@ -2738,13 +2933,15 @@
     "tags": [
       "real-estate",
       "documents",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://deal-close-plum.vercel.app"
+    "hostedUrl": "https://deal-close-plum.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "BrandProof",
@@ -2756,13 +2953,15 @@
     "tags": [
       "beauty",
       "marketing",
-      "shopping",
-      "APIWorld Hackathon 2026"
+      "shopping"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://aviad12g.github.io/brandproof-devnetwork-2026/"
+    "hostedUrl": "https://aviad12g.github.io/brandproof-devnetwork-2026/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "FacTruth",
@@ -2774,14 +2973,16 @@
     "tags": [
       "fact-checking",
       "news",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API",
       "Google News API"
     ],
-    "hostedUrl": "https://factruth-zn0v.onrender.com"
+    "hostedUrl": "https://factruth-zn0v.onrender.com",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Grant Scout",
@@ -2793,13 +2994,15 @@
     "tags": [
       "funding",
       "startups",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://grant-scout-jayblast.vercel.app"
+    "hostedUrl": "https://grant-scout-jayblast.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "LiveLLM",
@@ -2809,10 +3012,9 @@
     "githubUrl": "https://github.com/prx0r/livellm",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "research",
-      "market-data",
-      "APIWorld Hackathon 2026"
+      "market-data"
     ],
     "apis": [
       "Google Light Search API",
@@ -2820,7 +3022,10 @@
       "Google News API",
       "Search Index"
     ],
-    "hostedUrl": "https://livellm.tradesprior.workers.dev/"
+    "hostedUrl": "https://livellm.tradesprior.workers.dev/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "PatchSignal",
@@ -2832,12 +3037,14 @@
     "tags": [
       "developer-tools",
       "research",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google AI Mode API",
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2850,13 +3057,15 @@
     "tags": [
       "shopping",
       "price-comparison",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://priceverdict.vercel.app/"
+    "hostedUrl": "https://priceverdict.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Unspun: Search Without Sales Pitch",
@@ -2868,14 +3077,16 @@
     "tags": [
       "shopping",
       "research",
-      "price-comparison",
-      "APIWorld Hackathon 2026"
+      "price-comparison"
     ],
     "apis": [
       "Google Search API",
       "Google Shopping API"
     ],
-    "hostedUrl": "https://unspun-v.vercel.app/"
+    "hostedUrl": "https://unspun-v.vercel.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Document Trust Gate",
@@ -2887,11 +3098,13 @@
     "tags": [
       "documents",
       "verification",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2904,11 +3117,13 @@
     "tags": [
       "events",
       "discovery",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2921,11 +3136,13 @@
     "tags": [
       "beauty",
       "shopping",
-      "price-comparison",
-      "APIWorld Hackathon 2026"
+      "price-comparison"
     ],
     "apis": [
       "Google Shopping API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2938,14 +3155,16 @@
     "tags": [
       "fashion",
       "images",
-      "price-comparison",
-      "APIWorld Hackathon 2026"
+      "price-comparison"
     ],
     "apis": [
       "Google Lens API",
       "Google Shopping API",
       "eBay Search API",
       "Google Trends API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2958,11 +3177,13 @@
     "tags": [
       "beauty",
       "research",
-      "analytics",
-      "APIWorld Hackathon 2026"
+      "analytics"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -2975,13 +3196,15 @@
     "tags": [
       "startups",
       "market-research",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "http://ignition.clustralai.com"
+    "hostedUrl": "http://ignition.clustralai.com",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "MirrorMuse AI — Autonomous Beauty & AR Concierge",
@@ -2993,13 +3216,15 @@
     "tags": [
       "beauty",
       "shopping",
-      "images",
-      "APIWorld Hackathon 2026"
+      "images"
     ],
     "apis": [
       "Google Shopping API"
     ],
-    "hostedUrl": "https://mirrormuse-ai.vercel.app"
+    "hostedUrl": "https://mirrormuse-ai.vercel.app",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "PatentPincer",
@@ -3011,15 +3236,17 @@
     "tags": [
       "patents",
       "research",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Patents API",
       "Google Patents Details API",
       "Google Scholar API"
     ],
-    "hostedUrl": "https://doom2quake.github.io/patentpincer/ui/"
+    "hostedUrl": "https://doom2quake.github.io/patentpincer/ui/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "AlonTrip",
@@ -3031,13 +3258,15 @@
     "tags": [
       "travel",
       "maps",
-      "itinerary",
-      "APIWorld Hackathon 2026"
+      "itineraries"
     ],
     "apis": [
       "Google Maps API"
     ],
-    "hostedUrl": "https://alonuniverse.com/trip/"
+    "hostedUrl": "https://alonuniverse.com/trip/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Grid Guardian Intel",
@@ -3049,12 +3278,14 @@
     "tags": [
       "security",
       "news",
-      "research",
-      "APIWorld Hackathon 2026"
+      "research"
     ],
     "apis": [
       "Google News API",
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -3067,13 +3298,15 @@
     "tags": [
       "infrastructure",
       "news",
-      "analytics",
-      "APIWorld Hackathon 2026"
+      "analytics"
     ],
     "apis": [
       "Google News API"
     ],
-    "hostedUrl": "https://civis-analytics.netlify.app/"
+    "hostedUrl": "https://civis-analytics.netlify.app/",
+    "events": [
+      "APIWorld Hackathon 2026"
+    ]
   },
   {
     "name": "Time-Out",
@@ -3085,11 +3318,13 @@
     "tags": [
       "healthcare",
       "research",
-      "verification",
-      "APIWorld Hackathon 2026"
+      "verification"
     ],
     "apis": [
       "Google Search API"
+    ],
+    "events": [
+      "APIWorld Hackathon 2026"
     ]
   },
   {
@@ -3202,7 +3437,7 @@
     "links": [],
     "tags": [
       "crm",
-      "leads",
+      "lead-generation",
       "sales"
     ],
     "apis": [
@@ -3237,12 +3472,16 @@
     "tags": [
       "jobs",
       "automation",
-      "matching",
-      "google-sheets"
+      "matching"
     ],
     "apis": [
       "Google Jobs API"
-    ]
+    ],
+    "metadata": {
+      "integrations": [
+        "Google Sheets"
+      ]
+    }
   },
   {
     "name": "AshenAudit",
@@ -3360,7 +3599,7 @@
     "githubUrl": "https://github.com/gopinathan-1806/apple-support-agent-crewai",
     "links": [],
     "tags": [
-      "agent",
+      "ai-agents",
       "search",
       "self-hosted"
     ],
@@ -3401,7 +3640,7 @@
     "links": [],
     "tags": [
       "travel",
-      "itinerary",
+      "itineraries",
       "planning"
     ],
     "apis": [
@@ -3463,7 +3702,6 @@
       }
     ],
     "tags": [
-      "featured",
       "monitoring",
       "app-stores",
       "ai-search"
@@ -3538,10 +3776,9 @@
     "links": [],
     "tags": [
       "fact-checking",
-      "game",
+      "games",
       "research",
-      "education",
-      "games"
+      "education"
     ],
     "apis": [
       "Google Search API"
@@ -3558,10 +3795,9 @@
     "githubUrl": "https://github.com/sumitGK07/CuroaAgent",
     "links": [],
     "tags": [
-      "health",
+      "healthcare",
       "research",
-      "education",
-      "healthcare"
+      "education"
     ],
     "apis": [
       "Google Search API",
@@ -3625,7 +3861,7 @@
       "patents",
       "video",
       "explainer",
-      "motiongraphics",
+      "motion-graphics",
       "infographics",
       "research",
       "visualization"
@@ -3652,10 +3888,9 @@
       "SerpApi India Hackathon 2026"
     ],
     "tags": [
-      "travel-tech",
+      "travel",
       "ai",
       "planning",
-      "travel",
       "group-planning",
       "itineraries"
     ],
@@ -3682,15 +3917,11 @@
       }
     ],
     "tags": [
-      "ai-agent",
+      "ai-agents",
       "recruitment",
       "hr-tech",
       "verification",
       "candidate-ranking",
-      "google-maps",
-      "python",
-      "react",
-      "fastapi",
       "careers"
     ],
     "apis": [
@@ -3700,7 +3931,14 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python",
+        "React",
+        "FastAPI"
+      ]
+    }
   },
   {
     "name": "ExportScout",
@@ -3727,14 +3965,12 @@
       "SerpApi India Hackathon 2026"
     ],
     "tags": [
-      "export",
+      "exports",
       "market-research",
       "ecommerce",
-      "ai-agent",
+      "ai-agents",
       "pricing",
-      "lead-generation",
-      "india",
-      "streamlit"
+      "lead-generation"
     ],
     "apis": [
       "Google Lens API",
@@ -3750,7 +3986,15 @@
       "Google Ads Transparency API",
       "Google News API",
       "Google Finance API"
-    ]
+    ],
+    "metadata": {
+      "regions": [
+        "India"
+      ],
+      "technologies": [
+        "Streamlit"
+      ]
+    }
   },
   {
     "name": "Pīzhù",
@@ -3818,7 +4062,7 @@
     "tags": [
       "security",
       "fact-checking",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -3841,7 +4085,6 @@
     ],
     "tags": [
       "accessibility",
-      "android",
       "ai"
     ],
     "events": [
@@ -3849,7 +4092,12 @@
     ],
     "apis": [
       "Google Search API"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Android"
+      ]
+    }
   },
   {
     "name": "PatchPal",
@@ -3865,15 +4113,19 @@
     ],
     "tags": [
       "security",
-      "news",
-      "python"
+      "news"
     ],
     "events": [
       "Hacktoberfest 2026"
     ],
     "apis": [
       "Google News API"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "OutingFit Mumbai",
@@ -3913,8 +4165,7 @@
     ],
     "tags": [
       "education",
-      "ai",
-      "local-ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -3937,7 +4188,6 @@
     ],
     "tags": [
       "education",
-      "ai",
       "news",
       "learning",
       "ai-agents"
@@ -4037,7 +4287,7 @@
     "tags": [
       "security",
       "messaging",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4086,7 +4336,7 @@
     "tags": [
       "reviews",
       "local-business",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4410,7 +4660,7 @@
     "tags": [
       "shopping",
       "personal-finance",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4434,7 +4684,7 @@
     "tags": [
       "travel",
       "planning",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4458,7 +4708,7 @@
     "tags": [
       "weather",
       "outdoors",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4482,7 +4732,7 @@
     "tags": [
       "travel",
       "audio",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4506,7 +4756,7 @@
     "tags": [
       "weather",
       "outdoors",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4531,7 +4781,7 @@
     "tags": [
       "nature",
       "outdoors",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -4849,8 +5099,7 @@
     ],
     "tags": [
       "market-research",
-      "ai",
-      "agents",
+      "ai-agents",
       "competitive-analysis"
     ],
     "events": [
@@ -5166,7 +5415,7 @@
     "tags": [
       "productivity",
       "outdoors",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5190,7 +5439,7 @@
     "tags": [
       "outdoors",
       "audio",
-      "agents"
+      "ai-agents"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5214,7 +5463,7 @@
     "tags": [
       "outdoors",
       "nature",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5238,7 +5487,7 @@
     "tags": [
       "outdoors",
       "weather",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5311,7 +5560,7 @@
     "tags": [
       "outdoors",
       "travel",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5335,7 +5584,7 @@
     "tags": [
       "outdoors",
       "gaming",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5358,8 +5607,8 @@
     ],
     "tags": [
       "research",
-      "agents",
-      "ai"
+      "ai-agents",
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5383,7 +5632,7 @@
     "tags": [
       "travel",
       "outdoors",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5431,7 +5680,7 @@
     "tags": [
       "nature",
       "travel",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5479,7 +5728,7 @@
     "tags": [
       "outdoors",
       "journaling",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -5503,7 +5752,7 @@
     "tags": [
       "outdoors",
       "journaling",
-      "ai"
+      "local-models"
     ],
     "events": [
       "Hacktoberfest 2026"
@@ -6103,7 +6352,7 @@
     "tags": [
       "shopping",
       "ai-agents",
-      "e-commerce"
+      "ecommerce"
     ],
     "apis": [
       "Amazon Search API",
@@ -8166,7 +8415,6 @@
     "links": [],
     "tags": [
       "integrations",
-      "kotlin",
       "developer-tools"
     ],
     "apis": [
@@ -8179,7 +8427,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Kotlin"
+      ]
+    }
   },
   {
     "name": "Deal Scout — Buy or Pass?",
@@ -8675,7 +8928,7 @@
     "links": [],
     "tags": [
       "education",
-      "agents"
+      "ai-agents"
     ],
     "apis": [
       "Google Search API"
@@ -11183,7 +11436,6 @@
     "links": [],
     "tags": [
       "finance",
-      "desktop",
       "monitoring"
     ],
     "apis": [
@@ -11192,7 +11444,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Desktop"
+      ]
+    }
   },
   {
     "name": "tripPilot-ai",
@@ -11759,7 +12016,6 @@
     "links": [],
     "tags": [
       "integrations",
-      "python",
       "developer-tools"
     ],
     "apis": [
@@ -11773,7 +12029,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "Fin4X",
@@ -12987,7 +13248,6 @@
     "links": [],
     "tags": [
       "integrations",
-      "python",
       "developer-tools"
     ],
     "apis": [
@@ -12997,7 +13257,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Python"
+      ]
+    }
   },
   {
     "name": "Alerion",
@@ -14030,7 +14295,6 @@
     "githubUrl": "https://github.com/phenomdeekey271020/ResQ-Android",
     "links": [],
     "tags": [
-      "android",
       "local-search",
       "accessibility"
     ],
@@ -14039,7 +14303,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Android"
+      ]
+    }
   },
   {
     "name": "quaoar",
@@ -15126,7 +15395,6 @@
     "links": [],
     "tags": [
       "integrations",
-      "java",
       "developer-tools"
     ],
     "apis": [
@@ -15137,7 +15405,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "technologies": [
+        "Java"
+      ]
+    }
   },
   {
     "name": "JobTracker",
@@ -15209,7 +15482,7 @@
     "links": [],
     "tags": [
       "careers",
-      "resumes",
+      "resume",
       "jobs"
     ],
     "apis": [
@@ -16296,15 +16569,19 @@
     "githubUrl": "https://github.com/Dev-VardhanX/SnapShop",
     "links": [],
     "tags": [
-      "shopping",
-      "android"
+      "shopping"
     ],
     "apis": [
       "Google Shopping API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Android"
+      ]
+    }
   },
   {
     "name": "claimcheck",
@@ -16742,7 +17019,7 @@
     "links": [],
     "tags": [
       "business",
-      "competitive-intelligence"
+      "competitive-analysis"
     ],
     "apis": [
       "Google Search API",
@@ -17278,7 +17555,6 @@
     "links": [],
     "tags": [
       "productivity",
-      "android",
       "verification"
     ],
     "apis": [
@@ -17288,7 +17564,12 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "metadata": {
+      "platforms": [
+        "Android"
+      ]
+    }
   },
   {
     "name": "NoticeDrift",
@@ -17421,7 +17702,7 @@
     "links": [],
     "tags": [
       "developer-tools",
-      "agents",
+      "ai-agents",
       "research"
     ],
     "apis": [
@@ -17985,7 +18266,7 @@
     "tags": [
       "outdoors",
       "travel",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google News API"
@@ -18062,7 +18343,7 @@
     "tags": [
       "outdoors",
       "gamification",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Maps API"
@@ -18215,7 +18496,7 @@
     "tags": [
       "reselling",
       "pricing",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Search API"
@@ -18320,7 +18601,7 @@
     "tags": [
       "travel",
       "flights",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Flights API"
@@ -18346,7 +18627,7 @@
     "tags": [
       "ecommerce",
       "reselling",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Shopping API"
@@ -18476,7 +18757,7 @@
     "tags": [
       "reselling",
       "pricing",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "eBay Search API"
@@ -18604,7 +18885,7 @@
     "tags": [
       "fashion",
       "shopping",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Shopping API"
@@ -18732,7 +19013,7 @@
     ],
     "tags": [
       "market-research",
-      "local-ai",
+      "local-models",
       "monitoring"
     ],
     "apis": [
@@ -18758,7 +19039,7 @@
     "tags": [
       "job-search",
       "freelancing",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Jobs API"
@@ -18809,7 +19090,7 @@
     "tags": [
       "freelancing",
       "estimates",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Search API"
@@ -19038,7 +19319,7 @@
     "tags": [
       "reselling",
       "electronics",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "eBay Search API"
@@ -19171,7 +19452,7 @@
     "tags": [
       "job-search",
       "resume",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "Google Jobs API"
@@ -19223,7 +19504,7 @@
     "tags": [
       "reselling",
       "pricing",
-      "local-ai"
+      "local-models"
     ],
     "apis": [
       "eBay Search API"
@@ -19298,7 +19579,7 @@
     ],
     "tags": [
       "market-research",
-      "local-ai",
+      "local-models",
       "competitive-analysis"
     ],
     "apis": [
