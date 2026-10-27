@@ -19633,7 +19633,12 @@
     "dateAdded": "2026-10-25",
     "githubUrl": "https://github.com/p-rth12999/Sloth-CLoset",
     "hostedUrl": "https://sloth-closet12999.streamlit.app/",
-    "links": [],
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/parth_kulkarni_f56a656693/slothcloset-2iod"
+      }
+    ],
     "tags": [
       "fashion",
       "planning",
@@ -19641,6 +19646,9 @@
     ],
     "apis": [
       "Google Images API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
     ]
   },
   {
@@ -21389,5 +21397,939 @@
       "HackTX 2026"
     ],
     "hostedUrl": "https://ducky-snowy.vercel.app/"
+  },
+  {
+    "name": "Perforvisor",
+    "description": "Analyzes Google Maps reviews to surface recurring customer feedback and compare a business with nearby competitors.",
+    "author": "Kartik Agnihotri",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/KrAG2000/perforvisor",
+    "hostedUrl": "https://perforvisor.vercel.app",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/kartik_agnihotri_b7c42298/perforvisor-a-5-review-said-needs-to-be-more-clean-open-models-caught-it-38pn"
+      }
+    ],
+    "tags": [
+      "reviews",
+      "business-intelligence",
+      "competitive-analysis"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Maps Reviews API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Digest Sloth",
+    "description": "Summarizes local documents with an open-weight model and can enrich extracted action items with Google Search results.",
+    "author": "Muhammad Khizar",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/khizzcr7/digest-sloth",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/khizzcr7/digest-sloth-drop-files-in-wake-up-to-a-digest-1a01"
+      }
+    ],
+    "tags": [
+      "summarization",
+      "local-models",
+      "productivity"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "FlipCheck",
+    "description": "Identifies secondhand items from photos, compares current eBay listings, and drafts resale listings with estimated asking prices.",
+    "author": "mohamedaminehamdi",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/mohamedaminehamdi/flipcheck",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/mohamedaminehamdi/flipcheck-snap-a-thrift-find-get-a-fair-price-and-a-ready-listing-gemma-4-tabpfn-1im5"
+      }
+    ],
+    "tags": [
+      "resale",
+      "price-comparison",
+      "image-analysis"
+    ],
+    "apis": [
+      "eBay Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "slug": "flipcheck-mohamedaminehamdi"
+  },
+  {
+    "name": "slothd",
+    "description": "Organizes local files while the computer is idle and can use Google Search to identify unfamiliar vendors and add context to file metadata.",
+    "author": "Dhruv Jani",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/JaniDhruv/slothd",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/dj29/i-built-slothd-a-local-first-offline-capable-ai-daemon-that-patiently-organizes-your-messy-53e7"
+      }
+    ],
+    "tags": [
+      "file-management",
+      "local-models",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Wait For It",
+    "description": "Monitors conditions described in natural language, using Google Search for requests without a source URL and notifying users when a change is detected.",
+    "author": "Ibrahim Awab",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/miawab/waitforit",
+    "hostedUrl": "https://waitforit.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/miawab/i-built-wait-for-it-tell-an-open-gemma-what-youre-waiting-for-it-checks-rarely-and-it-got-35-of-jgg"
+      }
+    ],
+    "tags": [
+      "monitoring",
+      "notifications",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Lazy Scholar",
+    "description": "Searches for scholarships, paid internships, and hackathons overnight, then uses Gemma to summarize opportunities that fit a student's profile.",
+    "author": "chamod dhananjaya",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/dhananjaya-hbc/lazy-scholar",
+    "hostedUrl": "https://lazyscholar.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/dhananjayachamod0754/i-need-money-for-my-studies-so-i-built-an-agent-that-hunts-for-it-while-i-sleep-1mpi"
+      }
+    ],
+    "tags": [
+      "education",
+      "opportunity-discovery",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Sloth Watch",
+    "description": "Searches for news about a business's software tools overnight and writes a brief of changes and deadlines that may need attention.",
+    "author": "Brasspage",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/brasspage/sloth-watch",
+    "hostedUrl": "https://brasspage.github.io/sloth-watch/",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/brasspage/sloth-watch-an-overnight-agent-that-reads-the-news-about-your-tools-so-you-can-stay-in-bed-3b06"
+      }
+    ],
+    "tags": [
+      "monitoring",
+      "news",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Slowth Money",
+    "description": "A local savings planner that uses Google Search to discover public financial product information while keeping personal planning data on the device.",
+    "author": "Julien Avezou",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/JulienAvezou/Slowth-Money",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/javz/slowth-money-a-local-ai-agent-for-your-financial-goals-2ki2"
+      }
+    ],
+    "tags": [
+      "finance",
+      "planning",
+      "desktop"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "DawnPatch",
+    "description": "Investigates software bugs with a local model and can retrieve documentation through Google Search to support repair proposals.",
+    "author": "Priyanshu Gupta",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/priy-anshugupta/DawnPatch",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/priyanshu_gupta_26/dawnpatch-let-your-laptop-reproduce-the-bug-before-you-touch-the-code-51hi"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "debugging",
+      "local-models"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Preclass in Three Lines",
+    "description": "Turns Google Search results into a three-line Chinese lesson preview using a local Gemma model.",
+    "author": "dhuang0808",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/dhuang0808/preclass-3-lines",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/dhuang0808/three-lines-before-class-live-search-meets-local-gemma-4bnm"
+      }
+    ],
+    "tags": [
+      "education",
+      "local-models",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "VOX",
+    "description": "Triages support tickets and drafts replies with fresh troubleshooting references retrieved through Google Search.",
+    "author": "Himanshu Kumar",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/himanshu748/vox-zero-touch-os",
+    "hostedUrl": "https://getvox.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/himanshu_748/bas-do-minute-ka-kaam-hai-i-built-vox-so-24-support-tickets-stop-keeping-me-up-34dd"
+      }
+    ],
+    "tags": [
+      "customer-support",
+      "automation",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Night Guard",
+    "description": "Flags potential risks in game chats and uses Google Search to look for scam or phishing reports about shared domains.",
+    "author": "Jennifer Evangelista",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/jenniferevangelista-de/night-guard",
+    "hostedUrl": "https://night-guard-demo.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/jenniferevangelistade/night-guard-an-open-model-guard-that-watches-out-for-kids-in-game-chats-so-tired-parents-dont-3fb6"
+      }
+    ],
+    "tags": [
+      "security",
+      "online-safety",
+      "scam-detection"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "UNWATCH",
+    "description": "Compares YouTube tutorials using timestamped transcripts to show which parts repeat familiar material and which introduce new ideas.",
+    "author": "Reet Singh",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Reet24-del/unwatch",
+    "hostedUrl": "https://unwatch-byeb.onrender.com/",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/reet_singh_ee97da2986538e/unwatch-finding-what-a-second-tutorial-actually-adds-4hm0"
+      }
+    ],
+    "tags": [
+      "education",
+      "video",
+      "transcripts"
+    ],
+    "apis": [
+      "YouTube Video Transcript API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Mr. Couch",
+    "description": "A desktop assistant that handles local tasks and uses Google site searches and YouTube results to find web pages, music, and videos.",
+    "author": "Ronak sarda",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/ronaksarda/couch",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ronaksarda/i-gave-my-pc-a-lazy-rude-roommate-he-does-my-chores-but-only-if-i-say-thank-you-474h"
+      }
+    ],
+    "tags": [
+      "desktop",
+      "automation",
+      "voice"
+    ],
+    "apis": [
+      "Google Search API",
+      "YouTube Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "knowledge-gate",
+    "description": "Watches YouTube channels, turns talk transcripts into cited concept cards, and adds new points to personal notes using a local model.",
+    "author": "Sohee Lee",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/gracelee087/knowledge-gate",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/gracelee087/knowledge-gate-ai-talks-into-my-own-notes-while-i-sleep-1agg"
+      }
+    ],
+    "tags": [
+      "education",
+      "knowledge-management",
+      "transcripts"
+    ],
+    "apis": [
+      "YouTube Channel API",
+      "YouTube Video Transcript API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Knell",
+    "description": "Checks app and hackathon ideas against Google Search results for existing products, demand, and competitors.",
+    "author": "Hashir",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/mateir0/knell",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/offxhashir/finding-a-hackathon-idea-took-me-14-hours-and-50-dead-ideas-so-i-automated-the-killing-1e1i"
+      }
+    ],
+    "tags": [
+      "idea-validation",
+      "market-research",
+      "hackathons"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Loafline",
+    "description": "Helps prioritize commitments and draft a next step, using Google Search to add context to deadline estimates.",
+    "author": "S. M. Riad",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/smriad/loafline",
+    "hostedUrl": "https://loafline.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/smriad/loafline-open-weight-ai-that-gives-you-permission-to-defer-hacktoberfest-week-3-3cp5"
+      }
+    ],
+    "tags": [
+      "productivity",
+      "planning",
+      "task-management"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "SecureScope",
+    "description": "Scans code for security issues and uses Google Search to attach related vulnerability records and security advisories to findings.",
+    "author": "Anavay Sharma",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/SuperSaiyan101/securescope",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/supersaiyan101/securescope-building-a-privacy-first-ai-code-security-agent-with-google-gemma-2-serpapi--4e7"
+      }
+    ],
+    "tags": [
+      "security",
+      "code-analysis",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Pinlight",
+    "description": "An interactive electronics tutor that uses Google Search to find manufacturer datasheets, application notes, and CAD references.",
+    "author": "Afreen Hossain",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/afreenorbit/pinlight",
+    "hostedUrl": "https://pinlight.afreenorbit.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/afreenorbit/pinlight-i-was-too-lazy-to-read-a-40-page-datasheet-so-i-built-an-interactive-electronics-tutor-46ff"
+      }
+    ],
+    "tags": [
+      "education",
+      "electronics",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "MailAssistant",
+    "description": "Summarizes emails with a local model and researches senders' companies through Google Light Search to add context to each message.",
+    "author": "Barbaros Emre Alagöz",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/barbarosalagoz/MailAssistant",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/barbarosalagoz/i-built-an-ai-email-assistant-in-net-with-serpapi-and-a-local-llm-heres-what-broke-37od"
+      }
+    ],
+    "tags": [
+      "email",
+      "local-models",
+      "company-research"
+    ],
+    "apis": [
+      "Google Light Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Vendorwake",
+    "description": "Finds vendors' release announcements through Google Search and checks whether documented changes affect a connected codebase.",
+    "author": "Shailesh Vats",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/shaileshvats/vendorwake",
+    "hostedUrl": "https://vendorwake-web.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/shaileshvats2004/vendorwake-the-upstream-changed-gemma-caught-it-and-a-test-proved-it-3o3f"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "dependency-management",
+      "code-analysis"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "CraveCode",
+    "description": "Finds meals through Google Search and ranks options around food preferences, nutrition targets, and budget.",
+    "author": "Sarvesh",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/SarveshDujari/CraveCode",
+    "hostedUrl": "https://cravecode.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/sarvesh_3bcf0f427a27e1849/i-built-an-ai-food-scout-because-what-should-i-eat-is-a-surprisingly-hard-question-30of"
+      }
+    ],
+    "tags": [
+      "food",
+      "recommendations",
+      "local-search"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "OpenPilot Research",
+    "description": "Uses Google Search results and a local Gemma model to write research reports with source links and saved history.",
+    "author": "Snehal koli",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Snehal20Koli/OpenPilot-Research",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/snehal_koli_0296ff12af52b/openpilot-research-your-local-ai-research-assistant-hacktoberfest-2026-3196"
+      }
+    ],
+    "tags": [
+      "research",
+      "local-models",
+      "summarization"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Receipts, Not Rumors",
+    "description": "Organizes posts, screenshots, and web sources into an evidence timeline, using Google Search to discover additional sources.",
+    "author": "NIKITHA S",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/stargalax/receipts-not-rumors-web",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/nikitha_s_3a42baaa72fd15a/receiptsnot-rumors-4lp7"
+      }
+    ],
+    "tags": [
+      "research",
+      "fact-checking",
+      "timelines"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "ClassSloth",
+    "description": "Plans Google Classroom coursework with a local Gemma model and finds related educational resources through Google Search.",
+    "author": "NIDHAN JAIN",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Dev-Nidhan/classsloth",
+    "hostedUrl": "https://classsloth.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/nidhan_jain/classsloth-a-local-gemma-planner-for-the-weeks-homework-1ahc"
+      }
+    ],
+    "tags": [
+      "education",
+      "study-planning",
+      "local-models"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "StudyGuardian",
+    "description": "Combines coursework, notes, and local AI study plans with Google Search results for supplementary learning material.",
+    "author": "Masham",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Masham-0/studyGuardian",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/masham_/studyguardian-your-local-first-ai-study-planner-powered-by-gemma-3-48mm"
+      }
+    ],
+    "tags": [
+      "education",
+      "study-planning",
+      "local-models"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Doxify",
+    "description": "Creates repository documentation and upgrade reports, using Google Search to find release notes when GitHub releases are unavailable.",
+    "author": "Ekomjah Denis",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Ekomjah/doxify",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ekomjah/a-1b-gemma-wrote-47-claims-about-a-repo-my-verifier-let-13-through-1ofg"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "documentation",
+      "dependency-management"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "YourPaddock",
+    "description": "Builds Formula 1 briefings from articles and uses Google Search to discover additional sources for follow-up questions.",
+    "author": "Edgi Axel",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/edgiaxel/YourPaddock",
+    "hostedUrl": "https://your-paddock-web.onrender.com/",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/edgiaxel/i-got-tired-of-five-f1-tabs-so-i-built-a-briefing-that-can-argue-from-the-articles-23dg"
+      }
+    ],
+    "tags": [
+      "sports",
+      "news",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "SlothBoss",
+    "description": "A local Windows assistant that researches topics through Google Search and combines web sources with local files to draft reports.",
+    "author": "Rajesh Khadka",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/rajeshkhadka200/SlothBoss",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/rajesh0315/i-built-slothboss-a-local-ai-agent-that-actually-gets-things-done-25jn"
+      }
+    ],
+    "tags": [
+      "desktop",
+      "local-models",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Nobody Plans",
+    "description": "Plans group outings around shared availability and budgets using Google Maps places and Google Events listings.",
+    "author": "Nikitha Kishore Avadootha",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/nikithakls17-sys/group-planner",
+    "hostedUrl": "https://nobody-plans.onrender.com",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/nikithakls17sys/every-group-chat-has-one-person-who-plans-everything-i-built-an-app-so-nobody-has-to-be-that-nlm"
+      }
+    ],
+    "tags": [
+      "planning",
+      "local-search",
+      "events"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Events API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "TeApuesto Assistant",
+    "description": "Reads a sports odds board and uses Google Search sports results and news to prepare daily booth scripts and reports.",
+    "author": "Juan Huanaco",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/juanhuanaco/teapuesto-agent",
+    "hostedUrl": "https://teapuesto.juanhuanaco.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/jhuanaco/my-mom-struggled-to-write-daily-sales-speeches-so-i-built-an-ai-agent-for-her-2dom"
+      }
+    ],
+    "tags": [
+      "sports",
+      "reporting",
+      "image-analysis"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "ScamSloth",
+    "description": "Transcribes voicemails, flags possible scam indicators, and searches Google for reports about the callback number.",
+    "author": "Hannan Zubair",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/bauji/scamslothis",
+    "hostedUrl": "https://scamslothis.mildlyintelligent.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/hannanthetron/scamsloth-listens-to-your-voicemails-so-you-dont-have-to-5cbi"
+      }
+    ],
+    "tags": [
+      "security",
+      "audio",
+      "scam-detection"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Unread",
+    "description": "Turns newsletters into private audio episodes and can add a topical news segment from Google News results.",
+    "author": "Victory Lucky",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/codewithveek/unread",
+    "hostedUrl": "https://getunread.site",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/codewithveek/too-lazy-to-read-my-newsletters-so-i-built-an-ai-that-reads-them-to-me-i85"
+      }
+    ],
+    "tags": [
+      "newsletters",
+      "audio",
+      "news"
+    ],
+    "apis": [
+      "Google News API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Bumpy",
+    "description": "An Obsidian assistant for journals and daily briefings that uses Google Search to create research notes with source links.",
+    "author": "ashish malla",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/im45145v/BUMPY",
+    "hostedUrl": "https://bumpyai.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/im45145v/i-left-my-journal-on-read-bumpy-is-still-typing-2h80"
+      }
+    ],
+    "tags": [
+      "obsidian",
+      "productivity",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "FlakePilot",
+    "description": "Investigates flaky tests from CI reports and uses Google Search to collect sources related to failing test names.",
+    "author": "Priyanshu Jha",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/CodewithJha/FlakePilot",
+    "hostedUrl": "https://app.flakepilot.tech",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/priyanshu_jha_eee132b17e5/i-stopped-re-running-flaky-tests-a-deterministic-verdict-and-a-gemma-thats-only-allowed-to-guess-1le9"
+      }
+    ],
+    "tags": [
+      "testing",
+      "developer-tools",
+      "ci"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "SlothBotanist",
+    "description": "Suggests herbal drinks from pantry ingredients, using web research, image search, and Google Lens to find recipes and ingredient references.",
+    "author": "Coder",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Coder-432/slothbotanist",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/coder_432/slothbotanist-an-ai-drink-maker-that-turns-your-pantry-into-a-tiny-herbal-bar-293o"
+      }
+    ],
+    "tags": [
+      "recipes",
+      "food",
+      "image-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Scholar API",
+      "Google Patents API",
+      "Google News API",
+      "YouTube Search API",
+      "Google Trends Trending Now API",
+      "Google Trends API",
+      "DuckDuckGo Search API",
+      "Google Images API",
+      "Google Lens API",
+      "Extract API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
   }
 ]
