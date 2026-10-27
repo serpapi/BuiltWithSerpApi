@@ -199,7 +199,7 @@ module.exports = function (eleventyConfig) {
         description: site.description,
         numberOfItems: projects.length,
         itemListElement: projects.map((project, index) => {
-          const projectPageUrl = absoluteUrl(`/projects/${slugify(project.name)}/`, baseUrl);
+          const projectPageUrl = absoluteUrl(`/projects/${project.slug || slugify(project.name)}/`, baseUrl);
 
           return {
             "@type": "ListItem",

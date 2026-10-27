@@ -8753,9 +8753,9 @@
     ]
   },
   {
-    "name": "BrandGuard360: AI-Powered Brand Protection for Small Businesses (SerpApi + Gemini)",
-    "description": "Combines Google Search, Maps and News results from SerpApi into reports on a business's public search presence.",
-    "author": "VISHNUVARDHAN B",
+    "name": "BrandGuard360",
+    "description": "Combines Google Search, Maps, and News through SerpApi to review a brand's search presence, flag potential anomalies, and show supporting sources.",
+    "author": "Vishnu Vardhan B",
     "dateAdded": "2026-10-20",
     "githubUrl": "https://github.com/xokingvk/BrandWatch360-Serpapi-2026",
     "links": [],
@@ -8770,7 +8770,8 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "hostedUrl": "https://brandwatch360-serpapi.vercel.app/"
   },
   {
     "name": "Scholar Research Assistant",
@@ -19330,8 +19331,8 @@
   },
   {
     "name": "GTM Shortlist",
-    "description": "Finds potential business customers through Google Search, checks their websites, and assembles a shortlist with evidence for each prospect.",
-    "author": "ADK BBX",
+    "description": "Finds companies matching a product's target market through SerpApi Google Search, then presents website evidence for users to review and export a prospect shortlist.",
+    "author": "Akshay Dilip Kumar",
     "dateAdded": "2026-10-21",
     "githubUrl": "https://github.com/adkbbx/GTM_Shortlist",
     "hostedUrl": "https://eygentic.tech",
@@ -19624,5 +19625,1769 @@
     "apis": [
       "Google Search API"
     ]
+  },
+  {
+    "name": "SlothCloset Studio",
+    "description": "A digital wardrobe and outfit planner with laundry tracking. Uses SerpApi Google Images API to find clothing visuals.",
+    "author": "Parth Kulkarni",
+    "dateAdded": "2026-10-25",
+    "githubUrl": "https://github.com/p-rth12999/Sloth-CLoset",
+    "hostedUrl": "https://sloth-closet12999.streamlit.app/",
+    "links": [],
+    "tags": [
+      "fashion",
+      "planning",
+      "image-search"
+    ],
+    "apis": [
+      "Google Images API"
+    ]
+  },
+  {
+    "name": "CarPlan.tech",
+    "description": "Compares vehicle ownership and lease options using contract details and advertised car prices found through SerpApi Google Search.",
+    "author": "kian m",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/kian-m/carplan",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/carplan-tech-zy3qs7"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "pricing",
+      "planning"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://carplan.tech/"
+  },
+  {
+    "name": "Rabbit Hole",
+    "description": "Helps students choose a first portfolio project and find research papers, tutorials, and materials through Google, Scholar, YouTube, and shopping searches.",
+    "author": "Edward Mou, Makani K  Flanders, Curtis Tan, virajs-garage",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/mkflan/hacktx",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/research-rabbit-hole"
+      }
+    ],
+    "tags": [
+      "education",
+      "research",
+      "project-planning"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Scholar API",
+      "YouTube Search API",
+      "Google Shopping API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Find your Film",
+    "description": "A movie discovery app that uses SerpApi Google Search to find streaming availability and links for selected films.",
+    "author": "Divya Viswanath, Abigail Xin, Cynthia Guzman Ramirez, Yachi Shekhawat",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/cyngram/hackTX_project",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/find-your-film-tsk6co"
+      },
+      {
+        "label": "Additional team submission",
+        "url": "https://devpost.com/software/find-your-film-3agqbs"
+      }
+    ],
+    "tags": [
+      "movies",
+      "discovery",
+      "entertainment"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://hacktx-movies.onrender.com/"
+  },
+  {
+    "name": "DripGram",
+    "description": "A social fashion app for sharing outfits, finding similar clothing with Google Lens, and comparing shopping offers and product details.",
+    "author": "Rishi Nigam",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/w8asec7/dripgram",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/dripgram"
+      }
+    ],
+    "tags": [
+      "fashion",
+      "ecommerce",
+      "visual-search"
+    ],
+    "apis": [
+      "Google Lens API",
+      "Google Shopping API",
+      "Google Immersive Product API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://thread-hacktx-2026-rp.web.app/feed"
+  },
+  {
+    "name": "Petal",
+    "description": "Connects women around shared health experiences and provides a clinician directory using SerpApi Google Maps listings and reviews.",
+    "author": "Anika Chock, Jhanvi Kodikanti, Sreeharshini Ambatipudi, Vaishnavi Ch",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/jhanvikk/Hack-Texas-Petal",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/petal-i37uez"
+      }
+    ],
+    "tags": [
+      "healthcare",
+      "community",
+      "local-search"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Maps Reviews API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://hack-texas-petal.vercel.app/"
+  },
+  {
+    "name": "Landed",
+    "description": "Helps newcomers find jobs, community events, nearby services, and information sources through SerpApi search results.",
+    "author": "Shervin AntonyArokiaraj, Sashank Bhagavatula, Likith Cheekoti, Sriram Srinivasan",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/sant-dev-dotcom/Landed",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/landed-osh3bw"
+      }
+    ],
+    "tags": [
+      "community",
+      "jobs",
+      "local-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Events API",
+      "Google Jobs API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "NxT",
+    "description": "Turns group conversations into shared plans, with SerpApi searches for flights, hotels, places, and prices to support planning and price watches.",
+    "author": "DevinT7, Srujan Sannidhi, Srikrishna Balaji, Sopan J",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/sjalkote/MuseOrganizer",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/museorganizer"
+      }
+    ],
+    "tags": [
+      "travel",
+      "planning",
+      "collaboration"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Flights API",
+      "Google Hotels API",
+      "Google Maps API",
+      "Google Shopping API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "slug": "nxt-museorganizer"
+  },
+  {
+    "name": "myTA",
+    "description": "A browser extension that guides students through difficult questions and finds practice resources and explanatory videos through Google and YouTube searches.",
+    "author": "Nuhan Hasan, Hitesh Mallula, Roy Wang, Tanush Agrawal",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/nuhan2007/HackTX-2026-Gongoleers",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/myta"
+      }
+    ],
+    "tags": [
+      "education",
+      "browser-extension",
+      "tutoring"
+    ],
+    "apis": [
+      "Google Search API",
+      "YouTube Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "ToyoGo",
+    "description": "Compares Toyota vehicle upgrade options and ownership costs using advertised vehicle prices retrieved through SerpApi Google Search.",
+    "author": "Edwin Feng, Duoyi Liang, Cody Chang, Eric Zhang",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/edf3ng/toyogo",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/toyogo"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "pricing",
+      "sustainability"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.toyogo.tech/"
+  },
+  {
+    "name": "Prandium AI",
+    "description": "Creates meal plans and grocery lists using SerpApi Google Gemini, then looks up Walmart products and nearby stores.",
+    "author": "Rodolfo C., William Qin",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/williamqin123/prandium-ai",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/prandiumai"
+      }
+    ],
+    "tags": [
+      "food",
+      "meal-planning",
+      "ecommerce"
+    ],
+    "apis": [
+      "Google Gemini API",
+      "Walmart Search API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://prandium.tech/"
+  },
+  {
+    "name": "Nano Foundry",
+    "description": "Explores enzyme pathways for target molecules and displays research citations retrieved through SerpApi Google Scholar.",
+    "author": "Tuffs Barreras",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/severo126/protein_customizer",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/protein-maker"
+      }
+    ],
+    "tags": [
+      "research",
+      "biology",
+      "visualization"
+    ],
+    "apis": [
+      "Google Scholar API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Agent-Depot",
+    "description": "A platform for configuring and testing AI agents with shared tools, including news search, shopping search, and webpage extraction through SerpApi.",
+    "author": "Aleksandr Nikitin, Siri Kishore Dola, Sreehaasika Katuru, Harshi2007176 Bondila",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Aleks-Nikitin/agent-depot",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/agent-depot"
+      }
+    ],
+    "tags": [
+      "ai-agents",
+      "automation",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google News API",
+      "Google Shopping API",
+      "Extract API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Lore",
+    "description": "A social planning app that turns conversations into activity suggestions using SerpApi web, event, and local place searches.",
+    "author": "Hamiz Iqbal, Shreekar Dittakavi",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/hamizfaraz/lore",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/lore-36es8f"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "events"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Events API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://lore-hacktx.vercel.app/"
+  },
+  {
+    "name": "Orkis",
+    "description": "Builds and manages AI agents with reusable tools, approval controls, and SerpApi searches for web information, places, and events.",
+    "author": "Laksh Kumar, Abdullah Al Mahmud",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/zero-abd/orkis",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/orkis"
+      }
+    ],
+    "tags": [
+      "ai-agents",
+      "automation",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Events API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://orkis.tech/"
+  },
+  {
+    "name": "FindMyVibe",
+    "description": "Suggests nearby places from individual or group preferences using SerpApi Google Maps, with shared voting to choose a destination.",
+    "author": "fiexinn, Jose Gurrola, Joshua Aguilar",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/JoseGurrola1/FindMyVibe",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/findmyvibe"
+      }
+    ],
+    "tags": [
+      "local-search",
+      "recommendations",
+      "social"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://findmyvibe.tech/"
+  },
+  {
+    "name": "iynk",
+    "description": "A browser learning environment for electronics, robots, and drones. SerpApi finds parts, tutorials, datasheets, makerspaces, and events.",
+    "author": "Jagrati Kumari, Amar Kushwaha, Rumaisa Mughal",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/kushwahaamar-dev/iynk",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/simlab-ps41uk"
+      }
+    ],
+    "tags": [
+      "education",
+      "hardware",
+      "simulation"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Shopping API",
+      "Amazon Search API",
+      "eBay Search API",
+      "Walmart Search API",
+      "Google Maps API",
+      "Google Events API",
+      "YouTube Search API",
+      "Extract API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://iynk.tech/en"
+  },
+  {
+    "name": "Drivn",
+    "description": "An automotive assistance app that searches for repair information, replacement parts, and nearby dealerships through SerpApi.",
+    "author": "Eneojo Unwuchola, Advaith Binu, PranitPrasanna, Matthew V",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/buildingBuild/HackTX-Project",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/car-of-the-future"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "local-search",
+      "ecommerce"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Shopping API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Ditto",
+    "description": "Helps friends discover activities and agree on hangout plans using SerpApi Google Maps place and route results.",
+    "author": "Mohit-Bapatla Bapatla, Edwin Chung",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Mohit-Bapatla/ditto",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/ditto-0b6s51"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "local-search"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Maps Directions API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://ditto-production.up.railway.app/"
+  },
+  {
+    "name": "Heatsink",
+    "description": "An operations agent platform with configuration, testing, and deployment workflows. Its SerpApi tools search the web, shopping offers, and local places.",
+    "author": "Yusuf Shaikh",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/yfshaikh/agent-platform",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/cool-project-g0vp76"
+      }
+    ],
+    "tags": [
+      "ai-agents",
+      "operations",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Shopping API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "TXMates",
+    "description": "Collects friends’ availability and preferences to build Austin hangout itineraries, with SerpApi Google Search and Google Local results for activity research.",
+    "author": "Ryan Varghese, Gohith Reddy",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/JeffOfTheSixPaths/TXMates",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/txmates"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "local-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Local API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Crossroads",
+    "description": "Compares vehicle lease and loan options using cost calculations, advertised car listings, and nearby dealerships found through SerpApi.",
+    "author": "Anoushka Kancherla",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/anoushka-kancherla/crossroads",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/crossroads-z6c8tr"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "pricing",
+      "planning"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://app.149.28.244.73.nip.io/"
+  },
+  {
+    "name": "Elevation",
+    "description": "A tower-building game whose material catalog uses SerpApi to retrieve reference images and facts about building materials.",
+    "author": "j, Preston Nguyen, Joshua Le Nguyen, Matthew Pham",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/JoshNguyen13/Elevation",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/elevation-azkn8w"
+      }
+    ],
+    "tags": [
+      "gaming",
+      "education",
+      "image-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Images API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://elevationgame.vercel.app/"
+  },
+  {
+    "name": "Catch",
+    "description": "Explores the budget impact of purchases and finds alternative products through SerpApi Google Shopping.",
+    "author": "Kaartik Virigineni, Quan Nguyen, Rexford Nimoh, Aarush Agrawal",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Aarush49/Catch",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/catch-ilr4jh"
+      }
+    ],
+    "tags": [
+      "shopping",
+      "budgeting",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Junction",
+    "description": "Helps vehicle owners share repair experiences and find nearby mechanics using SerpApi Google Maps.",
+    "author": "Aashish Dhital, Sanish Shrestha, Falcon Kid, Yugesh Bhattarai",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/madmax-10/junction",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/junction-a6fp8s"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "community",
+      "local-search"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.junction-ai.tech/"
+  },
+  {
+    "name": "BreakingPoint",
+    "description": "Models how unexpected expenses affect a short-term budget and researches nearby services, reviews, and travel routes through SerpApi.",
+    "author": "Saran Jacob, Monish Mehta, Shiloh Asir",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/MMehta45/hacktx26",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/breakingpoint"
+      }
+    ],
+    "tags": [
+      "budgeting",
+      "planning",
+      "local-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Maps Reviews API",
+      "Google Maps Directions API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "familiar",
+    "description": "An assistive glasses companion with voice tools and a SerpApi Google Search integration for spoken questions about places, events, and everyday facts.",
+    "author": "Sahas Sharma, Keane Ferdinand, Caleb Bae",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/balebbae/hacktx-2026",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/youcanseeeverything"
+      }
+    ],
+    "tags": [
+      "accessibility",
+      "voice-assistant",
+      "wearables"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "SweetSpot",
+    "description": "Plans home theater setups and compares equipment offers retrieved through SerpApi Google Shopping.",
+    "author": "Hrishi Kamireddy, Neel  Mittal, Ankur Dabholkar, Aaditya Matampalli",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/autonomical1/sweetspot",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/sweetspot-xdb0hy"
+      }
+    ],
+    "tags": [
+      "shopping",
+      "recommendations",
+      "home-theater"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "BenchCheck",
+    "description": "Analyzes cyclic voltammetry data and helps researchers compare possible explanations with papers and passages retrieved through Google Scholar and the Extract API.",
+    "author": "Ulan Sarolia, Johan Martinez",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Electrochemistry-Undergrads/benchcheck",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/research-x6dgqi"
+      }
+    ],
+    "tags": [
+      "research",
+      "electrochemistry",
+      "data-analysis"
+    ],
+    "apis": [
+      "Google Scholar API",
+      "Extract API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Runway",
+    "description": "Helps employees prepare purchase proposals by comparing product specifications, prices, and seller details through SerpApi shopping and product searches.",
+    "author": "Saleh Khan, Malakai Delcid",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/malki-aal/MalakaiSaleh_H26",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/runway-5i4r6e"
+      }
+    ],
+    "tags": [
+      "procurement",
+      "price-comparison",
+      "collaboration"
+    ],
+    "apis": [
+      "Google Shopping API",
+      "Google Immersive Product API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.bosspleaseapprovemy.tech/sign-in"
+  },
+  {
+    "name": "All Ears",
+    "description": "A speech practice assistant that retrieves web sources through SerpApi Google Search to support audience questions and feedback.",
+    "author": "Abhijay  Patchala, Kundansai  Ampagowni, Shimal Tajale, Abhiram Jetty",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Shimal-Tajale/DevilsAdvocatesSpeechBot",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/speechbot-29k8wc"
+      }
+    ],
+    "tags": [
+      "education",
+      "presentation",
+      "voice-assistant"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://devilsadvocatesspeechbot.onrender.com/results/e114fc15-f47c-4fc2-8cd7-439d1502bb6f"
+  },
+  {
+    "name": "FareWell",
+    "description": "Turns group travel ideas into trip drafts and savings plans, with flight and hotel comparisons powered by SerpApi.",
+    "author": "Adrith Iyer, Shravya Nayani, Thomas Vu, Lakshmi Muppana",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/HeyaDrith/FareWell",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/farewell-95gbqa"
+      }
+    ],
+    "tags": [
+      "travel",
+      "budgeting",
+      "planning"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Agent Forge: Build AI Agents You Can Audit",
+    "description": "Builds and tests AI agents with auditable tool results from SerpApi web, news, shopping, and local searches.",
+    "author": "raymond zhu",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/RaymondZhu3/Agent-Forge",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/agent-forge-build-ai-agents-you-can-audit"
+      }
+    ],
+    "tags": [
+      "ai-agents",
+      "automation",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API",
+      "Google Shopping API",
+      "Google Local API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Group Project",
+    "description": "A multiplayer storytelling game that uses SerpApi Google News to find real headlines as starting points for shared adventures.",
+    "author": "oclabomb rudd, Uche",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/b14ck5tar/H4CKBOMB",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/group-project-h4adtj"
+      }
+    ],
+    "tags": [
+      "gaming",
+      "storytelling",
+      "news"
+    ],
+    "apis": [
+      "Google News API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://groupproject-game.vercel.app/tv"
+  },
+  {
+    "name": "SCRAPR",
+    "description": "A multiplayer research game where players answer trivia using Google Search and Google Shopping results, with search suggestions from SerpApi.",
+    "author": "Manas  Agrawal",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/ManasAgrawal05/SCRAPR",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/scrapr"
+      }
+    ],
+    "tags": [
+      "gaming",
+      "search",
+      "education"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Shopping API",
+      "Google Autocomplete API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Nxt",
+    "description": "An automotive planning app that compares ownership options and uses SerpApi to research vehicle listings, dealers, and recall news.",
+    "author": "Sameeraa K, Hung Hoang, Vishva Patel, Vishwaa Shah",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Vswashah/toyota-next",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/trustfundbabies"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "planning",
+      "pricing"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google News API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "slug": "nxt-toyota",
+    "hostedUrl": "https://rizzk.tech/"
+  },
+  {
+    "name": "Cohue",
+    "description": "Helps people form teams around a shared goal, using SerpApi Google Search to research relevant opportunities and information.",
+    "author": "Richmond Azadze, Setornam Sam-Anyormi",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/richmondazadze/cohue",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/cohue"
+      }
+    ],
+    "tags": [
+      "collaboration",
+      "community",
+      "ai-agents"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://cohue.tech/"
+  },
+  {
+    "name": "Third Place",
+    "description": "Turns friends’ voice notes and preferences into hangout suggestions using SerpApi Google Maps and Google Events.",
+    "author": "Shah Aneequddin",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Aneeq177/Third-Place",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/third-place-nofejm"
+      }
+    ],
+    "tags": [
+      "social",
+      "voice-assistant",
+      "planning"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Events API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.3rdplaceonline.tech/"
+  },
+  {
+    "name": "SAIDE | student aid for human connection",
+    "description": "A student connection prototype that expands conversation topics through several SerpApi search engines to help identify shared interests.",
+    "author": "Zoë Bryant, Deeksha Bandi, Nathan Han, Emraan Yusuf",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/DeekshaBandi/HackTX26",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/no-fnbgq5"
+      }
+    ],
+    "tags": [
+      "education",
+      "community",
+      "search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Autocomplete API",
+      "Google News API",
+      "Google Scholar API",
+      "YouTube Search API",
+      "Bing Search API",
+      "DuckDuckGo Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Equa - Equality Finnances",
+    "description": "A budgeting app that searches for public assistance programs through SerpApi Google Search and organizes program links and application progress.",
+    "author": "J Sanders",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Savern02/hacktx2026",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/equa-equality-finnances"
+      }
+    ],
+    "tags": [
+      "budgeting",
+      "local-search",
+      "productivity"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.equalityfin.tech/"
+  },
+  {
+    "name": "ParaMyth",
+    "description": "A collaborative writing and production workspace that uses SerpApi Google Search for documentary leads, location research, and production planning.",
+    "author": "Tanish Chauhan, Jerrick Kamaraj, aadityathegreat, ronmin11",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/TanishC4444/ParaMyth",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/paramyth"
+      }
+    ],
+    "tags": [
+      "writing",
+      "storytelling",
+      "collaboration"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://paramyth.tech/"
+  },
+  {
+    "name": "QuestBound",
+    "description": "Turns group chats into shared city quests, using SerpApi place and event discovery plus Google Lens searches for submitted images.",
+    "author": "Aryan Bachu, Mahir Patel, Akshat Dua, Eshanthsai Vanam",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/EshanthsaiVanam/questbound",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/quest-bound"
+      }
+    ],
+    "tags": [
+      "gaming",
+      "social",
+      "local-search"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Events API",
+      "Google Lens API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://questbound.expo.app/"
+  },
+  {
+    "name": "Smart Next Move",
+    "description": "Compares vehicle lease-end choices and uses SerpApi Google Search for market prices and local listings.",
+    "author": "Ryan Thieu, Ansh Shah, Krish Bhalani",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/krishb111/carfinanceapp",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/car-finance-app"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "pricing",
+      "planning"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Breadcrumbs",
+    "description": "Visualizes SSH honeypot activity and uses SerpApi Google Search to find public references to observed domains, IP addresses, and file indicators.",
+    "author": "Keziah Muyna, Aryan Achar, kyan ocampo, Julian Pineros",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/aryansvt/hacktx2026",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/naps-hack-project"
+      }
+    ],
+    "tags": [
+      "cybersecurity",
+      "monitoring",
+      "visualization"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.followthebreadcrumbs.tech/live"
+  },
+  {
+    "name": "Nook",
+    "description": "Finds nearby study spots and helps friends coordinate study plans using place information from SerpApi Google Maps.",
+    "author": "Amogh Astagi, Andrew Sun, Zach Gaudin, Jeffrey Josh Jone Rajarupan",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/amohash/nook",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/space-qtizcg"
+      }
+    ],
+    "tags": [
+      "education",
+      "local-search",
+      "social"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Pixling",
+    "description": "A virtual pet game that rewards outdoor activities and uses SerpApi Google Maps to suggest nearby places for quests.",
+    "author": "Richard Huang, Siddharth Ammanur, Daniel Deng, Kevin Vargas",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/KernyMC/hacktx",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/pixling"
+      }
+    ],
+    "tags": [
+      "gaming",
+      "local-search",
+      "wellness"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.pixling.tech/"
+  },
+  {
+    "name": "betonthehorns",
+    "description": "A Texas Hold’em project with AI practice tools that uses SerpApi to retrieve poker news and reference material for its coaching features.",
+    "author": "Daniel H, Aakash Vishnuvarth",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/aakashvishcoder/betonthehorns",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/untitleed"
+      }
+    ],
+    "tags": [
+      "gaming",
+      "news",
+      "education"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://betonthehorns-nine.vercel.app/"
+  },
+  {
+    "name": "SquadUp",
+    "description": "Helps groups find activities, events, and places to meet using SerpApi Google Maps, Google Events, and web search.",
+    "author": "Ethan Jeng, Daniel Hoffmaster, Abhinav Manesh, Aarav Awasthi",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Ethanwashere1/HackTX-Project",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/insert-here-floi2s"
+      }
+    ],
+    "tags": [
+      "social",
+      "events",
+      "local-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Events API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://thesquadup.tech/"
+  },
+  {
+    "name": "stor3D",
+    "description": "Creates an interactive 3D store from a shopping conversation, using Google Shopping and Amazon results plus product details from SerpApi.",
+    "author": "Aliki Michael, Michael Remishevsky",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/amichael33/hackTX_26",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/hacktx-2026-uh2tvs"
+      }
+    ],
+    "tags": [
+      "ecommerce",
+      "3d",
+      "voice-assistant"
+    ],
+    "apis": [
+      "Google Shopping API",
+      "Amazon Search API",
+      "Google Immersive Product API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://stor3d.tech/"
+  },
+  {
+    "name": "Maxwell, Interactive Health Assistant",
+    "description": "An experimental webcam wellness companion with breathing exercises and a chat interface connected to SerpApi’s Google Gemini API.",
+    "author": "Mahdi Kabir",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Mahdi-39/maxwell-health-companion",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/maxwell-interactive-health-assistant"
+      }
+    ],
+    "tags": [
+      "wellness",
+      "computer-vision",
+      "voice-assistant"
+    ],
+    "apis": [
+      "Google Gemini API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Atmos",
+    "description": "Combines environmental sensor readings with weather information from SerpApi Google Search to create story-based outdoor quests.",
+    "author": "Shreya Goel, Beatrice Olaosebikan, Ila Wallace, Bhavya Duggirala",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/ila-w/hacktx2026",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/atmos-08anry"
+      }
+    ],
+    "tags": [
+      "iot",
+      "environment",
+      "gaming"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "SideQuest",
+    "description": "Coordinates group hangouts using SerpApi web, place, and event searches, then extracts public page details to support shared plans.",
+    "author": "Hrutvik Palutla, Hugo Villarreal, Siddharth Sriram, Evan Girard",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/Hrutvik-Palutla/HackTX-2026",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/sidequest-8sl02k"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "events"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Events API",
+      "Extract API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "slug": "sidequest-hacktx-2026",
+    "hostedUrl": "https://getsidequest.tech/"
+  },
+  {
+    "name": "Meridian",
+    "description": "A city design and simulation workspace with SerpApi tools for web research, local place discovery, news, and scholarly sources.",
+    "author": "Saketh Sripada, Sriram Mupparapu, Victor L, Siddhant Maji",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/sriramup/Meridian",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/meridian-p4lntd"
+      }
+    ],
+    "tags": [
+      "urban-planning",
+      "simulation",
+      "research"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google News API",
+      "Google Scholar API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://www.ge0.tech/"
+  },
+  {
+    "name": "Escudo RGV",
+    "description": "A bilingual message-review prototype that retrieves web references and place listings through SerpApi to help users examine suspicious messages.",
+    "author": "rbccvgws-gif Vega, Juliet Vega",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/rbccvgws-gif/shield-rgv",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/escudo-rgv"
+      }
+    ],
+    "tags": [
+      "cybersecurity",
+      "accessibility",
+      "search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "WolfWeave",
+    "description": "A secondhand clothing research app that uses SerpApi to look up garment information, size references, and comparable shopping offers.",
+    "author": "Sergio Rebeles, Aiden Salinas",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/aiden-08/hack-tx-product",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/wolfweave"
+      }
+    ],
+    "tags": [
+      "fashion",
+      "reselling",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Shopping API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Unlisted",
+    "description": "Helps compare apartments using web research, place details, photos, reviews, and route information retrieved through SerpApi.",
+    "author": "sherpchee Chen, Azalea Tang, Aditya",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/aditya-khambekar/hacktx",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/unlisted-cni6t3"
+      }
+    ],
+    "tags": [
+      "real-estate",
+      "local-search",
+      "comparison"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Images API",
+      "Google Maps Photos API",
+      "Google Maps Reviews API",
+      "Google Maps Directions API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://hacktx-alpha.vercel.app/"
+  },
+  {
+    "name": "CloseMates",
+    "description": "Helps friends coordinate supportive check-ins and meetups, with nearby place suggestions from SerpApi Google Maps.",
+    "author": "Vishnu Athreya, Hrithik Mallireddy, Ujval Nallur",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/sendtovishnu/hacktx26",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/working-hacktx-2026"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "local-search"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Dance Fantasy",
+    "description": "Generates dance practice routines and researches reference videos through SerpApi Google Search and YouTube Search.",
+    "author": "Toyeshh Medikonda, Luv Malay Udeshi, Gatik Goyal, Suchay Kommisetty",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/luvudeshi/dance-fantasy",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/hack-em-horns"
+      }
+    ],
+    "tags": [
+      "dance",
+      "education",
+      "video-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "YouTube Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://dancefantasy.tech/"
+  },
+  {
+    "name": "Smart Service Guardian",
+    "description": "An automotive planning and maintenance assistant that uses SerpApi to research market information and nearby service providers.",
+    "author": "Sehej Singal, Ashrith Velagandula",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/SSingal1/HackTX",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/smart-service-guardian"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "planning",
+      "local-search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Regentic",
+    "description": "Compares vehicle ownership scenarios and driving costs, with SerpApi searches for car listings, dealerships, and vehicle reference images.",
+    "author": "karl McHazlett-Ayala, Vishruth M, Ariana Azimi, Judy Fu",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/grilledcheese1/regenerative-analysis",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/regenerativeanalysis"
+      }
+    ],
+    "tags": [
+      "automotive",
+      "simulation",
+      "pricing"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Images API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://regentic.tech/"
+  },
+  {
+    "name": "Even Stevens",
+    "description": "Helps friends review shared spending and find activities to do together using SerpApi Google Maps and Google Events.",
+    "author": "Stas Gannutin, Kishen Sargur, Arav Agarwal, Ritvik Rajesh",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/saucefishman/SARK-hack-tx",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/sark-hb5zxn"
+      }
+    ],
+    "tags": [
+      "social",
+      "budgeting",
+      "events"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Events API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Hands-Off OR",
+    "description": "A gesture and voice interface prototype for medical image viewing and instrument logs, with SerpApi tools for web and local service searches.",
+    "author": "Victor Van, Sarah Nguyen, Ansur Riera-Vales",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/AXR110/hands-off-or",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/hands-off-or"
+      }
+    ],
+    "tags": [
+      "accessibility",
+      "computer-vision",
+      "voice-assistant"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Local API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Huddle",
+    "description": "Turns group-chat travel ideas into shared plans using SerpApi flight, hotel, place, and route searches.",
+    "author": "Arun Bagavathiannan, Valerius Petrini, Sid Mannepalli",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/arunbagavathiannan/hacktx",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/huddle-xsg4ch"
+      }
+    ],
+    "tags": [
+      "travel",
+      "planning",
+      "collaboration"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API",
+      "Google Maps API",
+      "Google Maps Directions API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "InstaPlan",
+    "description": "Coordinates group trips and events with shared voting and cost planning, using SerpApi for travel, place, event, and image searches.",
+    "author": "Bala Kausik Vazrala, Oscar Santos, sanjay-codez Krishnan, Adit Tripathi",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/bvazrala/InstaPlan",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/tbd-temporary-project-name-holder"
+      }
+    ],
+    "tags": [
+      "travel",
+      "planning",
+      "collaboration"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Flights API",
+      "Google Hotels API",
+      "Google Maps API",
+      "Google Events API",
+      "Google Maps Directions API",
+      "Google Images API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Rendezvoo",
+    "description": "Finds hangout options that fit friends’ schedules and preferences using SerpApi place, event, and route searches.",
+    "author": "Marcopolo Agostadero, Langa-pdf, Aminah Robinson",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/marco-git05/Rendezvoo",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/rendezvoo"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "events"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Events API",
+      "Google Maps Directions API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Kindred",
+    "description": "Turns messages into meetup plans and shared expenses, with place details and images from SerpApi Google Maps.",
+    "author": "Shria  Patel, Katie Vo, Anushka Sharma, Ashwika Katiyar",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/ashwikakatiyar/hacktx26",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/tbd-u5y2c8"
+      }
+    ],
+    "tags": [
+      "social",
+      "planning",
+      "budgeting"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Hello Again",
+    "description": "A meeting companion that organizes conversation notes and uses SerpApi web, place, and event searches for follow-up suggestions.",
+    "author": "Cesar Sanchez, Sai Pranav Chakka, Ojas Sarada",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/okyoiu/hacktx",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/coi"
+      }
+    ],
+    "tags": [
+      "productivity",
+      "meetings",
+      "search"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps API",
+      "Google Events API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ]
+  },
+  {
+    "name": "Ducky",
+    "description": "A voice-based thinking companion that finds supporting articles and videos through SerpApi Google Search and YouTube Search.",
+    "author": "Krish Sav, James Fang, Ethan Li, Partha R",
+    "dateAdded": "2026-10-27",
+    "githubUrl": "https://github.com/jamesfang87/HackTX-2026",
+    "links": [
+      {
+        "label": "HackTX 2026 submission",
+        "url": "https://devpost.com/software/ducky-68bql1"
+      }
+    ],
+    "tags": [
+      "education",
+      "voice-assistant",
+      "research"
+    ],
+    "apis": [
+      "Google Search API",
+      "YouTube Search API"
+    ],
+    "events": [
+      "HackTX 2026"
+    ],
+    "hostedUrl": "https://ducky-snowy.vercel.app/"
   }
 ]
