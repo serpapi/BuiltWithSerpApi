@@ -39,7 +39,7 @@ eleventyComputed:
         </div>
         <div class="project-detail-actions">
           {% if projectEntry.hostedUrl %}
-            <a class="button" href="{{ projectEntry.hostedUrl }}" target="_blank" rel="noopener noreferrer">{% icon "rocket" %}Open project</a>
+            <a class="button" href="{{ projectEntry.hostedUrl }}" target="_blank" rel="noopener noreferrer">{% icon "open" %}Open project</a>
           {% endif %}
           <a class="button{% if projectEntry.hostedUrl %} button-secondary{% endif %}" href="{{ projectEntry.githubUrl }}" target="_blank" rel="noopener noreferrer">{% icon "github" %}View source</a>
         </div>
@@ -82,7 +82,7 @@ eleventyComputed:
               <h2>Additional links</h2>
               <div class="project-detail-meta-links">
                 {% for link in projectEntry.links %}
-                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{% icon "link" %}{{ link.label }}{% include "icons/external-link.svg" %}</a>
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{% icon "link" %}{{ link.label }}{% icon "open" %}</a>
                 {% endfor %}
               </div>
             </div>

@@ -3,7 +3,7 @@
     <div class="project-search" role="search">
       {% icon "search" %}
       <input type="search" aria-label="Search projects" placeholder="{% if showEventFilter %}Search names, tags, events…{% else %}Search this event’s projects…{% endif %}" autocomplete="off" data-search-input>
-      <button type="button" aria-label="Clear search" data-search-clear hidden>×</button>
+      <button type="button" aria-label="Clear search" data-search-clear hidden>{% icon "close" %}</button>
     </div>
     <label class="sort-control" for="project-sort">
       {% icon "sort" %}

@@ -98,14 +98,12 @@
     selectedTags.forEach((tag) => {
       const button = document.createElement("button");
       const label = document.createElement("span");
-      const remove = document.createElement("span");
+      const remove = searchClear.querySelector("svg").cloneNode(true);
       button.type = "button";
       button.className = "selected-tag";
       button.dataset.removeTag = tag;
       button.setAttribute("aria-label", `Remove ${tag} tag`);
       label.textContent = tag;
-      remove.textContent = "×";
-      remove.setAttribute("aria-hidden", "true");
       button.append(label, remove);
       fragment.appendChild(button);
     });

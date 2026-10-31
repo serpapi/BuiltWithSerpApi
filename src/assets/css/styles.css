@@ -486,10 +486,10 @@ a:hover {
   cursor: pointer;
 }
 
-.selected-tag span:last-child {
+.selected-tag .icon {
   color: var(--brand-purple);
-  font-size: 1rem;
-  line-height: 1;
+  width: 14px;
+  height: 14px;
 }
 
 .api-filter-list {
@@ -700,6 +700,8 @@ a:hover {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 0;
   padding: 24px;
@@ -716,7 +718,7 @@ a:hover {
   background: var(--surface);
 }
 
-.project-card-featured .project-kicker span:first-child {
+.project-kicker .project-featured-label {
   color: var(--brand-purple);
 }
 
@@ -729,6 +731,7 @@ a:hover {
 
 .project-kicker {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 18px;
@@ -737,6 +740,32 @@ a:hover {
   letter-spacing: 0;
   font-size: .78rem;
   font-weight: 700;
+}
+
+.project-kicker-title {
+  flex-shrink: 0;
+}
+
+.project-kicker-events {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.project-kicker .event-chip {
+  min-height: 26px;
+  max-width: 100%;
+  padding: 3px 8px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.project-kicker .project-engine-count {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .project-kicker span {
@@ -749,10 +778,6 @@ a:hover {
   color: #6379a1;
   width: 1.15em;
   height: 1.15em;
-}
-
-.project-kicker span:last-child {
-  color: #626c7c;
 }
 
 .project-card-top {
@@ -794,8 +819,7 @@ a:hover {
 }
 
 .meta-group,
-.api-row,
-.project-links {
+.api-row {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -829,7 +853,6 @@ a:hover {
   border-color: #d1c2f5;
 }
 
-.chip .icon,
 .api-pill:hover {
   color: #5430bd;
   background: #ece6fd;
@@ -859,33 +882,65 @@ a:hover {
 }
 
 .project-links {
-  margin-top: 20px;
-  padding-top: 17px;
+  margin-top: auto;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
-  border-color: var(--line);
-  border-top-color: #e6eaf1;
+}
+
+.project-actions {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
 }
 
 .project-links a {
   display: inline-flex;
+  min-height: 34px;
   align-items: center;
+  justify-content: center;
   gap: 5px;
-  color: #526174;
-  font-size: 0.86rem;
+  padding: 6px 8px;
+  color: var(--brand-purple);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 0.8rem;
   font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
 }
 
 .project-links a:hover {
-  text-decoration: underline;
+  color: #5225c4;
+  background: #f1ebfd;
+}
+
+.project-submission-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 16px;
+  margin-top: 6px;
 }
 
 .project-links .icon {
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
 }
 
-.project-links .primary-project-link {
-  color: #6937ea;
+@media (max-width: 520px) {
+  .project-actions {
+    gap: 6px;
+  }
+
+  .project-links a {
+    gap: 3px;
+    padding: 6px 0;
+    border-width: 0;
+    font-size: 0.75rem;
+  }
 }
 
 .resource-promo {
@@ -995,14 +1050,12 @@ a:hover {
   width: 32px;
   height: 32px;
   margin-bottom: 12px;
-  color: #ffffff;
-  background: var(--brand-gradient);
-  border-radius: var(--radius);
+  color: var(--brand-purple);
 }
 
 .mini-icon .icon {
-  width: 17px;
-  height: 17px;
+  width: 22px;
+  height: 22px;
 }
 
 .browse-card:hover {
@@ -1018,7 +1071,7 @@ a:hover {
 
 .browse-card .mini-icon {
   display: inline-flex;
-  color: #ffffff;
+  color: var(--brand-purple);
 }
 
 .browse-card strong {
@@ -1487,6 +1540,8 @@ a:hover {
 }
 
 .project-search button {
+  display: grid;
+  place-items: center;
   min-width: 32px;
   min-height: 36px;
   padding: 0;
@@ -1497,6 +1552,11 @@ a:hover {
   font: inherit;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.project-search button .icon {
+  width: 18px;
+  height: 18px;
 }
 
 .project-search button[hidden] {
@@ -1648,7 +1708,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: -.018em;
 }
-.stream-feed .api-row {
+.project-card .api-row {
   margin-bottom: 20px;
 }
 .stream-feed .project-links {
