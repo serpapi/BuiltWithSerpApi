@@ -2246,26 +2246,6 @@
     ]
   },
   {
-    "name": "Thermaflow",
-    "description": "Combines boiler and pressure-vessel records with incident reports and local context found through SerpApi to support maintenance investigations.",
-    "author": "king-star-12",
-    "dateAdded": "2026-09-09",
-    "githubUrl": "https://github.com/king-star-12/thermaflow",
-    "links": [],
-    "tags": [
-      "manufacturing",
-      "monitoring",
-      "research"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "hostedUrl": "https://thermaflow.clustralai.com",
-    "events": [
-      "APIWorld Hackathon 2026"
-    ]
-  },
-  {
     "name": "SERPDelta",
     "description": "Compares an AI assistant's answers with current Google web and news results from SerpApi to highlight outdated or missing information.",
     "author": "researchsite",
@@ -2551,26 +2531,6 @@
     ]
   },
   {
-    "name": "Lifecycle Hub",
-    "description": "Combines water-pipe asset records with construction, incident, and local-condition reports found through SerpApi to support failure-risk reviews.",
-    "author": "king-star-12",
-    "dateAdded": "2026-09-09",
-    "githubUrl": "https://github.com/king-star-12/lifecycle-hub",
-    "links": [],
-    "tags": [
-      "infrastructure",
-      "monitoring",
-      "research"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "hostedUrl": "http://lifecyclehub.clustralai.com",
-    "events": [
-      "APIWorld Hackathon 2026"
-    ]
-  },
-  {
     "name": "VentureRadar AI",
     "description": "Evaluates business ideas with SerpApi searches for demand, competitors, and adoption barriers, then assembles the findings into a venture brief.",
     "author": "babifarah9",
@@ -2605,7 +2565,6 @@
     "apis": [
       "Google Search API"
     ],
-    "hostedUrl": "https://charter-217o.onrender.com",
     "events": [
       "APIWorld Hackathon 2026"
     ]
@@ -2755,28 +2714,6 @@
       "Google News API",
       "Google Maps API"
     ],
-    "events": [
-      "APIWorld Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Radar",
-    "description": "Combines SerpApi web searches, news, and Google Maps listings into a cited competitive-intelligence brief about a company or product.",
-    "author": "Deepak Kambala",
-    "dateAdded": "2026-09-09",
-    "githubUrl": "https://github.com/DeepakKambala/Radar",
-    "links": [],
-    "tags": [
-      "market-research",
-      "news",
-      "research"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google News API",
-      "Google Maps API"
-    ],
-    "hostedUrl": "https://radar-delta-inky.vercel.app",
     "events": [
       "APIWorld Hackathon 2026"
     ]
@@ -3089,25 +3026,6 @@
     ]
   },
   {
-    "name": "Document Trust Gate",
-    "description": "Extracts document evidence and cross-checks claims through SerpApi's Google Search API before routing consequential decisions for human approval.",
-    "author": "Bryan",
-    "dateAdded": "2026-09-09",
-    "githubUrl": "https://github.com/equinoxaifinance-rgb/document-trust-gate",
-    "links": [],
-    "tags": [
-      "documents",
-      "verification",
-      "research"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "events": [
-      "APIWorld Hackathon 2026"
-    ]
-  },
-  {
     "name": "Orbit (Conference Discovery)",
     "description": "Enriches conference speaker and company records with SerpApi's Google Search results to help attendees discover relevant people and sessions.",
     "author": "Hafsa Nawaz",
@@ -3182,26 +3100,6 @@
     "apis": [
       "Google Search API"
     ],
-    "events": [
-      "APIWorld Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Ignition",
-    "description": "Researches startup ideas through SerpApi's Google Search API and assembles cited findings, a viability assessment, and a follow-up work plan.",
-    "author": "king-star-12",
-    "dateAdded": "2026-09-09",
-    "githubUrl": "https://github.com/king-star-12/ignition",
-    "links": [],
-    "tags": [
-      "startups",
-      "market-research",
-      "research"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "hostedUrl": "http://ignition.clustralai.com",
     "events": [
       "APIWorld Hackathon 2026"
     ]
@@ -4070,34 +3968,6 @@
     "apis": [
       "Google Search API"
     ]
-  },
-  {
-    "name": "Suniye",
-    "description": "A Hindi reading aid with speech and document support, plus searches for current official setup references for caregivers.",
-    "author": "Himanshu Kumar",
-    "dateAdded": "2026-10-12",
-    "githubUrl": "https://github.com/himanshu748/suniye",
-    "links": [
-      {
-        "label": "Hacktoberfest submission",
-        "url": "https://dev.to/himanshu_748/suniye-let-my-parents-hear-the-message-themselves-41bh"
-      }
-    ],
-    "tags": [
-      "accessibility",
-      "ai"
-    ],
-    "events": [
-      "Hacktoberfest 2026"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "metadata": {
-      "platforms": [
-        "Android"
-      ]
-    }
   },
   {
     "name": "PatchPal",
@@ -5328,30 +5198,6 @@
     ]
   },
   {
-    "name": "Civic Lens",
-    "description": "Helps walkers document infrastructure problems and find the official government page for reporting them.",
-    "author": "Simran Kaur",
-    "dateAdded": "2026-10-12",
-    "githubUrl": "https://github.com/arkia09/CivicLens",
-    "links": [
-      {
-        "label": "Hacktoberfest submission",
-        "url": "https://dev.to/arkia09/who-do-you-report-a-pothole-to-i-built-civic-lens-to-answer-that-1nlg"
-      }
-    ],
-    "tags": [
-      "civic-tech",
-      "outdoors",
-      "ai"
-    ],
-    "events": [
-      "Hacktoberfest 2026"
-    ],
-    "apis": [
-      "Google Light Search API"
-    ]
-  },
-  {
     "name": "Earthly",
     "description": "Generates personalized nature quests and searches for nearby public places that can serve as starting points.",
     "author": "Charan Romi",
@@ -5570,30 +5416,6 @@
     ]
   },
   {
-    "name": "NeighbourDex",
-    "description": "Turns nearby places found through Google Maps into outdoor quests with local AI and photo-based progress checks.",
-    "author": "Sarvesh",
-    "dateAdded": "2026-10-12",
-    "githubUrl": "https://github.com/SarveshDujari/NeighbourDex",
-    "links": [
-      {
-        "label": "Hacktoberfest submission",
-        "url": "https://dev.to/sarvesh_3bcf0f427a27e1849/i-built-a-pokedex-for-my-neighbourhood-because-go-outside-needed-better-instructions-2d6l"
-      }
-    ],
-    "tags": [
-      "outdoors",
-      "gaming",
-      "local-models"
-    ],
-    "events": [
-      "Hacktoberfest 2026"
-    ],
-    "apis": [
-      "Google Maps API"
-    ]
-  },
-  {
     "name": "Autonomiq",
     "description": "Runs research tasks with local AI, retrieves web sources through SerpApi, and can produce an audio digest.",
     "author": "Tejas Rawool",
@@ -5783,32 +5605,6 @@
     ],
     "apis": [
       "Google Search API"
-    ]
-  },
-  {
-    "name": "ClaimTrail",
-    "description": "Plans short walks using place search, round-trip walking estimates, and retrieved evidence for observation prompts.",
-    "author": "Adarsh Singh",
-    "dateAdded": "2026-10-12",
-    "githubUrl": "https://github.com/adarsh-singh106/claimtrail",
-    "links": [
-      {
-        "label": "Hacktoberfest submission",
-        "url": "https://dev.to/adarsh-singh106/claimtrail-a-15-minute-walk-has-to-include-coming-back-35l7"
-      }
-    ],
-    "tags": [
-      "outdoors",
-      "planning",
-      "ai"
-    ],
-    "events": [
-      "Hacktoberfest 2026"
-    ],
-    "apis": [
-      "Google Maps API",
-      "Google Maps Directions API",
-      "Google Maps Reviews API"
     ]
   },
   {
@@ -6051,27 +5847,6 @@
       "Google Search API",
       "Google Jobs API",
       "Google News API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Kalidass",
-    "description": "Adds web search, AI Overview results and Amazon book discovery to a research publishing platform through SerpApi.",
-    "author": "AMRIT SHANKAR DUTTA",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/AmritSDutta/kalidass",
-    "links": [],
-    "tags": [
-      "research",
-      "publishing",
-      "books"
-    ],
-    "apis": [
-      "Amazon Search API",
-      "Google Search API",
-      "Google AI Overview API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -6792,27 +6567,6 @@
     ]
   },
   {
-    "name": "PriceHonest",
-    "description": "Investigates product offers using merchant listings, product details and web evidence retrieved through SerpApi.",
-    "author": "Deep Saha",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/DeepSaha25/PriceHonest",
-    "links": [],
-    "tags": [
-      "shopping",
-      "price-comparison",
-      "verification"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Shopping API",
-      "Google Immersive Product API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "SkillMatch",
     "description": "Searches job and company information through SerpApi and organizes the returned evidence for career research.",
     "author": "Dhiyaa",
@@ -7247,27 +7001,6 @@
     ]
   },
   {
-    "name": "MarketPilot",
-    "description": "Collects search, news, pricing and trend evidence through SerpApi to research markets and business ideas.",
-    "author": "Pragadeeswaran P",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/Pragadee2605/MarketPilot",
-    "links": [],
-    "tags": [
-      "market-research",
-      "ai-agents"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google News API",
-      "Google Shopping API",
-      "Google Trends API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "SerpSense AI",
     "description": "Monitors how brands appear in search results, suggestions, news and reviews using SerpApi.",
     "author": "Aniket Maithani",
@@ -7285,28 +7018,6 @@
       "Google News API",
       "Google Trends API",
       "Google Maps Reviews API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Pehle Pehchaan - first identify",
-    "description": "Investigates investment tips with public search evidence, financial data and image searches retrieved through SerpApi.",
-    "author": "Ekatha HS",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/wolf-agent/pehle-pehchaan",
-    "links": [],
-    "tags": [
-      "verification",
-      "finance",
-      "fraud-detection"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google News API",
-      "Google Finance API",
-      "Google Lens API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -7790,26 +7501,6 @@
     ]
   },
   {
-    "name": "SourcePatch",
-    "description": "Finds replacement sources for broken Markdown citations through SerpApi and prepares reviewable URL patches.",
-    "author": "Himanshu Kumar",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/himanshu748/sourcepatch",
-    "links": [],
-    "tags": [
-      "developer-tools",
-      "documentation",
-      "verification"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Scholar API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "Trustlens-Ai",
     "description": "Investigates suspicious recruitment messages using SerpApi searches for company and offer evidence.",
     "author": "Satyam Raghuvanshi",
@@ -7988,25 +7679,6 @@
       "Google Shopping API",
       "Google Trends API",
       "Google Autocomplete API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Milo ai",
-    "description": "Supports group-trip planning in chat with flight options retrieved through SerpApi.",
-    "author": "Madhavaram Rishitha",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/richierichpro/milo-bot",
-    "links": [],
-    "tags": [
-      "travel",
-      "flights",
-      "chatbots"
-    ],
-    "apis": [
-      "Google Flights API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -8982,49 +8654,6 @@
     ]
   },
   {
-    "name": "TraceMail AI",
-    "description": "Extracts indicators from suspicious emails and searches public web, news and local-business evidence through SerpApi.",
-    "author": "Laajvi",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/Laajvi/tracemail-ai",
-    "links": [],
-    "tags": [
-      "security",
-      "verification",
-      "ai-agents"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Maps API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "TechScope",
-    "description": "Combines papers, patents, news and hiring evidence from SerpApi to investigate technology adoption.",
-    "author": "Akshit agarwal",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/akshitag001/TECHSCOPE",
-    "links": [],
-    "tags": [
-      "technology",
-      "research",
-      "analytics"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Jobs API",
-      "Google News API",
-      "Google Patents API",
-      "Google Scholar API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "WorthIt",
     "description": "Identifies products from images and researches merchant offers and review evidence through SerpApi.",
     "author": "Ujjwal Rai",
@@ -9383,51 +9012,6 @@
       "Google News API",
       "Google Scholar API",
       "YouTube Search API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Cachy: Verdict Timeline",
-    "description": "Retrieves video details, transcripts and related web evidence through SerpApi to organize saved media into research notes.",
-    "author": "Vatsal Vaghasiya",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/Vatsal057/Cachy",
-    "links": [],
-    "tags": [
-      "video",
-      "knowledge-management",
-      "research"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google News API",
-      "YouTube Search API",
-      "YouTube Video API",
-      "YouTube Video Transcript API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "BagTrip AI",
-    "description": "Builds trip research boards from SerpApi flight, hotel, local-place and web searches.",
-    "author": "Sriniketh-J7",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/Sriniketh-J7/Bag-Trip-Planner-Agent",
-    "links": [],
-    "tags": [
-      "travel",
-      "itineraries",
-      "planning"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Flights API",
-      "Google Hotels API",
-      "Google Maps API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -10782,29 +10366,6 @@
     ]
   },
   {
-    "name": "TopperTrail",
-    "description": "Investigates coaching-institute claims about exam achievers using public search, advertising and video evidence from SerpApi.",
-    "author": "Subhojyoti Maity",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/MONSTERBOY110/TopperTrail",
-    "links": [],
-    "tags": [
-      "education",
-      "verification",
-      "research"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Images API",
-      "Google Ads Transparency API",
-      "YouTube Search API",
-      "YouTube Video Transcript API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "Shift ready",
     "description": "Searches technical documentation through SerpApi and saves evidence for software migration and integration research.",
     "author": "Nisha",
@@ -11023,26 +10584,6 @@
     ],
     "apis": [
       "Google Shopping API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Saarvi — Study. Work. Grow.",
-    "description": "Finds jobs and learning opportunities through SerpApi for a student career-development platform.",
-    "author": "Mrutyunjaya Ashok hangaragi",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/mrutyunjayahangaragi-afk/Saarvi",
-    "links": [],
-    "tags": [
-      "education",
-      "careers",
-      "opportunities"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Jobs API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -12119,28 +11660,6 @@
     ]
   },
   {
-    "name": "TripMission",
-    "description": "Compares travel options against arrival-time and budget constraints using SerpApi flight, route and accommodation searches.",
-    "author": "Jagdish Prajapati",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/jagdish575/TripMission",
-    "links": [],
-    "tags": [
-      "travel",
-      "planning"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Flights API",
-      "Google Hotels API",
-      "Google Maps API",
-      "Google Maps Directions API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "Sarkaari — India Government Scheme Discovery Agent",
     "description": "Researches Indian government schemes through SerpApi and organizes eligibility and application information for user profiles.",
     "author": "Varun Junja",
@@ -13009,7 +12528,7 @@
   },
   {
     "name": "AsliGhar",
-    "description": "Checks rental photos, addresses and price context using SerpApi image, Maps and web results.",
+    "description": "Checks rental listings for reused photos, address plausibility, and unusual prices using SerpApi. Presents evidence and risk signals rather than declaring listings fraudulent.",
     "author": "Kushagra Kulshrestha",
     "dateAdded": "2026-10-20",
     "githubUrl": "https://github.com/kk161205/AsliGhar",
@@ -13026,7 +12545,8 @@
     ],
     "events": [
       "SerpApi India Hackathon 2026"
-    ]
+    ],
+    "hostedUrl": "https://asli-ghar.vercel.app/"
   },
   {
     "name": "MarketPilot",
@@ -15895,24 +15415,6 @@
     ]
   },
   {
-    "name": "SkillProof",
-    "description": "Compares resume skills with public project evidence and web research retrieved through SerpApi.",
-    "author": "Utkarsh Pandey",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/aryancodex-19/SerpApi",
-    "links": [],
-    "tags": [
-      "careers",
-      "verification"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "Future Me Simulator",
     "description": "Explores possible hobbies and lifestyle choices using current web research from SerpApi.",
     "author": "Sandeep Chakravartty",
@@ -16564,13 +16066,15 @@
   },
   {
     "name": "SnapShop",
-    "description": "Searches product offers through SerpApi in an Android shopping app with saved items and search history.",
+    "description": "Identifies products from photos using AI, then uses SerpApi Google Shopping API to find similar items and compare seller prices.",
     "author": "Dev Vardhan",
     "dateAdded": "2026-10-20",
     "githubUrl": "https://github.com/Dev-VardhanX/SnapShop",
     "links": [],
     "tags": [
-      "shopping"
+      "shopping",
+      "image-search",
+      "price-comparison"
     ],
     "apis": [
       "Google Shopping API"
@@ -16845,27 +16349,6 @@
     ]
   },
   {
-    "name": "BANLAG — One Missing Fact",
-    "description": "Provides a SerpApi evidence collector alongside an offline factual-registry and claim-audit demonstration.",
-    "author": "Aishwarya Dewangan",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/aishwaryadewangan15-wq/banlag",
-    "links": [],
-    "tags": [
-      "verification",
-      "research",
-      "developer-tools"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google AI Mode API",
-      "Google AI Overview API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "Renaissance",
     "description": "Combines patent details and market evidence from SerpApi into source-linked product design dossiers.",
     "author": "Aryan Saxena",
@@ -17012,29 +16495,6 @@
     ]
   },
   {
-    "name": "Rivalyze",
-    "description": "Collects hiring, patent, advertising, news and search-interest signals through SerpApi for competitor research.",
-    "author": "Aditya Chimurkar",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/inslot2525-ctrl/Rivalyze",
-    "links": [],
-    "tags": [
-      "business",
-      "competitive-analysis"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Ads Transparency API",
-      "Google Jobs API",
-      "Google News API",
-      "Google Patents API",
-      "Google Trends API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
     "name": "SearchWise",
     "description": "Displays SerpApi web results with source links and short descriptions in a lightweight research interface.",
     "author": "code_pri",
@@ -17107,28 +16567,6 @@
       "Google Scholar API",
       "Google Scholar Author API",
       "Google Trends API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "Beacontra",
-    "description": "Collects marketplace and visual-search evidence through SerpApi to help brands investigate product listings.",
-    "author": "Kirtan",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/ThatKJ/Beacontra",
-    "links": [],
-    "tags": [
-      "shopping",
-      "brand-monitoring"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Lens API",
-      "Google Shopping API",
-      "Amazon Search API",
-      "Amazon Product API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -17262,24 +16700,6 @@
     "tags": [
       "agriculture",
       "research"
-    ],
-    "apis": [
-      "Google Search API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "HackMate AI",
-    "description": "Finds hackathons through SerpApi and organizes opportunities and competition-planning resources.",
-    "author": "Kamakshi C",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/kamakshi232006/HackMate_AI",
-    "links": [],
-    "tags": [
-      "hackathons",
-      "opportunities"
     ],
     "apis": [
       "Google Search API"
@@ -17671,24 +17091,6 @@
       "Google Shopping API",
       "Google Trends API",
       "Google Trends Trending Now API"
-    ],
-    "events": [
-      "SerpApi India Hackathon 2026"
-    ]
-  },
-  {
-    "name": "PiracyHunter - An Antipiracy web intelligence",
-    "description": "Uses targeted SerpApi searches to find and organize public results that content owners may want to investigate.",
-    "author": "Chinmay Veerendra Kumar",
-    "dateAdded": "2026-10-20",
-    "githubUrl": "https://github.com/chiviku/PiracyHunter",
-    "links": [],
-    "tags": [
-      "content-protection",
-      "research"
-    ],
-    "apis": [
-      "Google Search API"
     ],
     "events": [
       "SerpApi India Hackathon 2026"
@@ -18669,7 +18071,6 @@
     "author": "Megh Deb",
     "dateAdded": "2026-10-21",
     "githubUrl": "https://github.com/Megh2005/dev-challange-2",
-    "hostedUrl": "https://mediscan-xi-seven.vercel.app",
     "featured": false,
     "links": [
       {
@@ -18721,7 +18122,6 @@
     "author": "Benny",
     "dateAdded": "2026-10-21",
     "githubUrl": "https://github.com/Bennykillua/leadfinder",
-    "hostedUrl": "https://leadfinder-9aep.onrender.com",
     "featured": false,
     "links": [
       {
@@ -18927,7 +18327,6 @@
     "author": "Piyush Gupta",
     "dateAdded": "2026-10-21",
     "githubUrl": "https://github.com/guptapiyush16/EchoDesk",
-    "hostedUrl": "https://echodesk-6qd3.onrender.com",
     "featured": false,
     "links": [
       {
@@ -19388,7 +18787,6 @@
     "author": "Antonia Herrera",
     "dateAdded": "2026-10-21",
     "githubUrl": "https://github.com/antoniahp/alma-receptionist",
-    "hostedUrl": "https://almaestetica.tech",
     "featured": false,
     "links": [
       {
@@ -19996,33 +19394,6 @@
     "hostedUrl": "https://lore-hacktx.vercel.app/"
   },
   {
-    "name": "Orkis",
-    "description": "Builds and manages AI agents with reusable tools, approval controls, and SerpApi searches for web information, places, and events.",
-    "author": "Laksh Kumar, Abdullah Al Mahmud",
-    "dateAdded": "2026-10-27",
-    "githubUrl": "https://github.com/zero-abd/orkis",
-    "links": [
-      {
-        "label": "HackTX 2026 submission",
-        "url": "https://devpost.com/software/orkis"
-      }
-    ],
-    "tags": [
-      "ai-agents",
-      "automation",
-      "developer-tools"
-    ],
-    "apis": [
-      "Google Search API",
-      "Google Maps API",
-      "Google Events API"
-    ],
-    "events": [
-      "HackTX 2026"
-    ],
-    "hostedUrl": "https://orkis.tech/"
-  },
-  {
     "name": "FindMyVibe",
     "description": "Suggests nearby places from individual or group preferences using SerpApi Google Maps, with shared voting to choose a destination.",
     "author": "fiexinn, Jose Gurrola, Joshua Aguilar",
@@ -20129,8 +19500,7 @@
     ],
     "events": [
       "HackTX 2026"
-    ],
-    "hostedUrl": "https://ditto-production.up.railway.app/"
+    ]
   },
   {
     "name": "Heatsink",
@@ -21868,12 +21238,6 @@
     "githubUrl": "https://github.com/afreenorbit/pinlight",
     "hostedUrl": "https://pinlight.afreenorbit.tech",
     "featured": false,
-    "links": [
-      {
-        "label": "Hacktoberfest submission",
-        "url": "https://dev.to/afreenorbit/pinlight-i-was-too-lazy-to-read-a-40-page-datasheet-so-i-built-an-interactive-electronics-tutor-46ff"
-      }
-    ],
     "tags": [
       "education",
       "electronics",
@@ -22330,6 +21694,76 @@
     ],
     "events": [
       "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "VoyageAI",
+    "description": "Uses SerpApi Google Flights, Hotels, and Maps APIs to find travel options and build itineraries with flight-and-hotel budget checks and listed opening hours where available.",
+    "author": "Shuvo Dutta",
+    "dateAdded": "2026-10-31",
+    "githubUrl": "https://github.com/shk0224/VoyageAI-MultiAgent-Travel-Planner",
+    "links": [],
+    "tags": [
+      "travel",
+      "planning",
+      "flights"
+    ],
+    "apis": [
+      "Google Flights API",
+      "Google Hotels API",
+      "Google Maps API"
+    ]
+  },
+  {
+    "name": "Nexora AI",
+    "description": "Lets users create agents from natural-language prompts, connect tools, and schedule tasks. SerpApi Google Search API supplies live web results.",
+    "author": "Prince Prajapati",
+    "dateAdded": "2026-10-31",
+    "githubUrl": "https://github.com/p-prince-n/NexoraAI",
+    "links": [],
+    "tags": [
+      "ai-agents",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Big Bad Wolf Inspection Agency",
+    "description": "Uses SerpApi Google Maps and Google Maps Reviews APIs to score Austin apartments and summarize review themes with supporting excerpts. Scores reflect reviews, not physical building inspections.",
+    "author": "Maria Koscheev and Ivanna Aleman-Coronado",
+    "dateAdded": "2026-10-31",
+    "githubUrl": "https://github.com/ivanna-utexas/Big_Bad_Wolf_Inspection_Agency",
+    "hostedUrl": "https://big-bad-wolf-inspection-agency.tech/",
+    "links": [],
+    "tags": [
+      "housing",
+      "reviews",
+      "review-analysis"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Maps Reviews API",
+      "Google Maps Autocomplete API",
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "TripFare AI",
+    "description": "Compares fares, schedules, and journey details using SerpApi Google Flights API, alongside a separate train-search integration and destination suggestions.",
+    "author": "Madhulika Tirupatipanya",
+    "dateAdded": "2026-10-31",
+    "githubUrl": "https://github.com/MadhulikaTirupatipanya/tripfare-ai-trip-planner",
+    "hostedUrl": "https://tripfare-ai-trip-planner.onrender.com/",
+    "links": [],
+    "tags": [
+      "travel",
+      "flights",
+      "price-comparison"
+    ],
+    "apis": [
+      "Google Flights API"
     ]
   }
 ]
