@@ -1,0 +1,69 @@
+[
+  {
+    "id": "agent-tools",
+    "title": "Python agent tools",
+    "icon": "code",
+    "headline": "Add live search to your Python AI agents.",
+    "package": "serpapi-search-tools",
+    "description": "works with popular agent SDKs and lets builders add web, news, maps, shopping, hotels, flights, and more as ready-to-use tools.",
+    "links": [
+      {
+        "label": "Read the docs",
+        "url": "https://serpapi.github.io/serpapi-search-tools-python/?utm_source=builtwithserpapi",
+        "icon": "docs"
+      },
+      {
+        "label": "View on PyPI",
+        "url": "https://pypi.org/project/serpapi-search-tools/",
+        "icon": "open"
+      }
+    ]
+  },
+  {
+    "id": "sdks",
+    "title": "SDK integrations",
+    "icon": "code",
+    "headline": "Use a language-specific SerpApi SDK to wire search data into your app faster.",
+    "description": "Pick the integration path that matches your stack and skip the boilerplate around request setup, parsing, and examples.",
+    "links": [
+      {
+        "label": "Browse integrations",
+        "url": "https://serpapi.com/integrations?utm_source=builtwithserpapi",
+        "icon": "docs"
+      }
+    ]
+  },
+  {
+    "id": "mcp",
+    "title": "MCP server",
+    "icon": "hub",
+    "headline": "Connect SerpApi search results to agents and MCP-compatible tools.",
+    "description": "The official SerpApi MCP server gives builders a ready path from natural language workflows to live search data.",
+    "links": [
+      {
+        "label": "View source",
+        "url": "https://github.com/serpapi/serpapi-mcp",
+        "icon": "github"
+      },
+      {
+        "label": "Read launch post",
+        "url": "https://serpapi.com/blog/introducing-serpapis-mcp-server/?utm_source=builtwithserpapi",
+        "icon": "book"
+      }
+    ]
+  },
+  {
+    "id": "tutorials",
+    "title": "More ideas",
+    "icon": "idea",
+    "headline": "Browse the SerpApi blog for build ideas, tutorials, and API walkthroughs.",
+    "description": "Use the examples as prompts for your next SerpApi powered app, automation, dashboard, or agent workflow.",
+    "links": [
+      {
+        "label": "Open blog",
+        "url": "https://serpapi.com/blog/?utm_source=builtwithserpapi",
+        "icon": "book"
+      }
+    ]
+  }
+]

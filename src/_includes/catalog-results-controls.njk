@@ -1,0 +1,17 @@
+<div class="feed-pagination" data-feed-pagination hidden>
+  <p data-project-visible-count aria-live="polite"></p>
+  <nav class="pagination-controls" aria-label="Project pages">
+    <button class="pagination-previous" type="button" data-page-previous>Previous</button>
+    <div class="pagination-pages" data-project-pages></div>
+    <button class="pagination-next" type="button" data-page-next>Next</button>
+  </nav>
+</div>
+
+<section class="filter-empty-state" data-filter-empty-state hidden>
+  <span class="filter-empty-icon">{% icon "search" %}</span>
+  <h3>No matching projects</h3>
+  <p>Try another search or clear your filters to see all projects.</p>
+  <button class="button" type="button" data-filter-clear>Clear search and filters</button>
+</section>
+
+<script src="{{ '/assets/js/project-catalog.js?v=20261031-feed-promos' | url }}" defer></script>

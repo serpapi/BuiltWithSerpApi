@@ -6,7 +6,7 @@
   "organizationName": "SerpApi",
   "organizationUrl": "https://serpapi.com",
   "logo": "/assets/brand/serpapi-logo.svg",
-  "ogImage": "/assets/og-image.png",
+  "ogImage": "/assets/og-image-clean.png",
   "ogImageAlt": "#BuiltWithSerpApi community projects powered by SerpApi",
   "ogImageWidth": "1200",
   "ogImageHeight": "630",

@@ -1,0 +1,10 @@
+<aside class="resource-promo" data-resource-promo="{{ promo.id }}" data-feed-item="promo" aria-label="{{ promo.title }} from SerpApi">
+  <span class="resource-promo-label">{% icon promo.icon %}{{ promo.title }}</span>
+  <h2>{{ promo.headline }}</h2>
+  <p>{% if promo.package %}<code>{{ promo.package }}</code> {% endif %}{{ promo.description }}</p>
+  <div class="resource-promo-actions">
+    {% for link in promo.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{% icon link.icon %}{{ link.label }}</a>
+    {% endfor %}
+  </div>
+</aside>

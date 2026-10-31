@@ -10,16 +10,32 @@ eleventyComputed:
   description: "Browse community projects from {{ projectForEvent }}, built with SerpApi."
 ---
 
+{% set filterProjects = projects | projectsByEvent(projectForEvent) %}
+{% set showEventFilter = false %}
+
 <section class="browse-hero">
   <div class="shell">
     <a class="back-link event-browse-link" href="{{ '/events/' | url }}">All events</a>
     <h1>{{ projectForEvent }}</h1>
-    <p>{{ projects | projectsByEvent(projectForEvent) | length }} projects from this event.</p>
+    <p>{{ filterProjects | length }} projects from this event.</p>
   </div>
 </section>
 
-<section class="shell listing">
-  {% for project in projects | projectsByEvent(projectForEvent) | sortProjectsNewest %}
-    {% include "project-card.njk" %}
-  {% endfor %}
+{% include "catalog-toolbar.njk" %}
+
+<section class="stream-section">
+  <div class="shell stream-layout">
+    <div class="stream-header">
+      <h2>Projects</h2>
+      <p class="project-result-count" data-project-result-count aria-live="polite">{{ filterProjects | length }} projects</p>
+    </div>
+    <div id="project-feed" class="feed stream-feed" data-project-feed>
+      {% set enableProjectSort = true %}
+      {% for project in filterProjects | sortProjectsNewest %}
+        {% set projectFeedIndex = loop.index0 %}
+        {% include "project-card.njk" %}
+      {% endfor %}
+    </div>
+    {% include "catalog-results-controls.njk" %}
+  </div>
 </section>

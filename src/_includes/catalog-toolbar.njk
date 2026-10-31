@@ -1,0 +1,82 @@
+<section class="catalog-toolbar" aria-label="Search and filter projects">
+  <div class="shell feed-controls">
+    <div class="project-search" role="search">
+      {% icon "search" %}
+      <input type="search" aria-label="Search projects" placeholder="{% if showEventFilter %}Search names, tags, events…{% else %}Search this event’s projects…{% endif %}" autocomplete="off" data-search-input>
+      <button type="button" aria-label="Clear search" data-search-clear hidden>×</button>
+    </div>
+    <label class="sort-control" for="project-sort">
+      {% icon "sort" %}
+      <select id="project-sort" aria-label="Sort projects" data-project-sort>
+        <option value="newest" selected>Newest</option>
+        <option value="oldest">Oldest</option>
+        <option value="random">Random</option>
+      </select>
+    </label>
+    <details class="filter-disclosure" data-filter-disclosure>
+      <summary class="filter-trigger">
+        {% icon "filter" %}
+        <span>Filters</span>
+        <span class="filter-count" data-filter-count hidden>0</span>
+      </summary>
+      <div class="filter-panel">
+        <div class="filter-panel-header">
+          <h3>Filter projects</h3>
+          <p>Matches any selection within each group.</p>
+        </div>
+        <div class="filter-panel-body">
+          {% if showEventFilter %}
+          <fieldset class="api-filter-fieldset event-filter-fieldset">
+            <legend>Events</legend>
+            <p>Browse projects from a conference or hackathon.</p>
+            <div class="api-filter-list">
+              {% for event in events %}
+                <label class="api-filter-option">
+                  <input type="checkbox" value="{{ event }}" data-event-filter>
+                  <span>{{ event }}</span>
+                  <small>{{ projects | projectsByEvent(event) | length }}</small>
+                </label>
+              {% endfor %}
+            </div>
+          </fieldset>
+          {% endif %}
+
+          <form class="tag-filter-form" data-tag-filter-form novalidate>
+            <label for="project-tag-filter">Tags</label>
+            <p>Start typing, then choose a suggested tag.</p>
+            <div class="tag-filter-entry">
+              <input id="project-tag-filter" type="search" list="project-tag-options" placeholder="Try seo or travel" autocomplete="off" data-tag-filter-input>
+              <datalist id="project-tag-options" data-tag-options>
+                {% for tag in filterProjects | allTags %}
+                  <option value="{{ tag }}"></option>
+                {% endfor %}
+              </datalist>
+              <button type="submit">Add tag</button>
+            </div>
+            <p class="filter-error" data-tag-filter-error role="status" hidden>Choose a tag from the suggestions.</p>
+            <div class="selected-tags" data-selected-tags aria-label="Selected tags" aria-live="polite" hidden></div>
+          </form>
+
+          <fieldset class="api-filter-fieldset">
+            <legend>SerpApi APIs</legend>
+            <p>Select one or more APIs to include.</p>
+            <div class="api-filter-list">
+              {% for api in filterProjects | allApis %}
+                <label class="api-filter-option">
+                  <input type="checkbox" value="{{ api }}" data-api-filter>
+                  <span>{{ api }}</span>
+                  <small>{{ filterProjects | relatedProjectCount(api, "apis") }}</small>
+                </label>
+              {% endfor %}
+            </div>
+          </fieldset>
+
+        </div>
+        <div class="filter-panel-footer">
+          <button type="button" data-filter-clear>Clear all</button>
+          <button class="filter-done" type="button" data-filter-close>Done</button>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
