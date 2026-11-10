@@ -20638,8 +20638,8 @@
   },
   {
     "name": "InstaPlan",
-    "description": "Coordinates group trips and events with shared voting and cost planning, using SerpApi for travel, place, event, and image searches.",
-    "author": "Bala Kausik Vazrala, Oscar Santos, sanjay-codez Krishnan, Adit Tripathi",
+    "description": "Turns group conversations into shared trip and event plans, using SerpApi to compare flights and lodging and find places and events.",
+    "author": "Oscar Santos, Bala Kausik Vazrala, sanjay-codez Krishnan, Adit Tripathi",
     "dateAdded": "2026-10-27",
     "githubUrl": "https://github.com/bvazrala/InstaPlan",
     "links": [
@@ -20654,12 +20654,10 @@
       "collaboration"
     ],
     "apis": [
-      "Google Search API",
       "Google Flights API",
       "Google Hotels API",
       "Google Maps API",
       "Google Events API",
-      "Google Maps Directions API",
       "Google Images API"
     ],
     "events": [
@@ -20899,8 +20897,8 @@
   },
   {
     "name": "Lazy Scholar",
-    "description": "Searches for scholarships, paid internships, and hackathons overnight, then uses Gemma to summarize opportunities that fit a student's profile.",
-    "author": "chamod dhananjaya",
+    "description": "Searches for scholarships, grants, paid internships, and hackathons through SerpApi, checks profile fit with Gemma, and publishes a daily digest with an application email draft.",
+    "author": "Dhananjaya C",
     "dateAdded": "2026-10-27",
     "githubUrl": "https://github.com/dhananjaya-hbc/lazy-scholar",
     "hostedUrl": "https://lazyscholar.tech",
@@ -21764,6 +21762,1458 @@
     ],
     "apis": [
       "Google Flights API"
+    ]
+  },
+  {
+    "name": "Uninvited",
+    "description": "Investigates Windows startup programs and unexpected wake events with a local model, with optional SerpApi searches to check unfamiliar processes against cited web sources.",
+    "author": "Vivaan Teotia",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/dragon-slayer27/uninvited",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/vivaan_teotia_/uninvited-my-laptop-left-standby-233-times-in-9-days-72-times-it-wasnt-me-11ld"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "ai",
+      "diagnostics"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Necromancer",
+    "description": "Helps modernize abandoned Python repositories with local AI and SerpApi searches for migration guides and replacements for deprecated packages.",
+    "author": "Sudhir Sharma",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/satanic47/necromancer",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/satanic47/necromancer-resurrecting-dead-repos-with-tabpfn-gemma-serpapi-11gd"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "ai",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://necromancer.shivysidinfo.tech"
+  },
+  {
+    "name": "SlothBrief",
+    "description": "Turns Google News results into short morning digests with Gemma, with optional spoken briefings and topic-based filtering.",
+    "author": "Sofia",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/sofiianowak/slothbrief",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/coph1a/-5el0"
+      }
+    ],
+    "tags": [
+      "news",
+      "ai",
+      "productivity"
+    ],
+    "apis": [
+      "Google News API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "LazyResearch OS",
+    "description": "Organizes saved articles and documents into cited research briefs, with an optional SerpApi integration for discovering public web sources.",
+    "author": "rishabh-hasija",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/rishabh-hasija/lazyresearch-os",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/rishabhhasija/lazyresearch-os-the-ai-that-reads-what-im-too-lazy-to-read-5ca"
+      }
+    ],
+    "tags": [
+      "research",
+      "ai",
+      "productivity"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://lazyresearch-os-demo.onrender.com/"
+  },
+  {
+    "name": "Hermes",
+    "description": "Turns email and classroom updates into an academic task list and spoken briefings, using SerpApi to look up missing application and event deadlines.",
+    "author": "UugaaaBugaaa",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/P1yansh/hermes",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/uugaaabugaaa/im-too-lazy-to-check-my-emails-and-classroom-stuff-so-i-built-hermes-ifc"
+      }
+    ],
+    "tags": [
+      "education",
+      "ai",
+      "productivity"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://athena-hermes.onrender.com"
+  },
+  {
+    "name": "DukaanVoice PK",
+    "description": "Provides a multilingual shop register and AI accounting assistant for Pakistani grocery stores, adding SerpApi search evidence to wholesale commodity price benchmarks.",
+    "author": "Safwan Ahmad Saffi",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/safwanahmadsaffi/hacktober",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/safwanahmadsaffi/dukaanvoice-pk-offline-first-ai-shop-register-for-pakistans-kiryana-stores-95d"
+      }
+    ],
+    "tags": [
+      "business",
+      "ai",
+      "finance"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Price Wire",
+    "description": "Helps price used electronics and draft resale listings using comparable Google Shopping and eBay listings retrieved through SerpApi.",
+    "author": "Abisoye O",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/AbisoyeOnanuga/price-wire",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/abisoye/price-wire-price-your-used-electronics-and-paste-a-listing-in-minutes-hf26-week-2-3fii"
+      }
+    ],
+    "tags": [
+      "shopping",
+      "pricing",
+      "ai"
+    ],
+    "apis": [
+      "Google Shopping API",
+      "eBay Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "RivalIQ",
+    "description": "Compares a seller's product with Google Shopping listings, calculates price benchmarks, and uses Gemma to explain competitive differences with source links.",
+    "author": "Aman Jain",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/MrCyberlord/RivalIQ",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/mrcyberlord/rivaliq-giving-small-online-sellers-their-own-ai-powered-competitor-intelligence-kbf"
+      }
+    ],
+    "tags": [
+      "ecommerce",
+      "pricing",
+      "ai"
+    ],
+    "apis": [
+      "Google Shopping API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "ClientRadar",
+    "description": "Finds freelance contracts with SerpApi's Google Jobs results, assesses their scope and compensation, and drafts tailored proposals with Gemma.",
+    "author": "Ashraf Ahmed",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/AshrafGalaxy/ClientRadar",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ashrafahm/clientradar-autonomous-freelance-contract-discovery-ai-proposal-engine-53dc"
+      }
+    ],
+    "tags": [
+      "jobs",
+      "ai",
+      "business"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://clientradar.streamlit.app/"
+  },
+  {
+    "name": "FreelanceCanvas",
+    "description": "Turns client briefs into freelance proposals using a local Gemma model, portfolio search, and optional SerpApi lookups for company context.",
+    "author": "Tejas Rawool",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/TejasRawool186/FreelanceCanvas",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/tejasrawool186/freelancecanvas-gemma-writes-my-client-proposals-locally-from-brief-to-bid-in-one-canvas-554a"
+      }
+    ],
+    "tags": [
+      "business",
+      "ai",
+      "productivity"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "AEGIS",
+    "description": "An AI gateway that screens prompts, documents, and SerpApi web search context with Gemma and text-sanitization tools before passing them to another model.",
+    "author": "Prathamesh Anvekar",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/prathamanvekar/secure-llm-proxy",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/prathamanvekar/building-a-secure-llm-proxy-with-fine-tuned-gemma-3-for-production-applications-2fdj"
+      }
+    ],
+    "tags": [
+      "security",
+      "ai",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "slug": "aegis-prathamanvekar"
+  },
+  {
+    "name": "DabbaIQ",
+    "description": "Helps tiffin services plan meals, stock, and costs, using SerpApi to discover ingredient suppliers and compare shopping and web price results.",
+    "author": "Ansh Meshram",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/AnshMeshram/dabbaiq",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/anshmeshram/from-leftover-rotis-to-better-margins-building-dabbaiq-with-open-source-ai-408"
+      }
+    ],
+    "tags": [
+      "business",
+      "food",
+      "ai"
+    ],
+    "apis": [
+      "Google Shopping API",
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://dabba-iq.vercel.app/"
+  },
+  {
+    "name": "init.dev",
+    "description": "A local career assistant that creates learning roadmaps and interview preparation plans, with SerpApi searches for current job descriptions and learning resources.",
+    "author": "Nillohit Roy",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/nillohitroy/init-dev-cli",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/nillohitroy/initdev-your-ai-powered-career-assistant-that-enables-you-to-prepare-for-jobs-and-interviews-2f2"
+      }
+    ],
+    "tags": [
+      "jobs",
+      "education",
+      "ai"
+    ],
+    "apis": [
+      "Google Jobs API",
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "PaddleSense",
+    "description": "Tracks river flows for paddlers in Pakistan and uses SerpApi to gather English and Urdu access notes, road closures, and other source-linked river information.",
+    "author": "Abubakar Ahmed",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/abubakar-ahmed-dev/paddle-sense",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/abubakar_ahmed/i-built-pakistans-missing-paddling-app-it-predicts-river-flows-speaks-urdu-and-refuses-to-say-3946"
+      }
+    ],
+    "tags": [
+      "travel",
+      "outdoors",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://paddle-sense.onrender.com"
+  },
+  {
+    "name": "Return Route",
+    "description": "Plans litter-collection walks that finish at a deposit return machine, using SerpApi event listings to identify places where discarded cans and bottles may accumulate.",
+    "author": "Muhammad Murtuza Hussain",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/MuhammadMurtuzaHussain/return-route",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/muhammadmurtuzahussain/i-walked-an-hour-for-30-cents-gemma-plans-litter-walks-that-end-at-a-deposit-machine-4ih9"
+      }
+    ],
+    "tags": [
+      "outdoors",
+      "sustainability",
+      "ai"
+    ],
+    "apis": [
+      "Google Events API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://return-route.onrender.com"
+  },
+  {
+    "name": "RigCheck",
+    "description": "Helps assess PC hardware upgrades with a local model and SerpApi searches for component specifications, compatibility information, and upgrade context.",
+    "author": "Edgi Axel",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/edgiaxel/RigCheck",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/edgiaxel/rigcheck-bringing-a-local-ai-hardware-assistant-beyond-my-desk-599d"
+      }
+    ],
+    "tags": [
+      "hardware",
+      "shopping",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://rigcheck-frontend.onrender.com"
+  },
+  {
+    "name": "FoliageRun",
+    "description": "Suggests running routes around Bhubaneswar green spaces, using SerpApi web results for foliage context and exporting routes as GPX files.",
+    "author": "Aditya",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/AdityaNarayanPadhi/FoliageRun",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/adityanarayanpadhi/foliagerun-autonomous-autumn-canopy-route-synthesizer-for-bhubaneswarpublished-true-2ijo"
+      }
+    ],
+    "tags": [
+      "outdoors",
+      "travel",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://foliagerun.vercel.app"
+  },
+  {
+    "name": "Feels",
+    "description": "Turns Spotify listening patterns into outdoor activity ideas, using a local model and SerpApi Google Maps results to suggest places to visit.",
+    "author": "Prathamesh Anvekar",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/prathamanvekar/feels",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/prathamanvekar/feels-translating-your-spotify-soundtrack-into-real-outdoor-places-with-local-ai-and-serpapi-5e0d"
+      }
+    ],
+    "tags": [
+      "music",
+      "outdoors",
+      "ai"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Rabbit Hole Explorer",
+    "description": "Researches a topic with SerpApi and turns the results into a short AI-generated podcast, summary, and suggested follow-up questions.",
+    "author": "Ayush Kumar",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/ayushkr23/rabbit-hole-explorer",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ayush_01/down-the-rabbit-hole-an-ai-mini-podcast-generator-875"
+      }
+    ],
+    "tags": [
+      "research",
+      "audio",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://rabbit-hole-explorer-eight.vercel.app/"
+  },
+  {
+    "name": "JobPilot",
+    "description": "A local career coach that compares a CV with job requirements and uses SerpApi Google Jobs results to find roles for interview and application preparation.",
+    "author": "Tenath Dilusha",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/TenathDilusha/jobpilot",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/dilusha_chandrasiri/i-built-my-friend-a-private-coach-that-says-what-to-fix-before-applying-to-jobs-no-more-applying-2jcj"
+      }
+    ],
+    "tags": [
+      "jobs",
+      "ai",
+      "productivity"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "AccessPath",
+    "description": "Plans step-free New York subway journeys and uses SerpApi to find official accessibility evidence for destinations alongside route and equipment checks.",
+    "author": "Shaikh Ubaid Ahmed",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/shaikhubaidahmed/accesspath-ai",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/shaikhubaidahmed/accesspath-ai-i-built-my-sibling-a-subway-planner-that-wont-strand-him-when-a-lift-breaks-3cj"
+      }
+    ],
+    "tags": [
+      "accessibility",
+      "travel",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://accesspath-ai.onrender.com"
+  },
+  {
+    "name": "NipCure",
+    "description": "Organizes medical reports into understandable summaries and care reminders, with SerpApi searches for educational resources related to the report.",
+    "author": "Mohamed Ali Benbelghith",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/MohamedAli1937/NipCure",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/mohamed_ali_65506dccb2680/know-someone-who-struggles-with-medical-reports-and-care-plans-meet-nipcure-335f"
+      }
+    ],
+    "tags": [
+      "health",
+      "ai",
+      "education"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Autonomous Repository Support Agent",
+    "description": "Investigates GitHub issues with codebase retrieval and AI reasoning, using SerpApi to find current documentation and context for external dependency errors.",
+    "author": "Harsh Mangukia",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/harsh-mangukia44/Autonomous-Repository-Support-Agent",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/harshmangukia123/autonomous-repository-support-agent-2cd"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "ai",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "ScamShield",
+    "description": "A Telegram assistant that assesses suspicious messages in Thai and English, using SerpApi searches to add web evidence about suspicious domains.",
+    "author": "memeshe",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/memeshee/scamshield",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/memeshe/my-mum-keeps-getting-scam-texts-i-built-her-a-telegram-shield-1j1a"
+      }
+    ],
+    "tags": [
+      "security",
+      "ai",
+      "chatbot"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "slug": "scamshield-memeshee"
+  },
+  {
+    "name": "Gravespeaker",
+    "description": "Turns headstone photos into researched stories and spoken monologues, using SerpApi to find sources about the person behind the inscription.",
+    "author": "Ashley Childress",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/anchildress1/gravespeaker",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/anchildress1/gravespeaker-giving-the-person-behind-the-headstone-a-voice-329e"
+      }
+    ],
+    "tags": [
+      "ai",
+      "research",
+      "storytelling"
+    ],
+    "apis": [
+      "Google Search API",
+      "Yandex Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://gravespeaker-288489184837.us-east1.run.app/"
+  },
+  {
+    "name": "DAYBACK",
+    "description": "Reconstructs historical moments from source-linked articles, videos, and public conversations, using SerpApi for web research and YouTube discovery.",
+    "author": "Sherwin Kumar",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/sherwinkumar2004/dayback",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/galaxystar/dayback-an-ai-time-machine-that-finds-the-receipts-of-your-past-reconstructs-what-happened-and-1l0c"
+      }
+    ],
+    "tags": [
+      "ai",
+      "research",
+      "history"
+    ],
+    "apis": [
+      "Google Search API",
+      "YouTube Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Judge Fangs",
+    "description": "Reviews hackathon submissions against challenge briefs and past winners, using SerpApi to locate relevant DEV challenge and winner posts.",
+    "author": "Raga Vinjanampati",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/Raga-V/judge-fangs",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/raga_vinjanampati/i-lost-3-hackathons-in-a-row-so-i-built-a-vampire-judge-to-tell-me-why-4fkf"
+      }
+    ],
+    "tags": [
+      "ai",
+      "developer-tools",
+      "hackathons"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://fangs-web.onrender.com/"
+  },
+  {
+    "name": "Ward",
+    "description": "A group-chat safety coach whose help-checking tool uses SerpApi to find official platform instructions and check its reporting and blocking guidance.",
+    "author": "Muhammad Murtuza Hussain",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/MuhammadMurtuzaHussain/ward",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/muhammadmurtuzahussain/not-every-ghost-is-here-to-scare-you-ward-is-the-friendly-one-in-your-group-chat-25g"
+      }
+    ],
+    "tags": [
+      "ai",
+      "safety",
+      "chat"
+    ],
+    "apis": [
+      "DuckDuckGo Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://try-ward.onrender.com"
+  },
+  {
+    "name": "Tributary",
+    "description": "Combines a feed reader with a visual workflow builder, using SerpApi to add Google News and web searches to custom feeds.",
+    "author": "Ekomjah Denis",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/Ekomjah/tributary",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ekomjah/i-brought-google-reader-and-yahoo-pipes-back-from-the-dead-with-ai-at-its-core-53aa"
+      }
+    ],
+    "tags": [
+      "ai",
+      "news",
+      "rss",
+      "automation"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google News API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://tributaries.tech"
+  },
+  {
+    "name": "Vacancy Autopsy",
+    "description": "Investigates whether job postings are still active, using SerpApi to discover candidate job pages before checking employer sources and recording the evidence.",
+    "author": "Himanshu Kumar",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/himanshu748/vacancy-autopsy",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/himanshu_748/the-listing-is-still-here-is-the-job-building-vacancy-autopsy-1dn8"
+      }
+    ],
+    "tags": [
+      "ai",
+      "jobs",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://vacancy-autopsy.onrender.com"
+  },
+  {
+    "name": "Haunted Inbox",
+    "description": "Finds forgotten accounts in local email exports and uses SerpApi to look up official account-deletion pages and evidence of company closures or acquisitions.",
+    "author": "Niraj Khetre",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/nirajkhetre/haunted-inbox",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/nirajkhetre/i-turned-my-inbox-into-a-graveyard-199-ghosts-rose-and-one-had-been-silent-for-78-years-56l8"
+      }
+    ],
+    "tags": [
+      "ai",
+      "privacy",
+      "email"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://haunted.celebrable.tech"
+  },
+  {
+    "name": "GhostWave",
+    "description": "A local music player and library organizer with optional SerpApi searches for missing track metadata, showing source links for users to review.",
+    "author": "Edgi Axel",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/edgiaxel/GhostWave",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/edgiaxel/the-ghost-doesnt-need-the-cloud-building-a-local-ai-music-curator-with-gemma-3-38"
+      }
+    ],
+    "tags": [
+      "ai",
+      "music",
+      "desktop"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://ghostwave.onrender.com"
+  },
+  {
+    "name": "FlashAfterlife",
+    "description": "Reworks old Flash game code into browser projects and uses SerpApi to research game history and creator information.",
+    "author": "Shubham Bhamare",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/theshubh77/flash-afterlife",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/theshubh77/flashafterlife-resurrecting-2000s-flash-games-with-gemma-and-mastra-no-code-dies-if-remembered-jf6"
+      }
+    ],
+    "tags": [
+      "ai",
+      "games",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://flash-afterlife.onrender.com/"
+  },
+  {
+    "name": "GitSeance",
+    "description": "Explores legacy code and its history, using SerpApi to find maintained dependency replacements and security advisories.",
+    "author": "Dhruv Jani",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/JaniDhruv/GitSeance",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/dj29/every-codebase-has-a-do-not-touch-file-i-built-an-ai-necromancer-to-summon-the-ghost-of-the-2no5"
+      }
+    ],
+    "tags": [
+      "ai",
+      "developer-tools",
+      "code-analysis"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://gitseance.onrender.com"
+  },
+  {
+    "name": "Catrina News",
+    "description": "Turns current technology headlines into Spanish satirical poems and spoken readings, using SerpApi to retrieve Google News stories and their source links.",
+    "author": "Jose Antonio Granero",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/finallyjay/catrinanews",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/finallyjay/every-rhyme-rule-i-gave-gemma-it-found-a-loophole-catrina-news-turns-todays-tech-headlines-into-1efb"
+      }
+    ],
+    "tags": [
+      "news",
+      "ai",
+      "poetry"
+    ],
+    "apis": [
+      "Google News API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://catrinanews.tech"
+  },
+  {
+    "name": "Ossuary",
+    "description": "Builds interactive stories around defunct websites, using SerpApi to find reporting about their closure and distinguish web evidence from generated narrative.",
+    "author": "Jack",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/setuju/ossuary",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ggle_in/every-ai-horror-project-lies-to-you-i-built-one-that-refuses-1ji1"
+      }
+    ],
+    "tags": [
+      "ai",
+      "archives",
+      "storytelling"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://ossuary.saturumah.net/"
+  },
+  {
+    "name": "Muertos.ai",
+    "description": "Creates digital memorials with narrated tributes and historical context, using SerpApi to research events and music from a person's lifetime.",
+    "author": "Farhan",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/YTxFSGAMERz/muertos-ai",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/farhans123456/muertosai-i-built-a-durable-ai-ofrenda-for-dia-de-los-muertos-gemma-temporal-mastra-3h4c"
+      }
+    ],
+    "tags": [
+      "ai",
+      "storytelling",
+      "history"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Inheritance Engine",
+    "description": "Helps revive abandoned software with local AI agents and behavior checks, using SerpApi to discover repositories, maintained successors, and documentation.",
+    "author": "Shailesh Vats",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/shaileshvats/inheritance-engine",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/shaileshvats2004/inheritance-engine-resurrecting-abandoned-code-with-a-local-gemma-team-where-the-original-gets-a-4i0n"
+      }
+    ],
+    "tags": [
+      "ai",
+      "developer-tools",
+      "code-analysis"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Closet 404",
+    "description": "Explores archived websites through AI conversations and cited histories, using SerpApi to research why each site disappeared.",
+    "author": "Kanak Waradkar",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/Labreo/closet-404",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/kakeroth/i-held-a-seance-for-31-dead-websites-the-most-honest-ghost-said-that-never-made-it-into-my-html-2fj"
+      }
+    ],
+    "tags": [
+      "ai",
+      "archives",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://closet-404.onrender.com"
+  },
+  {
+    "name": "The Unclaimed",
+    "description": "A digital investigation workspace that uses SerpApi to discover leads, then preserves page captures, archive records, and source-backed findings.",
+    "author": "NIDHAN JAIN",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/Dev-Nidhan/the-unclaimed",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/nidhan_jain/the-unclaimed-a-digital-archaeology-field-kit-142m"
+      }
+    ],
+    "tags": [
+      "ai",
+      "research",
+      "archives"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://unclaimed.nidhan.tech/"
+  },
+  {
+    "name": "Ghost Text",
+    "description": "Searches the web with SerpApi and scans result pages for hidden prompt-injection content before an AI agent reads them.",
+    "author": "Ronak sarda",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/ronaksarda/ghost-text",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/ronaksarda/your-ai-is-hearing-voices-i-built-the-exorcist-4md"
+      }
+    ],
+    "tags": [
+      "ai",
+      "security",
+      "developer-tools"
+    ],
+    "apis": [
+      "DuckDuckGo Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "Ghost Money",
+    "description": "Helps explore Pakistan's public unclaimed-bank-account records and uses SerpApi Google Maps results to locate current bank branches for follow-up.",
+    "author": "Ibrahim Awab",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/miawab/ghostmoney",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/miawab/you-cant-ask-the-dead-what-they-left-behind-so-i-built-a-way-to-find-out-45po"
+      }
+    ],
+    "tags": [
+      "ai",
+      "finance",
+      "search"
+    ],
+    "apis": [
+      "Google Maps API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://ghostmoney.onrender.com"
+  },
+  {
+    "name": "Linkmortem",
+    "description": "Checks websites and repositories for dead links and uses SerpApi to find candidate replacement pages for review.",
+    "author": "Carlos José Castro Galante",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/carlosjcastro/linkmortem",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/carlosjcastrog/linkmortem-an-autopsy-for-every-dead-link-56a6"
+      }
+    ],
+    "tags": [
+      "developer-tools",
+      "ai",
+      "link-checking"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://linkmortem.tech"
+  },
+  {
+    "name": "Ofrenda for the Dead Web",
+    "description": "Builds memorial pages and poems for defunct websites, using SerpApi to research each site alongside archived pages.",
+    "author": "Brasspage",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/brasspage/dead-web-ofrenda",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/brasspage/ofrenda-for-the-dead-web-an-open-weight-model-writes-calaveras-for-websites-that-died-2i91"
+      }
+    ],
+    "tags": [
+      "ai",
+      "archives",
+      "poetry"
+    ],
+    "apis": [
+      "DuckDuckGo Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ]
+  },
+  {
+    "name": "DeadNet Ectoplasm Browser",
+    "description": "Explores and reconstructs old websites, with optional SerpApi searches for historical mentions and context about missing pages.",
+    "author": "Malawige Inusha Thathsara Gunasekara",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/inusha-thathsara/deadnet-ectoplasm-browser",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/inushathathsara/exhuming-the-lost-web-of-1999-with-gemma-3-browserbase-and-temporal-87k"
+      }
+    ],
+    "tags": [
+      "ai",
+      "archives",
+      "developer-tools"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://deadnet.inusha.tech/"
+  },
+  {
+    "name": "Witching Hour",
+    "description": "Investigates sensor readings through a ghost-hunt interface and uses SerpApi weather results alongside a model of past indoor conditions to explore overnight forecasts.",
+    "author": "Jennifer Evangelista",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/jenniferevangelista-de/witching-hour",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/jenniferevangelistade/witching-hour-even-a-ghost-has-to-cite-its-sources-4kf9"
+      }
+    ],
+    "tags": [
+      "ai",
+      "data-analysis",
+      "weather"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://witching-hour.onrender.com"
+  },
+  {
+    "name": "ECHOES.EXE",
+    "description": "Explores abandoned repositories through AI analysis and conversation, using SerpApi to find dependency advisories, migration guides, and deprecation notices.",
+    "author": "Priyank Saxena",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/PriyankV25/echoes-exe",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/priyank_dev/echoesexe-every-repository-has-a-ghost-3mj9"
+      }
+    ],
+    "tags": [
+      "ai",
+      "developer-tools",
+      "code-analysis"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://echoes-exe.onrender.com/"
+  },
+  {
+    "name": "The Empty Room",
+    "description": "Uses local AI agents to investigate gaps in historical occupancy logs, with SerpApi searches for context such as holidays and working days.",
+    "author": "Malbolged",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/malbolged/empty-room",
+    "featured": false,
+    "links": [
+      {
+        "label": "Hacktoberfest submission",
+        "url": "https://dev.to/malbolged/the-empty-room-i-held-a-seance-over-a-2015-sensor-log-4f2g"
+      }
+    ],
+    "tags": [
+      "ai",
+      "data-analysis",
+      "research"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "Hacktoberfest 2026"
+    ],
+    "hostedUrl": "https://empty-room-6z2k.onrender.com/"
+  },
+  {
+    "name": "RxE Voice AI",
+    "description": "A multilingual healthcare information assistant that uses SerpApi Google Search when its knowledge base cannot answer, then saves results for reuse. Intended for general information, not medical advice.",
+    "author": "Krishan Kumar Yadav",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/krishkydv77/RxE-Voice-AI",
+    "featured": false,
+    "tags": [
+      "healthcare",
+      "voice-assistant",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ]
+  },
+  {
+    "name": "Job Scout",
+    "description": "Finds roles through SerpApi Google Jobs API, scores them against a job brief and resumes, and saves suitable matches to Google Sheets through a scheduled workflow.",
+    "author": "Julia Vasan",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/juliavasan/job-scout",
+    "featured": false,
+    "tags": [
+      "jobs",
+      "ai",
+      "automation"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ]
+  },
+  {
+    "name": "Africa Event Radar",
+    "description": "Finds Python conferences and communities across African countries and their neighbours through SerpApi MCP, with optional searches for local tech events.",
+    "author": "Eusebio Simango",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/EusebioSimango/africa-event-radar",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "events",
+      "conferences",
+      "community"
+    ],
+    "apis": [
+      "Google Light Search API",
+      "Google Events API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ],
+    "hostedUrl": "https://africa-event-radar.onrender.com"
+  },
+  {
+    "name": "Orbit",
+    "description": "Finds places in South Africa based on traveller interests and maps the results alongside official travel-safety guidance found through SerpApi.",
+    "author": "Tarun Jain",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/lucifertrj/Orbit",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "travel",
+      "maps",
+      "recommendations"
+    ],
+    "apis": [
+      "Google Maps API",
+      "Google Search API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ],
+    "hostedUrl": "https://orbit-south-africa.streamlit.app/"
+  },
+  {
+    "name": "Cape Town Area Finder",
+    "description": "Compares Cape Town suburbs using SerpApi searches for rent, commute routes, amenities, local news and safety information, with links to the sources.",
+    "author": "Simmera Ndlalane",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/simmerandlalane/cape-town-housing-ai",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "housing",
+      "local-search",
+      "maps"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Maps Directions API",
+      "Google Maps API",
+      "Google News API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ]
+  },
+  {
+    "name": "Council Room",
+    "description": "Lets specialist AI agents research questions in themed pixel-art rooms using eight SerpApi engines, with cited results and visible search logs.",
+    "author": "Tarun Jain",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/lucifertrj/council-room-serp",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "ai",
+      "agents",
+      "research"
+    ],
+    "apis": [
+      "Google Search API",
+      "Google Flights API",
+      "Google Hotels API",
+      "Google Finance API",
+      "Google News API",
+      "YouTube Search API",
+      "Google Shopping API",
+      "Google Trends API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ],
+    "hostedUrl": "https://council-room-serp.streamlit.app/"
+  },
+  {
+    "name": "Signal Scout",
+    "description": "Compares product prices and Google search visibility for South African shops, using SerpApi to retrieve shopping listings, seller links and availability.",
+    "author": "Tiaan Willemse",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://codeberg.org/tiaanwillemse/SignalScout",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "shopping",
+      "price-comparison",
+      "market-intelligence"
+    ],
+    "apis": [
+      "Google Shopping API",
+      "Google Search API",
+      "Google Immersive Product API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ]
+  },
+  {
+    "name": "KaziRadar",
+    "description": "Finds jobs by role, location and experience level through SerpApi, with remote-work filters, salary details when available and links to apply.",
+    "author": "Eusebio Simango",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/EusebioSimango/kaziradar",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "jobs",
+      "career",
+      "search"
+    ],
+    "apis": [
+      "Google Jobs API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ],
+    "hostedUrl": "https://kaziradar-s7wb.onrender.com"
+  },
+  {
+    "name": "TalkFollow",
+    "description": "Turns conference talks, speakers or topics into follow-up briefings with related reading, recent news and videos found through SerpApi search tools.",
+    "author": "Eusebio Simango",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/EusebioSimango/talkfollow",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "conferences",
+      "research",
+      "briefing"
+    ],
+    "apis": [
+      "Google Light Search API",
+      "Google News API",
+      "YouTube Search API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
+    ],
+    "hostedUrl": "https://talkfollow.onrender.com/"
+  },
+  {
+    "name": "Tender Agent",
+    "description": "Helps review South African tender documents and prepare bid outlines, with optional SerpApi searches for government procurement notices.",
+    "author": "Eric Nang'omba",
+    "dateAdded": "2026-11-10",
+    "githubUrl": "https://github.com/ericnangomba/TenderAgent",
+    "featured": false,
+    "links": [],
+    "tags": [
+      "procurement",
+      "document-analysis",
+      "ai"
+    ],
+    "apis": [
+      "Google Search API"
+    ],
+    "events": [
+      "SerpApi PyConZA Hackathon 2026"
     ]
   }
 ]
