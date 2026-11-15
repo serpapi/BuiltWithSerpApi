@@ -5537,7 +5537,7 @@
   },
   {
     "name": "Walk Journal",
-    "description": "Creates walking quests around real parks and trails, with local AI photo checks and a personal outdoor journal.",
+    "description": "Finds nearby parks and trails with the SerpApi Google Maps API. Pick a walk and Gemma writes a seasonal photo quest for that location.",
     "author": "Nikitha Kishore Avadootha",
     "dateAdded": "2026-10-12",
     "githubUrl": "https://github.com/nikithakls17-sys/Walk-Journal-",
@@ -20483,10 +20483,10 @@
   },
   {
     "name": "Dance Fantasy",
-    "description": "Generates dance practice routines and researches reference videos through SerpApi Google Search and YouTube Search.",
-    "author": "Toyeshh Medikonda, Luv Malay Udeshi, Gatik Goyal, Suchay Kommisetty",
+    "description": "Finds dance clips on Google and YouTube through SerpApi. When it recognizes a song's signature move, the game works it into the chorus choreography.",
+    "author": "Toyeshh Medikonda, Luv Udeshi, Gatik Goyal, Suchay Kommisetty",
     "dateAdded": "2026-10-27",
-    "githubUrl": "https://github.com/luvudeshi/dance-fantasy",
+    "githubUrl": "https://github.com/toyeshhm/DanceFantasy",
     "links": [
       {
         "label": "HackTX 2026 submission",
@@ -23214,6 +23214,41 @@
     ],
     "events": [
       "SerpApi PyConZA Hackathon 2026"
+    ]
+  },
+  {
+    "name": "Trend Validator",
+    "description": "Tracks search interest in a topic with the SerpApi Google Trends API and explains its trend score. It searches Google and YouTube for competing products.",
+    "author": "Areeba Afzal",
+    "dateAdded": "2026-11-16",
+    "githubUrl": "https://github.com/areeba-dev-eng/trend-validator",
+    "featured": false,
+    "tags": [
+      "trends",
+      "market-research",
+      "analytics"
+    ],
+    "apis": [
+      "Google Trends API",
+      "Google Search API",
+      "YouTube Search API"
+    ]
+  },
+  {
+    "name": "AI-Powered Trip Planner",
+    "description": "Finds hotels and attractions using the SerpApi Google Maps API and shows their addresses and ratings alongside a day-by-day itinerary.",
+    "author": "Udit Kataria",
+    "dateAdded": "2026-11-16",
+    "githubUrl": "https://github.com/UditKataria-UK/travel-ai-fastapi",
+    "hostedUrl": "https://travel-ai-frontend-cxgq.onrender.com/",
+    "featured": false,
+    "tags": [
+      "travel",
+      "hotels",
+      "planning"
+    ],
+    "apis": [
+      "Google Maps API"
     ]
   }
 ]
